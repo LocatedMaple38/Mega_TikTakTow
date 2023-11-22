@@ -30,18 +30,4 @@ void Game(){
   rect(xSquareBottemLeft3, ySquareBottemLeft3, widthSquareBottemLeft3, heightSquareBottemLeft3);
   rect(xSquareBottemCenter3, ySquareBottemCenter3, widthSquareBottemCenter3, heightSquareBottemCenter3);
   rect(xSquareBottemRight3, ySquareBottemRight3, widthSquareBottemRight3, heightSquareBottemRight3);
-  
-  if(start == true){
-    if(TeamGoing == false && mouseX>xSquareTopLeft1 && mouseX<xSquareTopLeft1+widthSquareTopLeft1 && mouseY>ySquareTopLeft1 && mouseY<ySquareTopLeft1+heightSquareTopLeft1){
-      topLeft1O = true;
-    }
-  }
-  if(topLeft1X == true && topLeft1O == false){
-    image(playerX, xSquareTopLeft1, ySquareTopLeft1, widthSquareTopLeft1, heightSquareTopLeft1);
-  }
-  //
-  if(topLeft1O == true && topLeft1X == false) {
-    image(playerO, xSquareTopLeft1, ySquareTopLeft1, widthSquareTopLeft1, heightSquareTopLeft1);
-  }
-
 }

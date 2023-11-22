@@ -38,6 +38,16 @@ boolean start = false;
 boolean firstGo = false;
 boolean TeamGoing = false;
 
+boolean topLeft1OverRide = false;
+boolean topCrnter1OverRide = false;
+boolean topRight1OverRide = false;
+boolean centerLeft1OverRide = false;
+boolean centerCenter1OverRide = false;
+boolean CenterRight1OverRide = false;
+boolean bottemLeft1OverRide = false;
+boolean bottemCenter1OverRide = false;
+boolean bottemRight1OverRide = false;
+
 boolean topLeft1O = false;
 boolean topCrnter1O = false;
 boolean topRight1O = false;
@@ -57,86 +67,6 @@ boolean CenterRight1X = false;
 boolean bottemLeft1X = false;
 boolean bottemCenter1X = false;
 boolean bottemRight1X = false;
-
-boolean topLeft2O = false;
-boolean topCrnter2O = false;
-boolean topRight2O = false;
-boolean centerLeft2O = false;
-boolean centerCenter2O = false;
-boolean CenterRight2O = false;
-boolean bottemLeft2O = false;
-boolean bottemCenter2O = false;
-boolean bottemRight2O = false;
-
-boolean topLeft2X = false;
-boolean topCrnter2X = false;
-boolean topRight2X = false;
-boolean centerLeft2X = false;
-boolean centerCenter2X = false;
-boolean CenterRight2X = false;
-boolean bottemLeft2X = false;
-boolean bottemCenter2X = false;
-boolean bottemRight2X = false;
-
-boolean topLeft3O = false;
-boolean topCrnter3O = false;
-boolean topRight3O = false;
-boolean centerLeft3O = false;
-boolean centerCenter3O = false;
-boolean CenterRight3O = false;
-boolean bottemLeft3O = false;
-boolean bottemCenter3O = false;
-boolean bottemRight3O = false;
-
-boolean topLeft3X = false;
-boolean topCrnter3X = false;
-boolean topRight3X = false;
-boolean centerLeft3X = false;
-boolean centerCenter3X = false;
-boolean CenterRight3X = false;
-boolean bottemLeft3X = false;
-boolean bottemCenter3X = false;
-boolean bottemRight3X = false;
-
-boolean topLeft4O = false;
-boolean topCrnter4O = false;
-boolean topRight4O = false;
-boolean centerLeft4O = false;
-boolean centerCenter4O = false;
-boolean CenterRight4O = false;
-boolean bottemLeft4O = false;
-boolean bottemCenter4O = false;
-boolean bottemRight4O = false;
-
-boolean topLeft4X = false;
-boolean topCrnter4X = false;
-boolean topRight4X = false;
-boolean centerLeft4X = false;
-boolean centerCenter4X = false;
-boolean CenterRight4X = false;
-boolean bottemLeft4X = false;
-boolean bottemCenter4X = false;
-boolean bottemRight4X = false;
-
-boolean topLeft5O = false;
-boolean topCrnter5O = false;
-boolean topRight5O = false;
-boolean centerLeft5O = false;
-boolean centerCenter5O = false;
-boolean CenterRight5O = false;
-boolean bottemLeft5O = false;
-boolean bottemCenter5O = false;
-boolean bottemRight5O = false;
-
-boolean topLeft5X = false;
-boolean topCrnter5X = false;
-boolean topRight5X = false;
-boolean centerLeft5X = false;
-boolean centerCenter5X = false;
-boolean CenterRight5X = false;
-boolean bottemLeft5X = false;
-boolean bottemCenter5X = false;
-boolean bottemRight5X = false;
 
 PImage playerO;
 PImage playerX;
