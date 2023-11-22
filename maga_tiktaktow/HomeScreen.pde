@@ -1,4 +1,4 @@
 void homeScreen(){
-  fill(0, 255, 255);
-  rect(xFirstGo, yFirstGo, widthFirstGo, heightFirstGo);
+  fill(0, 255, 0);
+  rect(xStart, yStart, widthStart, heightStart);
 }

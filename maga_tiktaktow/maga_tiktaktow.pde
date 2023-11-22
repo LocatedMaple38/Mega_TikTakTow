@@ -138,33 +138,32 @@ boolean bottemLeft5X = false;
 boolean bottemCenter5X = false;
 boolean bottemRight5X = false;
 
-
 PImage playerO;
 PImage playerX;
 
 void setup() {
-  size(500, 500);
+  size(500, 600);
 
-  playerO = loadImage("playerO.png");
-  playerX = loadImage("playrtX.png");
+  playerO = loadImage("..../hello/playerO.png");
+  playerX = loadImage("..../hello/playrtX.png");
 
   appWidth = width;
   appHeight = height;
 
   xFirstGo = 500*0;
   yFirstGo = 500*1/3;
-  widthFirstGo = appWidth*1/3;
-  heightFirstGo = appHeight*1/3;
+  widthFirstGo = 200;
+  heightFirstGo = 200;
   
   xStart = 500*2/3;
   yStart = 500*1/3;
   widthStart = 500*1/3;
-  eightStart = 500*1/3;
+  heightStart = 500*1/3;
 
-  xTeamGoing = 500*1/3;
-  yTeamGoing = 500*1/3;
-  widthTeamGoing = appWidth*1/3;
-  heightTeamGoing = appHeight*1/3;
+  xTeamGoing = 600*0;
+  yTeamGoing = 600*9/10;
+  widthTeamGoing = appWidth*1/6;
+  heightTeamGoing = appHeight-1;
 
   xSquareTopLeft1 = 500*0;
   ySquareTopLeft1 = 500*0;
@@ -256,28 +255,26 @@ void setup() {
   widthSquareBottemRight2 = 500*1/9;
   heightSquareBottemRight2 = 500*1/9;
 }
-void draw() {
+void draw(){
   if(start == true){
     Game();
   }else{
     homeScreen();
   }
-  
   if(start == false && firstGo == true){
     image(playerX, xFirstGo, yFirstGo, widthFirstGo, heightFirstGo);
-  }else{
-    image(playerO, xFirstGo, yFirstGo, widthFirstGo, heightFirstGo);
-  }
+  }//else{
+    //image(playerO, xFirstGo, yFirstGo, widthFirstGo, heightFirstGo);
+  //}
   
-  if(topLeft1O == true) {
-    image(playerO, xSquareTopLeft1, ySquareTopLeft1, widthSquareTopLeft1, heightSquareTopLeft1);
-  }
-  if(topLeft1X == true){
-    image(playerX, xSquareTopLeft1, ySquareTopLeft1, widthSquareTopLeft1, heightSquareTopLeft1);
-  }
 }
 void mousePressed() {
   println(mouseX);
   println(mouseY);
-  if(start == false && mouseX>xSquareTopLeft1 && mouseX<xSquareTopLeft1+widthSquareTopLeft1 && mouseY>ySquareTopLeft1 && mouseY<ySquareTopLeft1+heightSquareTopLeft1
+  if(start == false && mouseX>xStart && mouseX<xStart+widthStart && mouseY>yStart && mouseY<yStart+heightStart){
+    start = true;
+  }
+  if(start == true && mouseX>xFirstGo && mouseX<xFirstGo+widthFirstGo && mouseY>yFirstGo && mouseY<yFirstGo+heightFirstGo){
+    firstGo = true;
+  }
 }
