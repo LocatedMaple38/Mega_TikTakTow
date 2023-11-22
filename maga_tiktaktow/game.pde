@@ -1,5 +1,4 @@
 void Game(){
-  
   fill(0, 255, 0);
   rect(xSquareTopLeft1, ySquareTopLeft1, widthSquareTopLeft1, heightSquareTopLeft1);
   rect(xSquareTopCenter1, ySquareTopCenter1, widthSquareTopCenter1, heightSquareTopCenter1);
@@ -36,6 +35,9 @@ void Game(){
   
   if(start == true){
     if(TeamGoing == false && mouseX>xSquareTopLeft1 && mouseX<xSquareTopLeft1+widthSquareTopLeft1 && mouseY>ySquareTopLeft1 && mouseY<ySquareTopLeft1+heightSquareTopLeft1){
-      topLeft = true;
+      topLeft1O = true;
+    }else{
+      topLeft1X = true;
     }
   }
+}

@@ -1,5 +1,6 @@
 float xFirstGo, yFirstGo, widthFirstGo, heightFirstGo;
 float xTeamGoing, yTeamGoing, widthTeamGoing, heightTeamGoing;
+float xStart, yStart, widthStart, heightStart;
 
 float xSquareTopLeft1, ySquareTopLeft1, widthSquareTopLeft1, heightSquareTopLeft1;
 float xSquareTopCenter1, ySquareTopCenter1, widthSquareTopCenter1, heightSquareTopCenter1;
@@ -37,75 +38,133 @@ boolean start = false;
 boolean firstGo = false;
 boolean TeamGoing = false;
 
-boolean topLeft101 = false;
-boolean topCrnter101 = false;
-boolean topRight101 = false;
-boolean centerLeft101 = false;
-boolean centerCenter101 = false;
-boolean CenterRight1 = false;
-boolean bottemLeft1 = false;
-boolean bottemCenter1 = false;
-boolean bottemRight1 = false;
+boolean topLeft1O = false;
+boolean topCrnter1O = false;
+boolean topRight1O = false;
+boolean centerLeft1O = false;
+boolean centerCenter1O = false;
+boolean CenterRight1O = false;
+boolean bottemLeft1O = false;
+boolean bottemCenter1O = false;
+boolean bottemRight1O = false;
 
-boolean topLeft2 = false;
-boolean topCrnter2 = false;
-boolean topRight2 = false;
-boolean centerLeft2 = false;
-boolean centerCenter2 = false;
-boolean CenterRight2 = false;
-boolean bottemLeft2 = false;
-boolean bottemCenter2 = false;
-boolean bottemRight2 = false;
+boolean topLeft1X = false;
+boolean topCrnter1X = false;
+boolean topRight1X = false;
+boolean centerLeft1X = false;
+boolean centerCenter1X = false;
+boolean CenterRight1X = false;
+boolean bottemLeft1X = false;
+boolean bottemCenter1X = false;
+boolean bottemRight1X = false;
 
-boolean topLeft3 = false;
-boolean topCrnter3 = false;
-boolean topRight3 = false;
-boolean centerLeft3 = false;
-boolean centerCenter3 = false;
-boolean CenterRight3 = false;
-boolean bottemLeft3 = false;
-boolean bottemCenter3 = false;
-boolean bottemRight3 = false;
+boolean topLeft2O = false;
+boolean topCrnter2O = false;
+boolean topRight2O = false;
+boolean centerLeft2O = false;
+boolean centerCenter2O = false;
+boolean CenterRight2O = false;
+boolean bottemLeft2O = false;
+boolean bottemCenter2O = false;
+boolean bottemRight2O = false;
 
-boolean topLeft4 = false;
-boolean topCrnter4 = false;
-boolean topRight4 = false;
-boolean centerLeft4 = false;
-boolean centerCenter4 = false;
-boolean CenterRight4 = false;
-boolean bottemLeft4 = false;
-boolean bottemCenter4 = false;
-boolean bottemRight4 = false;
+boolean topLeft2X = false;
+boolean topCrnter2X = false;
+boolean topRight2X = false;
+boolean centerLeft2X = false;
+boolean centerCenter2X = false;
+boolean CenterRight2X = false;
+boolean bottemLeft2X = false;
+boolean bottemCenter2X = false;
+boolean bottemRight2X = false;
 
-boolean topLeft5 = false;
-boolean topCrnter5 = false;
-boolean topRight5 = false;
-boolean centerLeft5 = false;
-boolean centerCenter5 = false;
-boolean CenterRight5 = false;
-boolean bottemLeft5 = false;
-boolean bottemCenter5 = false;
-boolean bottemRight5 = false;
+boolean topLeft3O = false;
+boolean topCrnter3O = false;
+boolean topRight3O = false;
+boolean centerLeft3O = false;
+boolean centerCenter3O = false;
+boolean CenterRight3O = false;
+boolean bottemLeft3O = false;
+boolean bottemCenter3O = false;
+boolean bottemRight3O = false;
 
+boolean topLeft3X = false;
+boolean topCrnter3X = false;
+boolean topRight3X = false;
+boolean centerLeft3X = false;
+boolean centerCenter3X = false;
+boolean CenterRight3X = false;
+boolean bottemLeft3X = false;
+boolean bottemCenter3X = false;
+boolean bottemRight3X = false;
+
+boolean topLeft4O = false;
+boolean topCrnter4O = false;
+boolean topRight4O = false;
+boolean centerLeft4O = false;
+boolean centerCenter4O = false;
+boolean CenterRight4O = false;
+boolean bottemLeft4O = false;
+boolean bottemCenter4O = false;
+boolean bottemRight4O = false;
+
+boolean topLeft4X = false;
+boolean topCrnter4X = false;
+boolean topRight4X = false;
+boolean centerLeft4X = false;
+boolean centerCenter4X = false;
+boolean CenterRight4X = false;
+boolean bottemLeft4X = false;
+boolean bottemCenter4X = false;
+boolean bottemRight4X = false;
+
+boolean topLeft5O = false;
+boolean topCrnter5O = false;
+boolean topRight5O = false;
+boolean centerLeft5O = false;
+boolean centerCenter5O = false;
+boolean CenterRight5O = false;
+boolean bottemLeft5O = false;
+boolean bottemCenter5O = false;
+boolean bottemRight5O = false;
+
+boolean topLeft5X = false;
+boolean topCrnter5X = false;
+boolean topRight5X = false;
+boolean centerLeft5X = false;
+boolean centerCenter5X = false;
+boolean CenterRight5X = false;
+boolean bottemLeft5X = false;
+boolean bottemCenter5X = false;
+boolean bottemRight5X = false;
+
+
+PImage playerO;
+PImage playerX;
 
 void setup() {
   size(500, 500);
 
-  playerO = loadImage(playerO.png);
-  playerX = loadImage(playrtX.png);
+  playerO = loadImage("playerO.png");
+  playerX = loadImage("playrtX.png");
 
   appWidth = width;
   appHeight = height;
 
-  xFirstGo = 600*0;
-  yFirstGo = 600*8/10;
-  widthFirstGo = appWidth*1/2;
-  heightFirstGo = appHeight-1;
+  xFirstGo = 500*0;
+  yFirstGo = 500*1/3;
+  widthFirstGo = appWidth*1/3;
+  heightFirstGo = appHeight*1/3;
+  
+  xStart = 500*2/3;
+  yStart = 500*1/3;
+  widthStart = 500*1/3;
+  eightStart = 500*1/3;
 
-  xTeamGoing = 600*1/2;
-  yTeamGoing = 600*8/10;
-  widthTeamGoing = appWidth*1/2;
-  heightTeamGoing = appHeight-1;
+  xTeamGoing = 500*1/3;
+  yTeamGoing = 500*1/3;
+  widthTeamGoing = appWidth*1/3;
+  heightTeamGoing = appHeight*1/3;
 
   xSquareTopLeft1 = 500*0;
   ySquareTopLeft1 = 500*0;
@@ -198,16 +257,27 @@ void setup() {
   heightSquareBottemRight2 = 500*1/9;
 }
 void draw() {
-  if (start == true) {
+  if(start == true){
     Game();
-  } else {
+  }else{
     homeScreen();
   }
-  if (topLeft == true) {
+  
+  if(start == false && firstGo == true){
+    image(playerX, xFirstGo, yFirstGo, widthFirstGo, heightFirstGo);
+  }else{
+    image(playerO, xFirstGo, yFirstGo, widthFirstGo, heightFirstGo);
+  }
+  
+  if(topLeft1O == true) {
     image(playerO, xSquareTopLeft1, ySquareTopLeft1, widthSquareTopLeft1, heightSquareTopLeft1);
+  }
+  if(topLeft1X == true){
+    image(playerX, xSquareTopLeft1, ySquareTopLeft1, widthSquareTopLeft1, heightSquareTopLeft1);
   }
 }
 void mousePressed() {
   println(mouseX);
   println(mouseY);
+  if(start == false && mouseX>xSquareTopLeft1 && mouseX<xSquareTopLeft1+widthSquareTopLeft1 && mouseY>ySquareTopLeft1 && mouseY<ySquareTopLeft1+heightSquareTopLeft1
 }
