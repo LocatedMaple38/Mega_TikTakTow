@@ -2,16 +2,30 @@ float xFirstGo, yFirstGo, widthFirstGo, heightFirstGo;
 float xTeamGoing, yTeamGoing, widthTeamGoing, heightTeamGoing;
 float xStart, yStart, widthStart, heightStart;
 
-float xBoard1, yBoard1, widthBoard1, heightBoard1;
-float xBoard2, yBoard2, widthBoard2, heightBoard2;
-float xBoard3, yBoard3, widthBoard3, heightBoard3;
-float xBoard4, yBoard4, widthBoard4, heightBoard4;
-float xBoard5, yBoard5, widthBoard5, heightBoard5;
-float xBoard6, yBoard6, widthBoard6, heightBoard6;
-float xBoard7, yBoard7, widthBoard7, heightBoard7;
-float xBoard8, yBoard8, widthBoard8, heightBoard8;
-float xBoard9, yBoard9, widthBoard9, heightBoard9;
-float xBoardMain, yBoardMain, widthBoardMain, heightBoardMain;
+float xLeft1, yLeft1, widthLeft1, heightLeft1;
+float xRight1, yRight1, widthRight1, heightRight1;
+float xTop1, yTop1, widthTop1, heightTop1;
+float xBottom1, yBottom1, widthBottom1, heightBottom1;
+
+float xLeft2, yLeft2, widthLeft2, heightLeft2;
+float xRight2, yRight2, widthRight2, heightRight2;
+float xTop2, yTop2, widthTop2, heightTop2;
+float xBottom2, yBottom2, widthBottom2, heightBottom2;
+
+float xLeft3, yLeft3, widthLeft3, heightLeft3;
+float xRight3, yRight3, widthRight3, heightRight3;
+float xTop3, yTop3, widthTop3, heightTop3;
+float xBottom3, yBottom3, widthBottom3, heightBottom3;
+
+float xLeft4, yLeft4, widthLeft4, heightLeft4;
+float xRight4, yRight4, widthRight4, heightRight4;
+float xTop4, yTop4, widthTop4, heightTop4;
+float xBottom4, yBottom4, widthBottom4, heightBottom4;
+
+float xLeft5, yLeft5, widthLeft5, heightLeft5;
+float xRight5, yRight5, widthRight5, heightRight5;
+float xTop5, yTop5, widthTop5, heightTop5;
+float xBottom5, yBottom5, widthBottom5, heightBottom5;
 
 float xSquareTopLeft1, ySquareTopLeft1, widthSquareTopLeft1, heightSquareTopLeft1;
 float xSquareTopCenter1, ySquareTopCenter1, widthSquareTopCenter1, heightSquareTopCenter1;
@@ -43,7 +57,18 @@ float xSquareBottemLeft3, ySquareBottemLeft3, widthSquareBottemLeft3, heightSqua
 float xSquareBottemCenter3, ySquareBottemCenter3, widthSquareBottemCenter3, heightSquareBottemCenter3;
 float xSquareBottemRight3, ySquareBottemRight3, widthSquareBottemRight3, heightSquareBottemRight3;
 
+float xSquareTopLeft4, ySquareTopLeft4, widthSquareTopLeft4, heightSquareTopLeft4;
+float xSquareTopCenter4, ySquareTopCenter4, widthSquareTopCenter4, heightSquareTopCenter4;
+float xSquareTopRight4, ySquareTopRight4, widthSquareTopRight4, heightSquareTopRight4;
+float xSquareCenterLeft4, ySquareCenterLeft4, widthSquareCenterLeft4, heightSquareCenterLeft4;
+float xSquareCenterCenter4, ySquareCenterCenter4, widthSquareCenterCenter4, heightSquareCenterCenter4;
+float xSquareCenterRight4, ySquareCenterRight4, widthSquareCenterRight4, heightSquareCenterRight4;
+float xSquareBottemLeft4, ySquareBottemLeft4, widthSquareBottemLeft4, heightSquareBottemLeft4;
+float xSquareBottemCenter4, ySquareBottemCenter4, widthSquareBottemCenter4, heightSquareBottemCenter4;
+float xSquareBottemRight4, ySquareBottemRight4, widthSquareBottemRight4, heightSquareBottemRight4;
+
 int appWidth, appHeight;
+int gameWidth, gameHeight;
 
 boolean start = false;
 boolean firstGo = false;
@@ -81,135 +106,226 @@ boolean bottemRight1X = false;
 
 PImage playerO;
 PImage playerX;
-PImage board1;
-PImage board2;
+
+
 
 void setup() {
   size(500, 600);
+  surface.setResizable(true);
 
   playerO = loadImage("playerO.png");
   playerX = loadImage("playrtX.png");
-  board1 = loadImage("TikTakTowBoard1.png");
-  board2 = loadImage("TikTakTowBoard2.png");
 
   appWidth = width;
   appHeight = height;
+  gameWidth = appWidth;
+  gameHeight = appHeight*500/600;
 
-  xFirstGo = 500*0;
-  yFirstGo = 500*1/3;
+  xFirstGo = gameWidth*0;
+  yFirstGo = gameHeight*1/3;
   widthFirstGo = 200;
   heightFirstGo = 200;
   
-  xStart = 500*2/3;
-  yStart = 500*1/3;
-  widthStart = 500*1/3;
-  heightStart = 500*1/3;
+  xStart = gameWidth*2/3;
+  yStart = gameHeight*1/3;
+  widthStart = gameWidth*1/3;
+  heightStart =gameHeight*1/3;
 
-  xTeamGoing = 600*0;
-  yTeamGoing = 600*9/10;
+  xTeamGoing = appWidth*0;
+  yTeamGoing = appHeight*9/10;
   widthTeamGoing = appWidth*1/6;
   heightTeamGoing = appHeight-1;
   
-  xBoard1 = 500*0;
-  yBoard1 = 500*0;
-  widthBoard1 = 500*1/3;
-  heightBoard1 = 500*1/3;
+  xLeft1 = gameWidth*1/9;
+  yLeft1 = gameHeight*0;
+  widthLeft1 = gameWidth*1/9;
+  heightLeft1 = gameHeight*1/3;
   
-  xBoard2 = 500*1/3;
-  yBoard2 = 500*0;
-  widthBoard2 = 500*1/3;
-  heightBoard2 = 500*1/3;
-
-  xSquareTopLeft1 = 500*0;
-  ySquareTopLeft1 = 500*0;
+  xRight1 = gameWidth*2/9;
+  yRight1 = gameHeight*0;
+  widthRight1 = gameWidth*2/9;
+  heightRight1 = gameHeight*1/3;
+  
+  xTop1 = gameWidth*0;
+  yTop1 = gameHeight*1/9;
+  widthTop1 = gameWidth*1/3;
+  heightTop1 = gameHeight*1/9;
+  
+  xBottom1 = gameWidth*0;
+  yBottom1 = gameHeight*2/9;
+  widthBottom1 = gameWidth*1/3;
+  heightBottom1 = gameHeight*2/9;
+  
+  xLeft2 = gameWidth*4/9;
+  yLeft2 = gameHeight*0;
+  widthLeft2 = gameWidth*4/9;
+  heightLeft2 = gameHeight*1/3;
+  
+  xRight2 = gameWidth*5/9;
+  yRight2 = gameHeight*0;
+  widthRight2 = gameWidth*5/9;
+  heightRight2 = gameHeight*1/3;
+  
+  xTop2 = gameWidth*1/3;
+  yTop2 = gameHeight*1/9;
+  widthTop2 = gameWidth*2/3;
+  heightTop2 = gameHeight*1/9;
+  
+  xBottom2 = gameWidth*1/3;
+  yBottom2 = gameHeight*2/9;
+  widthBottom2 = gameWidth*2/3;
+  heightBottom2 = gameHeight*2/9;
+  
+  xLeft3 = gameWidth*7/9;
+  yLeft3 = gameHeight*0;
+  widthLeft3 = gameWidth*7/9;
+  heightLeft3 = gameHeight*1/3;
+  
+  xRight3 = gameWidth*8/9;
+  yRight3 = gameHeight*0;
+  widthRight3 = gameWidth*8/9;
+  heightRight3 = gameHeight*1/3;
+  
+  xTop3 = gameWidth*2/3;
+  yTop3 = gameHeight*1/9;
+  widthTop3 = gameWidth*3/3;
+  heightTop3 = gameHeight*1/9;
+  
+  xBottom3 = gameWidth*2/3;
+  yBottom3 = gameHeight*2/9;
+  widthBottom3 = gameWidth*1;
+  heightBottom3 = gameHeight*2/9;
+  
+  xLeft4 = gameWidth*1/9;
+  yLeft4 = gameHeight*1/3;
+  widthLeft4 = gameWidth*1/9;
+  heightLeft4 = gameHeight*2/3;
+  
+  xRight4 = gameWidth*2/9;
+  yRight4 = gameHeight*1/3;
+  widthRight4 = gameWidth*2/9;
+  heightRight4 = gameHeight*2/3;
+  
+  xTop4 = gameWidth*0;
+  yTop4 = gameHeight*4/9;
+  widthTop4 = gameWidth*1/3;
+  heightTop4 = gameHeight*4/9;
+  
+  xBottom4 = gameWidth*0;
+  yBottom4 = gameHeight*5/9;
+  widthBottom4 = gameWidth*1/3;
+  heightBottom4 = gameHeight*5/9;
+  
+  xLeft5 = gameWidth*
+  yLeft5 = gameHeight*
+  widthLeft5 = gameWidth*
+  heightLeft5 = gameHeight*
+  
+  xRight5 = gameWidth*
+  yRight5 = gameHeight*
+  widthRight5 = gameWidth*
+  heightRight5 = gameHeight*
+  
+  xTop5 = gameWidth*
+  yTop5 = gameHeight*
+  widthTop5 = gameWidth*
+  heightTop5 = gameHeight*
+  
+  xBottom5 = gameWidth*
+  yBottom5 = gameHeight*
+  widthBottom5 = gameWidth*
+  heightBottom5 = gameHeight*
+/*
+  xSquareTopLeft1 = appWidth*0;
+  ySquareTopLeft1 = appHeight*0-100;
   widthSquareTopLeft1 = 500*1/9;
-  heightSquareTopLeft1 = 500*1/9;
+  heightSquareTopLeft1 = appHeight*1/9-100;
 
   xSquareTopCenter1 = 500*1/9;
   ySquareTopCenter1 = 500*0;
   widthSquareTopCenter1 = 500*1/9;
-  heightSquareTopCenter1 = 500*1/9;
+  heightSquareTopCenter1 = appHeight*1/9-100;
 
   xSquareTopRight1 = 500*2/9;
   ySquareTopRight1 = 500*0;
   widthSquareTopRight1 = 500*1/9;
-  heightSquareTopRight1 = 500*1/9;
+  heightSquareTopRight1 = appHeight*1/9-100;
 
   xSquareCenterLeft1 = 500*0;
   ySquareCenterLeft1 = 500*1/9;
   widthSquareCenterLeft1 = 500*1/9;
-  heightSquareCenterLeft1 = 500*1/9;
+  heightSquareCenterLeft1 =appHeight*1/9-100;
 
   xSquareCenterCenter1 = 500*1/9;
   ySquareCenterCenter1 = 500*1/9;
   widthSquareCenterCenter1 = 500*1/9;
-  heightSquareCenterCenter1 = 500*1/9;
+  heightSquareCenterCenter1 = appHeight*1/9-100;
 
   xSquareCenterRight1 = 500*2/9;
   ySquareCenterRight1 = 500*1/9;
   widthSquareCenterRight1 = 500*1/9;
-  heightSquareCenterRight1 = 500*1/9;
+  heightSquareCenterRight1 = appHeight*1/9-100;
 
   xSquareBottemLeft1 = 500*0;
   ySquareBottemLeft1 = 500*2/9;
   widthSquareBottemLeft1 = 500*1/9;
-  heightSquareBottemLeft1 = 500*1/9;
+  heightSquareBottemLeft1 = appHeight*1/9-100;
 
   xSquareBottemCenter1 = 500*1/9;
   ySquareBottemCenter1 = 500*2/9;
   widthSquareBottemCenter1 = 500*1/9;
-  heightSquareBottemCenter1 = 500*1/9;
+  heightSquareBottemCenter1 = appHeight*1/9-100;
 
   xSquareBottemRight1 = 500*2/9;
   ySquareBottemRight1 = 500*2/9;
   widthSquareBottemRight1 = 500*1/9;
-  heightSquareBottemRight1 = 500*1/9;
+  heightSquareBottemRight1 = appHeight*1/9-100;
 
   xSquareTopLeft2 = 500*3/9;
   ySquareTopLeft2 = 500*0;
   widthSquareTopLeft2 = 500*1/9;
-  heightSquareTopLeft2 = 500*1/9;
+  heightSquareTopLeft2 = appHeight*1/9-100;
 
   xSquareTopCenter2 = 500*4/9;
   ySquareTopCenter2 = 500*0;
   widthSquareTopCenter2 = 500*1/9;
-  heightSquareTopCenter2 = 500*1/9;
-
+  heightSquareTopCenter2 = appHeight*1/9-100;
+  
   xSquareTopRight2 = 500*5/9;
   ySquareTopRight2 = 500*0;
   widthSquareTopRight2 = 500*1/9;
-  heightSquareTopRight2 = 500*1/9;
+  heightSquareTopRight2 = appHeight*1/9-100;
 
   xSquareCenterLeft2 = 500*3/9;
   ySquareCenterLeft2 = 500*1/9;
   widthSquareCenterLeft2 = 500*1/9;
-  heightSquareCenterLeft2 = 500*1/9;
+  heightSquareCenterLeft2 =appHeight*1/9-100;
 
   xSquareCenterCenter2 = 500*4/9;
   ySquareCenterCenter2 = 50*1/9;
   widthSquareCenterCenter2 = 500*1/9;
-  heightSquareCenterCenter2 = 500*1/9;
+  heightSquareCenterCenter2 = appHeight*1/9-100;
 
   xSquareCenterRight2 = 500*5/9;
   ySquareCenterRight2 = 500*1/9;
   widthSquareCenterRight2 = 500*1/9;
-  heightSquareCenterRight2 = 500*1/9;
+  heightSquareCenterRight2 = appHeight*1/9-100;
 
   xSquareBottemLeft2 = 500*3/9;
   ySquareBottemLeft2 = 500*2/9;
   widthSquareBottemLeft2 = 500*1/9;
-  heightSquareBottemLeft2 = 500*1/9;
+  heightSquareBottemLeft2 = appHeight*1/9-100;
 
   xSquareBottemCenter2 = 500*4/9;
   ySquareBottemCenter2 = 500*2/9;
   widthSquareBottemCenter2 = 500*1/9;
-  heightSquareBottemCenter2 = 500*1/9;
+  heightSquareBottemCenter2 = appHeight*1/9-100;
 
   xSquareBottemRight2 = 500*5/9;
   ySquareBottemRight2 = 500*2/9;
   widthSquareBottemRight2 = 500*1/9;
-  heightSquareBottemRight2 = 500*1/9;
-  
+  heightSquareBottemRight2 = appHeight*1/9-100;
+  */
   //noStroke();
 }
 void draw(){
