@@ -32,6 +32,10 @@ void PlayerO(){
       bottemCenter1O = true;
       bottemCenter1OverRide = true;
     }
+    if(bottemRight1OverRide == false && TeamGoing == false  && mouseX>xSquareBottemRight1 && mouseX<xSquareBottemRight1+widthSquareBottemRight1 && mouseY>ySquareBottemRight1 && mouseY<ySquareBottemRight1+heightSquareBottemRight1){
+      bottemRight1O = true;
+      bottemRight1OverRide = true;
+    }
   }
 }
 //

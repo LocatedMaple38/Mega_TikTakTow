@@ -2,6 +2,17 @@ float xFirstGo, yFirstGo, widthFirstGo, heightFirstGo;
 float xTeamGoing, yTeamGoing, widthTeamGoing, heightTeamGoing;
 float xStart, yStart, widthStart, heightStart;
 
+float xBoard1, yBoard1, widthBoard1, heightBoard1;
+float xBoard2, yBoard2, widthBoard2, heightBoard2;
+float xBoard3, yBoard3, widthBoard3, heightBoard3;
+float xBoard4, yBoard4, widthBoard4, heightBoard4;
+float xBoard5, yBoard5, widthBoard5, heightBoard5;
+float xBoard6, yBoard6, widthBoard6, heightBoard6;
+float xBoard7, yBoard7, widthBoard7, heightBoard7;
+float xBoard8, yBoard8, widthBoard8, heightBoard8;
+float xBoard9, yBoard9, widthBoard9, heightBoard9;
+float xBoardMain, yBoardMain, widthBoardMain, heightBoardMain;
+
 float xSquareTopLeft1, ySquareTopLeft1, widthSquareTopLeft1, heightSquareTopLeft1;
 float xSquareTopCenter1, ySquareTopCenter1, widthSquareTopCenter1, heightSquareTopCenter1;
 float xSquareTopRight1, ySquareTopRight1, widthSquareTopRight1, heightSquareTopRight1;
@@ -70,12 +81,16 @@ boolean bottemRight1X = false;
 
 PImage playerO;
 PImage playerX;
+PImage board1;
+PImage board2;
 
 void setup() {
   size(500, 600);
 
-  playerO = loadImage("..../hello/playerO.png");
-  playerX = loadImage("..../hello/playrtX.png");
+  playerO = loadImage("playerO.png");
+  playerX = loadImage("playrtX.png");
+  board1 = loadImage("TikTakTowBoard1.png");
+  board2 = loadImage("TikTakTowBoard2.png");
 
   appWidth = width;
   appHeight = height;
@@ -94,6 +109,16 @@ void setup() {
   yTeamGoing = 600*9/10;
   widthTeamGoing = appWidth*1/6;
   heightTeamGoing = appHeight-1;
+  
+  xBoard1 = 500*0;
+  yBoard1 = 500*0;
+  widthBoard1 = 500*1/3;
+  heightBoard1 = 500*1/3;
+  
+  xBoard2 = 500*1/3;
+  yBoard2 = 500*0;
+  widthBoard2 = 500*1/3;
+  heightBoard2 = 500*1/3;
 
   xSquareTopLeft1 = 500*0;
   ySquareTopLeft1 = 500*0;
@@ -184,6 +209,8 @@ void setup() {
   ySquareBottemRight2 = 500*2/9;
   widthSquareBottemRight2 = 500*1/9;
   heightSquareBottemRight2 = 500*1/9;
+  
+  //noStroke();
 }
 void draw(){
   if(start == true){
