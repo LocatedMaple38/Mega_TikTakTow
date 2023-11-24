@@ -27,6 +27,16 @@ float xRight5, yRight5, widthRight5, heightRight5;
 float xTop5, yTop5, widthTop5, heightTop5;
 float xBottom5, yBottom5, widthBottom5, heightBottom5;
 
+float xLeft6, yLeft6, widthLeft6, heightLeft6;
+float xRight6, yRight6, widthRight6, heightRight6; 
+float xTop6, yTop6, widthTop6, heightTop6; 
+float xBottom6, yBottom6, widthBottom6, heightBottom6;
+
+float xLeft7, yLeft7, widthLeft7, heightLeft7;
+float xRight7, yRight7, widthRight7, heightRight7; 
+float xTop7, yTop7, widthTop7, heightTop7; 
+float xBottom7, yBottom7, widthBottom7, heightBottom7;
+
 float xSquareTopLeft1, ySquareTopLeft1, widthSquareTopLeft1, heightSquareTopLeft1;
 float xSquareTopCenter1, ySquareTopCenter1, widthSquareTopCenter1, heightSquareTopCenter1;
 float xSquareTopRight1, ySquareTopRight1, widthSquareTopRight1, heightSquareTopRight1;
@@ -66,6 +76,8 @@ float xSquareCenterRight4, ySquareCenterRight4, widthSquareCenterRight4, heightS
 float xSquareBottemLeft4, ySquareBottemLeft4, widthSquareBottemLeft4, heightSquareBottemLeft4;
 float xSquareBottemCenter4, ySquareBottemCenter4, widthSquareBottemCenter4, heightSquareBottemCenter4;
 float xSquareBottemRight4, ySquareBottemRight4, widthSquareBottemRight4, heightSquareBottemRight4;
+
+float xBackGround, yBackGround, widthBackGround, heightBackGround;
 
 int appWidth, appHeight;
 int gameWidth, gameHeight;
@@ -120,6 +132,11 @@ void setup() {
   appHeight = height;
   gameWidth = appWidth;
   gameHeight = appHeight*500/600;
+  
+  xBackGround = gameWidth*0;
+  yBackGround = gameHeight*0;
+  widthBackGround = gameWidth-1;
+  heightBackGround = gameHeight-1;
 
   xFirstGo = gameWidth*0;
   yFirstGo = gameHeight*1/3;
@@ -216,25 +233,45 @@ void setup() {
   widthBottom4 = gameWidth*1/3;
   heightBottom4 = gameHeight*5/9;
   
-  xLeft5 = gameWidth*
-  yLeft5 = gameHeight*
-  widthLeft5 = gameWidth*
-  heightLeft5 = gameHeight*
+  xLeft5 = gameWidth*4/9;
+  yLeft5 = gameHeight*1/3;
+  widthLeft5 = gameWidth*4/9;
+  heightLeft5 = gameHeight*2/3;
   
-  xRight5 = gameWidth*
-  yRight5 = gameHeight*
-  widthRight5 = gameWidth*
-  heightRight5 = gameHeight*
+  xRight5 = gameWidth*5/9;
+  yRight5 = gameHeight*1/3;
+  widthRight5 = gameWidth*5/9;
+  heightRight5 = gameHeight*2/3;
+
+  xTop5 = gameWidth*1/3;
+  yTop5 = gameHeight*4/9;
+  widthTop5 = gameWidth*2/3;
+  heightTop5 = gameHeight*4/9;
+
+  xBottom5 = gameWidth*1/3;
+  yBottom5 = gameHeight*5/9;
+  widthBottom5 = gameWidth*2/3;
+  heightBottom5 = gameHeight*5/9;
   
-  xTop5 = gameWidth*
-  yTop5 = gameHeight*
-  widthTop5 = gameWidth*
-  heightTop5 = gameHeight*
+  xLeft6 = gameWidth*7/9;
+  yLeft6 = gameHeight*1/3;
+  widthLeft6 = gameWidth*7/9;
+  heightLeft6 = gameHeight*2/3;
   
-  xBottom5 = gameWidth*
-  yBottom5 = gameHeight*
-  widthBottom5 = gameWidth*
-  heightBottom5 = gameHeight*
+  xRight6 = gameWidth*8/9;
+  yRight6 = gameHeight*1/3;
+  widthRight6 = gameWidth*8/9;
+  heightRight6 = gameHeight*2/3;
+  
+  xTop6 = gameWidth*2/3;
+  yTop6 = gameHeight*4/9;
+  widthTop6 = gameWidth*1;
+  heightTop6 = gameHeight*4/9;
+  
+  xBottom6 = gameWidth*2/3;
+  yBottom6 = gameHeight*5/9;
+  widthBottom6 = gameWidth*1;
+  heightBottom6 = gameHeight*5/9;
 /*
   xSquareTopLeft1 = appWidth*0;
   ySquareTopLeft1 = appHeight*0-100;
