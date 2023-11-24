@@ -37,6 +37,16 @@ float xRight7, yRight7, widthRight7, heightRight7;
 float xTop7, yTop7, widthTop7, heightTop7; 
 float xBottom7, yBottom7, widthBottom7, heightBottom7;
 
+float xLeft8, yLeft8, widthLeft8, heightLeft8;
+float xRight8, yRight8, widthRight8, heightRight8; 
+float xTop8, yTop8, widthTop8, heightTop8; 
+float xBottom8, yBottom8, widthBottom8, heightBottom8;
+
+float xLeft9, yLeft9, widthLeft9, heightLeft9;
+float xRight9, yRight9, widthRight9, heightRight9; 
+float xTop9, yTop9, widthTop9, heightTop9; 
+float xBottom9, yBottom9, widthBottom9, heightBottom9;
+
 float xSquareTopLeft1, ySquareTopLeft1, widthSquareTopLeft1, heightSquareTopLeft1;
 float xSquareTopCenter1, ySquareTopCenter1, widthSquareTopCenter1, heightSquareTopCenter1;
 float xSquareTopRight1, ySquareTopRight1, widthSquareTopRight1, heightSquareTopRight1;
@@ -76,6 +86,56 @@ float xSquareCenterRight4, ySquareCenterRight4, widthSquareCenterRight4, heightS
 float xSquareBottemLeft4, ySquareBottemLeft4, widthSquareBottemLeft4, heightSquareBottemLeft4;
 float xSquareBottemCenter4, ySquareBottemCenter4, widthSquareBottemCenter4, heightSquareBottemCenter4;
 float xSquareBottemRight4, ySquareBottemRight4, widthSquareBottemRight4, heightSquareBottemRight4;
+
+float xSquareTopLeft5, ySquareTopLeft5, widthSquareTopLeft5, heightSquareTopLeft5;
+float xSquareTopCenter5, ySquareTopCenter5, widthSquareTopCenter5, heightSquareTopCenter5;
+float xSquareTopRight5, ySquareTopRight5, widthSquareTopRight5, heightSquareTopRight5;
+float xSquareCenterLeft5, ySquareCenterLeft5, widthSquareCenterLeft5, heightSquareCenterLeft5;
+float xSquareCenterCenter5, ySquareCenterCenter5, widthSquareCenterCenter5, heightSquareCenterCenter5;
+float xSquareCenterRight5, ySquareCenterRight5, widthSquareCenterRight5, heightSquareCenterRight5;
+float xSquareBottemLeft5, ySquareBottemLeft5, widthSquareBottemLeft5, heightSquareBottemLeft5;
+float xSquareBottemCenter5, ySquareBottemCenter5, widthSquareBottemCenter5, heightSquareBottemCenter5;
+float xSquareBottemRight5, ySquareBottemRight5, widthSquareBottemRight5, heightSquareBottemRight5;
+
+float xSquareTopLeft6, ySquareTopLeft6, widthSquareTopLeft6, heightSquareTopLeft6;
+float xSquareTopCenter6, ySquareTopCenter6, widthSquareTopCenter6, heightSquareTopCenter6;
+float xSquareTopRight6, ySquareTopRight6, widthSquareTopRight6, heightSquareTopRight6;
+float xSquareCenterLeft6, ySquareCenterLeft6, widthSquareCenterLeft6, heightSquareCenterLeft6;
+float xSquareCenterCenter6, ySquareCenterCenter6, widthSquareCenterCenter6, heightSquareCenterCenter6;
+float xSquareCenterRight6, ySquareCenterRight6, widthSquareCenterRight6, heightSquareCenterRight6;
+float xSquareBottemLeft6, ySquareBottemLeft6, widthSquareBottemLeft6, heightSquareBottemLeft6;
+float xSquareBottemCenter6, ySquareBottemCenter6, widthSquareBottemCenter6, heightSquareBottemCenter6;
+float xSquareBottemRight6, ySquareBottemRight6, widthSquareBottemRight6, heightSquareBottemRight6;
+
+float xSquareTopLeft7, ySquareTopLeft7, widthSquareTopLeft7, heightSquareTopLeft7;
+float xSquareTopCenter7, ySquareTopCenter7, widthSquareTopCenter7, heightSquareTopCenter7;
+float xSquareTopRight7, ySquareTopRight7, widthSquareTopRight7, heightSquareTopRight7;
+float xSquareCenterLeft7, ySquareCenterLeft7, widthSquareCenterLeft7, heightSquareCenterLeft7;
+float xSquareCenterCenter7, ySquareCenterCenter7, widthSquareCenterCenter7, heightSquareCenterCenter7;
+float xSquareCenterRight7, ySquareCenterRight7, widthSquareCenterRight7, heightSquareCenterRight7;
+float xSquareBottemLeft7, ySquareBottemLeft7, widthSquareBottemLeft7, heightSquareBottemLeft7;
+float xSquareBottemCenter7, ySquareBottemCenter7, widthSquareBottemCenter7, heightSquareBottemCenter7;
+float xSquareBottemRight7, ySquareBottemRight7, widthSquareBottemRight7, heightSquareBottemRight7;
+
+float xSquareTopLeft8, ySquareTopLeft8, widthSquareTopLeft8, heightSquareTopLeft8;
+float xSquareTopCenter8, ySquareTopCenter8, widthSquareTopCenter8, heightSquareTopCenter8;
+float xSquareTopRight8, ySquareTopRight8, widthSquareTopRight8, heightSquareTopRight8;
+float xSquareCenterLeft8, ySquareCenterLeft8, widthSquareCenterLeft8, heightSquareCenterLeft8;
+float xSquareCenterCenter8, ySquareCenterCenter8, widthSquareCenterCenter8, heightSquareCenterCenter8;
+float xSquareCenterRight8, ySquareCenterRight8, widthSquareCenterRight8, heightSquareCenterRight8;
+float xSquareBottemLeft8, ySquareBottemLeft8, widthSquareBottemLeft8, heightSquareBottemLeft8;
+float xSquareBottemCenter8, ySquareBottemCenter8, widthSquareBottemCenter8, heightSquareBottemCenter8;
+float xSquareBottemRight8, ySquareBottemRight8, widthSquareBottemRight8, heightSquareBottemRight8;
+
+float xSquareTopLeft9, ySquareTopLeft9, widthSquareTopLeft9, heightSquareTopLeft9;
+float xSquareTopCenter9, ySquareTopCenter9, widthSquareTopCenter9, heightSquareTopCenter9;
+float xSquareTopRight9, ySquareTopRight9, widthSquareTopRight9, heightSquareTopRight9;
+float xSquareCenterLeft9, ySquareCenterLeft9, widthSquareCenterLeft9, heightSquareCenterLeft9;
+float xSquareCenterCenter9, ySquareCenterCenter9, widthSquareCenterCenter9, heightSquareCenterCenter9;
+float xSquareCenterRight9, ySquareCenterRight9, widthSquareCenterRight9, heightSquareCenterRight9;
+float xSquareBottemLeft9, ySquareBottemLeft9, widthSquareBottemLeft9, heightSquareBottemLeft9;
+float xSquareBottemCenter9, ySquareBottemCenter9, widthSquareBottemCenter9, heightSquareBottemCenter9;
+float xSquareBottemRight9, ySquareBottemRight9, widthSquareBottemRight9, heightSquareBottemRight9;
 
 float xBackGround, yBackGround, widthBackGround, heightBackGround;
 
@@ -126,7 +186,7 @@ void setup() {
   surface.setResizable(true);
 
   playerO = loadImage("playerO.png");
-  playerX = loadImage("playrtX.png");
+  playerX = loadImage("playerX.png");
 
   appWidth = width;
   appHeight = height;
@@ -272,98 +332,474 @@ void setup() {
   yBottom6 = gameHeight*5/9;
   widthBottom6 = gameWidth*1;
   heightBottom6 = gameHeight*5/9;
-/*
-  xSquareTopLeft1 = appWidth*0;
-  ySquareTopLeft1 = appHeight*0-100;
-  widthSquareTopLeft1 = 500*1/9;
-  heightSquareTopLeft1 = appHeight*1/9-100;
-
-  xSquareTopCenter1 = 500*1/9;
-  ySquareTopCenter1 = 500*0;
-  widthSquareTopCenter1 = 500*1/9;
-  heightSquareTopCenter1 = appHeight*1/9-100;
-
-  xSquareTopRight1 = 500*2/9;
-  ySquareTopRight1 = 500*0;
-  widthSquareTopRight1 = 500*1/9;
-  heightSquareTopRight1 = appHeight*1/9-100;
-
-  xSquareCenterLeft1 = 500*0;
-  ySquareCenterLeft1 = 500*1/9;
-  widthSquareCenterLeft1 = 500*1/9;
-  heightSquareCenterLeft1 =appHeight*1/9-100;
-
-  xSquareCenterCenter1 = 500*1/9;
-  ySquareCenterCenter1 = 500*1/9;
-  widthSquareCenterCenter1 = 500*1/9;
-  heightSquareCenterCenter1 = appHeight*1/9-100;
-
-  xSquareCenterRight1 = 500*2/9;
-  ySquareCenterRight1 = 500*1/9;
-  widthSquareCenterRight1 = 500*1/9;
-  heightSquareCenterRight1 = appHeight*1/9-100;
-
-  xSquareBottemLeft1 = 500*0;
-  ySquareBottemLeft1 = 500*2/9;
-  widthSquareBottemLeft1 = 500*1/9;
-  heightSquareBottemLeft1 = appHeight*1/9-100;
-
-  xSquareBottemCenter1 = 500*1/9;
-  ySquareBottemCenter1 = 500*2/9;
-  widthSquareBottemCenter1 = 500*1/9;
-  heightSquareBottemCenter1 = appHeight*1/9-100;
-
-  xSquareBottemRight1 = 500*2/9;
-  ySquareBottemRight1 = 500*2/9;
-  widthSquareBottemRight1 = 500*1/9;
-  heightSquareBottemRight1 = appHeight*1/9-100;
-
-  xSquareTopLeft2 = 500*3/9;
-  ySquareTopLeft2 = 500*0;
-  widthSquareTopLeft2 = 500*1/9;
-  heightSquareTopLeft2 = appHeight*1/9-100;
-
-  xSquareTopCenter2 = 500*4/9;
-  ySquareTopCenter2 = 500*0;
-  widthSquareTopCenter2 = 500*1/9;
-  heightSquareTopCenter2 = appHeight*1/9-100;
   
-  xSquareTopRight2 = 500*5/9;
-  ySquareTopRight2 = 500*0;
-  widthSquareTopRight2 = 500*1/9;
-  heightSquareTopRight2 = appHeight*1/9-100;
+  xLeft7 = gameWidth*1/9;
+  yLeft7 = gameHeight*2/3;
+  widthLeft7 = gameWidth*1/9;
+  heightLeft7 = gameHeight-1;
+  
+  xRight7 = gameWidth*2/9;
+  yRight7 = gameHeight*2/3;
+  widthRight7 = gameWidth*2/9;
+  heightRight7 = gameHeight-1;
+  
+  xTop7 = gameWidth*0;
+  yTop7 = gameHeight*7/9;
+  widthTop7 = gameWidth*1/3;
+  heightTop7 = gameHeight*7/9;
+  
+  xBottom7 = gameWidth*0;
+  yBottom7 = gameHeight*8/9;
+  widthBottom7 = gameWidth*1/3;
+  heightBottom7 = gameHeight*8/9;
+  
+  xLeft8 = gameWidth*4/9;
+  yLeft8 = gameHeight*1/3;
+  widthLeft8 = gameWidth*4/9;
+  heightLeft8 = gameHeight*2/3;
+  
+  xRight8 = gameWidth*5/9;
+  yRight8 = gameHeight*1/3;
+  widthRight8 = gameWidth*5/9;
+  heightRight8 = gameHeight*2/3;
+  
+  xTop8 = gameWidth*1/3;
+  yTop8 = gameHeight*7/9;
+  widthTop8 = gameWidth*2/3;
+  heightTop8 = gameHeight*7/9;
+  
+  xBottom8 = gameWidth*1/3;
+  yBottom8 = gameHeight*8/9;
+  widthBottom8 = gameWidth*2/3;
+  heightBottom8 = gameHeight*8/9;
 
-  xSquareCenterLeft2 = 500*3/9;
-  ySquareCenterLeft2 = 500*1/9;
-  widthSquareCenterLeft2 = 500*1/9;
-  heightSquareCenterLeft2 =appHeight*1/9-100;
+  xLeft9 = gameWidth*7/9;
+  yLeft9 = gameHeight*2/3;
+  widthLeft9 = gameWidth*7/9;
+  heightLeft9 = gameHeight-1;
+  
+  xRight9 = gameWidth*8/9;
+  yRight9 = gameHeight*2/3;
+  widthRight9 = gameWidth*8/9;
+  heightRight9 = gameHeight-1;
+  
+  xTop9 = gameWidth*7/9;
+  yTop9 = gameHeight*2/3;
+  widthTop9 = gameWidth*7/9;
+  heightTop9 = gameHeight-1;
+  
+  xBottom9 = gameWidth*8/9;
+  yBottom9 = gameHeight*2/3;
+  widthBottom9 = gameWidth*8/9;
+  heightBottom9 = gameHeight-1;
 
-  xSquareCenterCenter2 = 500*4/9;
-  ySquareCenterCenter2 = 50*1/9;
-  widthSquareCenterCenter2 = 500*1/9;
-  heightSquareCenterCenter2 = appHeight*1/9-100;
+  xSquareTopLeft1 = gameWidth*0;
+  ySquareTopLeft1 = gameHeight*0;
+  widthSquareTopLeft1 = gameWidth*1/9;
+  heightSquareTopLeft1 = gameHeight*1/9;
 
-  xSquareCenterRight2 = 500*5/9;
-  ySquareCenterRight2 = 500*1/9;
-  widthSquareCenterRight2 = 500*1/9;
-  heightSquareCenterRight2 = appHeight*1/9-100;
+  xSquareTopCenter1 = gameWidth*1/9+1;
+  ySquareTopCenter1 = gameHeight*0;
+  widthSquareTopCenter1 = gameWidth*1/9;
+  heightSquareTopCenter1 = gameHeight*1/9;
 
-  xSquareBottemLeft2 = 500*3/9;
-  ySquareBottemLeft2 = 500*2/9;
-  widthSquareBottemLeft2 = 500*1/9;
-  heightSquareBottemLeft2 = appHeight*1/9-100;
+  xSquareTopRight1 = gameWidth*2/9+1;
+  ySquareTopRight1 = gameHeight*0;
+  widthSquareTopRight1 = gameWidth*1/9;
+  heightSquareTopRight1 = gameHeight*1/9;
 
-  xSquareBottemCenter2 = 500*4/9;
-  ySquareBottemCenter2 = 500*2/9;
-  widthSquareBottemCenter2 = 500*1/9;
-  heightSquareBottemCenter2 = appHeight*1/9-100;
+  xSquareCenterLeft1 = gameWidth*0;
+  ySquareCenterLeft1 = gameHeight*1/9+1;
+  widthSquareCenterLeft1 = gameWidth*1/9;
+  heightSquareCenterLeft1 = gameHeight*1/9;
 
-  xSquareBottemRight2 = 500*5/9;
-  ySquareBottemRight2 = 500*2/9;
-  widthSquareBottemRight2 = 500*1/9;
-  heightSquareBottemRight2 = appHeight*1/9-100;
-  */
+  xSquareCenterCenter1 = gameWidth*1/9+1;
+  ySquareCenterCenter1 = gameHeight*1/9+1;
+  widthSquareCenterCenter1 = gameWidth*1/9;
+  heightSquareCenterCenter1 = gameHeight*1/9;
+
+  xSquareCenterRight1 = gameWidth*2/9+1;
+  ySquareCenterRight1 = gameHeight*1/9+1;
+  widthSquareCenterRight1 = gameWidth*1/9;
+  heightSquareCenterRight1 = gameHeight*1/9;
+
+  xSquareBottemLeft1 = gameWidth*0;
+  ySquareBottemLeft1 = gameHeight*2/9+1;
+  widthSquareBottemLeft1 = gameWidth*1/9;
+  heightSquareBottemLeft1 = gameHeight*1/9;
+
+  xSquareBottemCenter1 = gameWidth*1/9+1;
+  ySquareBottemCenter1 = gameHeight*2/9+1;
+  widthSquareBottemCenter1 = gameWidth*1/9;
+  heightSquareBottemCenter1 = gameHeight*1/9;
+
+  xSquareBottemRight1 = gameWidth*2/9+1;
+  ySquareBottemRight1 = gameHeight*2/9+1;
+  widthSquareBottemRight1 = gameWidth*1/9;
+  heightSquareBottemRight1 = gameHeight*1/9;
+
+  xSquareTopLeft2 = gameWidth*3/9+1;
+  ySquareTopLeft2 = gameHeight*0;
+  widthSquareTopLeft2 = gameWidth*1/9;
+  heightSquareTopLeft2 = gameHeight*1/9;
+
+  xSquareTopCenter2 = gameWidth*4/9+1;
+  ySquareTopCenter2 = gameHeight*0;
+  widthSquareTopCenter2 = gameWidth*1/9;
+  heightSquareTopCenter2 = gameHeight*1/9;
+  
+  xSquareTopRight2 = gameWidth*5/9+1;
+  ySquareTopRight2 = gameHeight*0;
+  widthSquareTopRight2 = gameWidth*1/9;
+  heightSquareTopRight2 = gameHeight*1/9;
+
+  xSquareCenterLeft2 = gameWidth*3/9+1;
+  ySquareCenterLeft2 = gameHeight*1/9+1;
+  widthSquareCenterLeft2 = gameWidth*1/9;
+  heightSquareCenterLeft2 = gameHeight*1/9;
+
+  xSquareCenterCenter2 = gameWidth*4/9+1;
+  ySquareCenterCenter2 = gameHeight*1/9+1;
+  widthSquareCenterCenter2 = gameWidth*1/9;
+  heightSquareCenterCenter2 = gameHeight*1/9;
+  
+  xSquareCenterRight2 = gameWidth*5/9+1;
+  ySquareCenterRight2 = gameHeight*1/9+1;
+  widthSquareCenterRight2 = gameWidth*1/9;
+  heightSquareCenterRight2 = gameHeight*1/9;
+
+  xSquareBottemLeft2 = gameWidth*3/9+1;
+  ySquareBottemLeft2 = gameHeight*2/9+1;
+  widthSquareBottemLeft2 = gameWidth*1/9;
+  heightSquareBottemLeft2 = gameHeight*1/9;
+
+  xSquareBottemCenter2 = gameWidth*4/9+1;
+  ySquareBottemCenter2 = gameHeight*2/9+1;
+  widthSquareBottemCenter2 = gameWidth*1/9;
+  heightSquareBottemCenter2 = gameHeight*1/9;
+  
+  xSquareBottemRight2 = gameWidth*5/9+1;
+  ySquareBottemRight2 = gameHeight*2/9+1;
+  widthSquareBottemRight2 = gameWidth*1/9;
+  heightSquareBottemRight2 = gameHeight*1/9;
+  
+  xSquareTopLeft3 = gameWidth*6/9;
+  ySquareTopLeft3 = gameHeight*0;
+  widthSquareTopLeft3 = gameWidth*1/9;
+  heightSquareTopLeft3 = gameHeight*1/9;
+  
+  xSquareTopCenter3 = gameWidth*7/9+1;
+  ySquareTopCenter3 = gameHeight*0;
+  widthSquareTopCenter3 = gameWidth*1/9;
+  heightSquareTopCenter3 = gameHeight*1/9;
+    
+  xSquareTopRight3 = gameWidth*8/9+1;
+  ySquareTopRight3 = gameHeight*0;
+  widthSquareTopRight3 = gameWidth*1/9;
+  heightSquareTopRight3 = gameHeight*1/9;
+  
+  xSquareCenterLeft3 = gameWidth*6/9;
+  ySquareCenterLeft3 = gameHeight*1/9+1;
+  widthSquareCenterLeft3 = gameWidth*1/9;
+  heightSquareCenterLeft3 = gameHeight*1/9;
+  
+  xSquareCenterCenter3 = gameWidth*7/9+1;
+  ySquareCenterCenter3 = gameHeight*1/9+1;
+  widthSquareCenterCenter3 = gameWidth*1/9;
+  heightSquareCenterCenter3 = gameHeight*1/9;
+  
+  xSquareCenterRight3 = gameWidth*8/9+1;
+  ySquareCenterRight3 = gameHeight*1/9+1;
+  widthSquareCenterRight3 = gameWidth*1/9;
+  heightSquareCenterRight3 = gameHeight*1/9;
+  
+  xSquareBottemLeft3 = gameWidth*6/9;
+  ySquareBottemLeft3 = gameHeight*2/9+1;
+  widthSquareBottemLeft3 = gameWidth*1/9;
+  heightSquareBottemLeft3 = gameHeight*1/9;
+  
+  xSquareBottemCenter3 = gameWidth*7/9+1;
+  ySquareBottemCenter3 = gameHeight*2/9+1;
+  widthSquareBottemCenter3 = gameWidth*1/9;
+  heightSquareBottemCenter3 = gameHeight*1/9;
+  
+  xSquareBottemRight3 = gameWidth*8/9+1;
+  ySquareBottemRight3 = gameHeight*2/9+1;
+  widthSquareBottemRight3 = gameWidth*1/9;
+  heightSquareBottemRight3 = gameHeight*1/9;
+  
+  xSquareTopLeft4 = gameWidth*0;
+  ySquareTopLeft4 = gameHeight*3/9+1;
+  widthSquareTopLeft4 = gameWidth*1/9;
+  heightSquareTopLeft4 = gameHeight*1/9;
+  
+  xSquareTopCenter4 = gameWidth*1/9+1;
+  ySquareTopCenter4 = gameHeight*3/9+1;
+  widthSquareTopCenter4 = gameWidth*1/9;
+  heightSquareTopCenter4 = gameHeight*1/9;
+  
+  xSquareTopRight4 = gameWidth*2/9+1;
+  ySquareTopRight4 = gameHeight*3/9+1;
+  widthSquareTopRight4 = gameWidth*1/9;
+  heightSquareTopRight4 = gameHeight*1/9;
+  
+  xSquareCenterLeft4 = gameWidth*0;
+  ySquareCenterLeft4 = gameHeight*4/9+1;
+  widthSquareCenterLeft4 = gameWidth*1/9;
+  heightSquareCenterLeft4 = gameHeight*1/9;
+  
+  xSquareCenterCenter4 = gameWidth*1/9+1;
+  ySquareCenterCenter4 = gameHeight*4/9+1;
+  widthSquareCenterCenter4 = gameWidth*1/9;
+  heightSquareCenterCenter4 = gameHeight*1/9;
+    
+  xSquareCenterRight4 = gameWidth*2/9+1;
+  ySquareCenterRight4 = gameHeight*4/9+1;
+  widthSquareCenterRight4 = gameWidth*1/9;
+  heightSquareCenterRight4 = gameHeight*1/9;
+  
+  xSquareBottemLeft4 = gameWidth*0;
+  ySquareBottemLeft4 = gameHeight*5/9+1;
+  widthSquareBottemLeft4 = gameWidth*1/9;
+  heightSquareBottemLeft4 = gameHeight*1/9;
+  
+  xSquareBottemCenter4 = gameWidth*1/9+1;
+  ySquareBottemCenter4 = gameHeight*5/9+1;
+  widthSquareBottemCenter4 = gameWidth*1/9;
+  heightSquareBottemCenter4 = gameHeight*1/9;
+  
+  xSquareBottemRight4 = gameWidth*2/9+1;
+  ySquareBottemRight4 = gameHeight*5/9+1;
+  widthSquareBottemRight4 = gameWidth*1/9;
+  heightSquareBottemRight4 = gameHeight*1/9;
+  
+  xSquareTopLeft5 = gameWidth*3/9+1;
+  ySquareTopLeft5 = gameHeight*3/9+1;
+  widthSquareTopLeft5 = gameWidth*1/9;
+  heightSquareTopLeft5 = gameHeight*1/9;
+  
+  xSquareTopCenter5 = gameWidth*4/9+1;
+  ySquareTopCenter5 = gameHeight*3/9+1;
+  widthSquareTopCenter5 = gameWidth*1/9;
+  heightSquareTopCenter5 = gameHeight*1/9;
+  
+  xSquareTopRight5 = gameWidth*5/9+1;
+  ySquareTopRight5 = gameHeight*3/9;
+  widthSquareTopRight5 = gameWidth*1/9;
+  heightSquareTopRight5 = gameHeight*1/9;
+  
+  xSquareCenterLeft5 = gameWidth*3/9+1;
+  ySquareCenterLeft5 = gameHeight*4/9+1;
+  widthSquareCenterLeft5 = gameWidth*1/9;
+  heightSquareCenterLeft5 = gameHeight*1/9;
+  
+  xSquareCenterCenter5 = gameWidth*4/9+1;
+  ySquareCenterCenter5 = gameHeight*4/9+1;
+  widthSquareCenterCenter5 = gameWidth*1/9;
+  heightSquareCenterCenter5 = gameHeight*1/9;
+  
+  xSquareCenterRight5 = gameWidth*5/9+1;
+  ySquareCenterRight5 = gameHeight*4/9+1;
+  widthSquareCenterRight5 = gameWidth*1/9;
+  heightSquareCenterRight5 = gameHeight*1/9;
+  
+  xSquareBottemLeft5 = gameWidth*3/9+1;
+  ySquareBottemLeft5 = gameHeight*5/9+1;
+  widthSquareBottemLeft5 = gameWidth*1/9;
+  heightSquareBottemLeft5 = gameHeight*1/9;
+  
+  xSquareBottemCenter5 = gameWidth*4/9+1;
+  ySquareBottemCenter5 = gameHeight*5/9+1;
+  widthSquareBottemCenter5 = gameWidth*1/9;
+  heightSquareBottemCenter5 = gameHeight*1/9;
+  
+  xSquareBottemRight5 = gameWidth*5/9+1;
+  ySquareBottemRight5 = gameHeight*5/9+1;
+  widthSquareBottemRight5 = gameWidth*1/9;
+  heightSquareBottemRight5 = gameHeight*1/9;
+
+  xSquareTopLeft6 = gameWidth*6/9+1;
+  ySquareTopLeft6 = gameHeight*3/9+1;
+  widthSquareTopLeft6 = gameWidth*1/9;
+  heightSquareTopLeft6 = gameHeight*1/9;
+  
+  xSquareTopCenter6 = gameWidth*7/9+1;
+  ySquareTopCenter6 = gameHeight*3/9+1;
+  widthSquareTopCenter6 = gameWidth*1/9;
+  heightSquareTopCenter6 = gameHeight*1/9;
+  
+  xSquareTopRight6 = gameWidth*8/9+1;
+  ySquareTopRight6 = gameHeight*3/9+1
+  widthSquareTopRight6 = gameWidth*1/9;
+  heightSquareTopRight6 = gameHeight*1/9;
+  
+  xSquareCenterLeft6 = gameWidth*6/9+1;
+  ySquareCenterLeft6 = gameHeight*4/9+1;
+  widthSquareCenterLeft6 = gameWidth*1/9;
+  heightSquareCenterLeft6 = gameHeight*1/9;
+  
+  xSquareCenterCenter6 = gameWidth*7/9+1;
+  ySquareCenterCenter6 = gameHeight*4/9+1;
+  widthSquareCenterCenter6 = gameWidth*1/9;
+  heightSquareCenterCenter6 = gameHeight*1/9;
+  
+  xSquareCenterRight6 = gameWidth*8/9+1;
+  ySquareCenterRight6 = gameHeight*4/9+1;
+  widthSquareCenterRight6 = gameWidth*1/9;
+  heightSquareCenterRight6 = gameHeight*1/9;
+  
+  xSquareBottemLeft6 = gameWidth*0;
+  ySquareBottemLeft6 = gameHeight*6/9+1;
+  widthSquareBottemLeft6 = gameWidth*1/9;
+  heightSquareBottemLeft6 = gameHeight*1/9;
+  
+  xSquareBottemCenter6 = gameWidth*1/9+1;
+  ySquareBottemCenter6 = gameHeight*6/9+1;
+  widthSquareBottemCenter6 = gameWidth*1/9;
+  heightSquareBottemCenter6 = gameHeight*1/9;
+  
+  xSquareBottemRight6 = gameWidth*2/9+1;
+  ySquareBottemRight6 = gameHeight*6/9+1;
+  widthSquareBottemRight6 = gameWidth*1/9;
+  heightSquareBottemRight6 = gameHeight*1/9;
+
+  xSquareTopLeft7 = gameWidth*3/9+1;
+  ySquareTopLeft7 = gameHeight*6/9+1;
+  widthSquareTopLeft7 = gameWidth*1/9;
+  heightSquareTopLeft7 = gameHeight*1/9;
+  
+  xSquareTopCenter7 = gameWidth*4/9+1;
+  ySquareTopCenter7 = gameHeight*6/9+1;
+  widthSquareTopCenter7 = gameWidth*1/9;
+  heightSquareTopCenter7 = gameHeight*1/9;
+  
+  xSquareTopRight7 = gameWidth*5/9+1;
+  ySquareTopRight7 = gameHeight*6/9+1;
+  widthSquareTopRight7 = gameWidth*1/9;
+  heightSquareTopRight7 = gameHeight*1/9;
+  
+  xSquareCenterLeft7 = gameWidth*3/9+1;
+  ySquareCenterLeft7 = gameHeight*7/9+1;
+  widthSquareCenterLeft7 = gameWidth*1/9;
+  heightSquareCenterLeft7 = gameHeight*1/9;
+  
+  xSquareCenterCenter7 = gameWidth*4/9+1;
+  ySquareCenterCenter7 = gameHeight*7/9+1;
+  widthSquareCenterCenter7 = gameWidth*1/9;
+  heightSquareCenterCenter7 = gameHeight*1/9;
+  
+  xSquareCenterRight7 = gameWidth*3/9+1;
+  ySquareCenterRight7 = gameHeight*7/9+1;
+  widthSquareCenterRight7 = gameWidth*1/9;
+  heightSquareCenterRight7 = gameHeight*1/9;
+  
+  xSquareBottemLeft7 = gameWidth*0;
+  ySquareBottemLeft7 = gameHeight*6/9+1;
+  widthSquareBottemLeft7 = gameWidth*1/9;
+  heightSquareBottemLeft7 = gameHeight*1/9;
+  
+  xSquareBottemCenter7 = gameWidth*1/9+1;
+  ySquareBottemCenter7 = gameHeight*6/9+1;
+  widthSquareBottemCenter7 = gameWidth*1/9;
+  heightSquareBottemCenter7 = gameHeight*1/9;
+  
+  xSquareBottemRight7 = gameWidth*2/9+1;
+  ySquareBottemRight7 = gameHeight*6/9+1;
+  widthSquareBottemRight7 = gameWidth*1/9;
+  heightSquareBottemRight7 = gameHeight*1/9;
+
+  xSquareTopLeft8 = gameWidth*3/9+1;
+  ySquareTopLeft8 = gameHeight*6/9+1;
+  widthSquareTopLeft8 = gameWidth*1/9;
+  heightSquareTopLeft8 = gameHeight*1/9;
+  
+  xSquareTopCenter8 = gameWidth*
+  ySquareTopCenter8 = gameHeight*
+  widthSquareTopCenter8 = gameWidth*1/9;
+  heightSquareTopCenter8 = gameHeight*1/9;
+  
+  xSquareTopRight8 = gameWidth*
+  ySquareTopRight8 = gameHeight*
+  widthSquareTopRight8 = gameWidth*1/9;
+  heightSquareTopRight8 = gameHeight*1/9;
+  
+  xSquareCenterLeft8 = gameWidth*
+  ySquareCenterLeft8 = gameHeight*
+  widthSquareCenterLeft8 = gameWidth*1/9;
+  heightSquareCenterLeft8 = gameHeight*1/9;
+  
+  xSquareCenterCenter8 = gameWidth*
+  ySquareCenterCenter8 = gameHeight*
+  widthSquareCenterCenter8 = gameWidth*1/9;
+  heightSquareCenterCenter8 = gameHeight*1/9;
+  
+  xSquareCenterRight8 = gameWidth*
+  ySquareCenterRight8 = gameHeight*
+  widthSquareCenterRight8 = gameWidth*1/9;
+  heightSquareCenterRight8 = gameHeight*1/9;
+  
+  xSquareBottemLeft8 = gameWidth*
+  ySquareBottemLeft8 = gameHeight*
+  widthSquareBottemLeft8 = gameWidth*1/9;
+  heightSquareBottemLeft8 = gameHeight*1/9;
+  
+  xSquareBottemCenter8 = gameWidth*
+  ySquareBottemCenter8 = gameHeight*
+  widthSquareBottemCenter8 = gameWidth*1/9;
+  heightSquareBottemCenter8 = gameHeight*1/9;
+  
+  xSquareBottemRight8 = gameWidth*
+  ySquareBottemRight8 = gameHeight*
+  widthSquareBottemRight8 = gameWidth*1/9;
+  heightSquareBottemRight8 = gameHeight*1/9;
+
+  xSquareTopLeft9 = gameWidth*
+  ySquareTopLeft9 = gameHeight*
+  widthSquareTopLeft9 = gameWidth*1/9;
+  heightSquareTopLeft9 = gameHeight*1/9;
+  
+  xSquareTopCenter9 = gameWidth*
+  ySquareTopCenter9 = gameHeight*
+  widthSquareTopCenter9 = gameWidth*1/9;
+  heightSquareTopCenter9 = gameHeight*1/9;
+  
+  xSquareTopRight9 = gameWidth*
+  ySquareTopRight9 = gameHeight*
+  widthSquareTopRight9 = gameWidth*1/9;
+  heightSquareTopRight9 = gameHeight*1/9;
+  
+  xSquareCenterLeft9 = gameWidth*
+  ySquareCenterLeft9 = gameHeight*
+  widthSquareCenterLeft9 = gameWidth*1/9;
+  heightSquareCenterLeft9 = gameHeight*1/9;
+  
+  xSquareCenterCenter9 = gameWidth*
+  ySquareCenterCenter9 = gameHeight*
+  widthSquareCenterCenter9 = gameWidth*1/9;
+  heightSquareCenterCenter9 = gameHeight*1/9;
+  
+  xSquareCenterRight9 = gameWidth*
+  ySquareCenterRight9 = gameHeight*
+  widthSquareCenterRight9 = gameWidth*1/9;
+  heightSquareCenterRight9 = gameHeight*1/9;
+  
+  xSquareBottemLeft9 = gameWidth*  
+  ySquareBottemLeft9 = gameHeight*
+  widthSquareBottemLeft9 = gameWidth*1/9;
+  heightSquareBottemLeft9 = gameHeight*1/9;
+  
+  xSquareBottemCenter9 = gameWidth*
+  ySquareBottemCenter9 = gameHeight*
+  widthSquareBottemCenter9 = gameWidth*1/9;
+  heightSquareBottemCenter9 = gameHeight*1/9;
+  
+  xSquareBottemRight9 = gameWidth*
+  ySquareBottemRight9 = gameHeight*
+  widthSquareBottemRight9 = gameWidth*1/9;
+  heightSquareBottemRight9 = gameHeight*1/9;
+    
   //noStroke();
+
 }
 void draw(){
   if(start == true){

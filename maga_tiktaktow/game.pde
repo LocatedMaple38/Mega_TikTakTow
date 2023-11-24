@@ -6,15 +6,20 @@ void Game(){
     image(playerO, xSquareTopLeft1, ySquareTopLeft1, widthSquareTopLeft1, heightSquareTopLeft1);
   }*/
   rect(xBackGround, yBackGround, widthBackGround, heightBackGround);
-  gameTopLeftOutLine();
+  fill(255, 0, 0);
   gameTopLeftButtons();
-  gameTopCenterOutLine();
   gameTopCenterButtons();
-  gameTopRightOutLine();
   gameTopRightButtons();
-  gameCenterLeftOutLine();
-  gameCenterLeftButtons();
-  gameCenterCenterOutline();
+  gameCenterLeftButtons();  
   gameCenterCenterButtons();
+  gameCenterRightButtons();
+  gameBottomRightButtons();
+  fill(255);
+  gameTopLeftOutLine();
+  gameTopCenterOutLine();
+  gameTopRightOutLine();
+  gameCenterLeftOutLine();
+  gameCenterCenterOutline();
   gameCenterRightOutline();
+  gameButtomRightOutline();
 }
