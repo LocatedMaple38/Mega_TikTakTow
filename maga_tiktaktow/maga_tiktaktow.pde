@@ -857,47 +857,47 @@ void setup() {
   heightSquareBottemRight8 = gameHeight*1/9;
 
   xSquareTopLeft9 = gameWidth*3/9+1;
-  ySquareTopLeft9 = gameHeight*8/9+1;
+  ySquareTopLeft9 = gameHeight*6/9+1;
   widthSquareTopLeft9 = gameWidth*1/9;
   heightSquareTopLeft9 = gameHeight*1/9;
   
   xSquareTopCenter9 = gameWidth*4/9+1;
-  ySquareTopCenter9 = gameHeight*8/9+1;
+  ySquareTopCenter9 = gameHeight*6/9+1;
   widthSquareTopCenter9 = gameWidth*1/9;
   heightSquareTopCenter9 = gameHeight*1/9;
   
-  xSquareTopRight9 = gameWidth*
-  ySquareTopRight9 = gameHeight*
+  xSquareTopRight9 = gameWidth*5/9+1;
+  ySquareTopRight9 = gameHeight*6/9+1;
   widthSquareTopRight9 = gameWidth*1/9;
   heightSquareTopRight9 = gameHeight*1/9;
   
-  xSquareCenterLeft9 = gameWidth*
-  ySquareCenterLeft9 = gameHeight*
+  xSquareCenterLeft9 = gameWidth*3/9+1;
+  ySquareCenterLeft9 = gameHeight*7/9+1;
   widthSquareCenterLeft9 = gameWidth*1/9;
   heightSquareCenterLeft9 = gameHeight*1/9;
   
-  xSquareCenterCenter9 = gameWidth*
-  ySquareCenterCenter9 = gameHeight*
+  xSquareCenterCenter9 = gameWidth*4/9+1;
+  ySquareCenterCenter9 = gameHeight*7/9+1;
   widthSquareCenterCenter9 = gameWidth*1/9;
   heightSquareCenterCenter9 = gameHeight*1/9;
   
-  xSquareCenterRight9 = gameWidth*
-  ySquareCenterRight9 = gameHeight*
+  xSquareCenterRight9 = gameWidth*8/9+1;
+  ySquareCenterRight9 = gameHeight*7/9+1;
   widthSquareCenterRight9 = gameWidth*1/9;
   heightSquareCenterRight9 = gameHeight*1/9;
   
-  xSquareBottemLeft9 = gameWidth*  
-  ySquareBottemLeft9 = gameHeight*
+  xSquareBottemLeft9 = gameWidth*6/9+1;
+  ySquareBottemLeft9 = gameHeight*8/9+1;
   widthSquareBottemLeft9 = gameWidth*1/9;
   heightSquareBottemLeft9 = gameHeight*1/9;
   
-  xSquareBottemCenter9 = gameWidth*
-  ySquareBottemCenter9 = gameHeight*
+  xSquareBottemCenter9 = gameWidth*7/9+1;
+  ySquareBottemCenter9 = gameHeight*8/9+1;
   widthSquareBottemCenter9 = gameWidth*1/9;
   heightSquareBottemCenter9 = gameHeight*1/9;
   
-  xSquareBottemRight9 = gameWidth*
-  ySquareBottemRight9 = gameHeight*
+  xSquareBottemRight9 = gameWidth*8/9+1;
+  ySquareBottemRight9 = gameHeight*8/9+1;
   widthSquareBottemRight9 = gameWidth*1/9;
   heightSquareBottemRight9 = gameHeight*1/9;
   
