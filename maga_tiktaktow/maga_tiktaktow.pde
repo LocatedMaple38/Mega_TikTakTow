@@ -1,7 +1,9 @@
 String title = "Wencome to Mega Tik Tak Tow if you dont know how to play tap or clik the -how to- button if you do know how to play press -start- good luck and may the odds be in your faver";
 String footer = "By LocatedMaple38";
 String start = "START", how to = "HoW To";
+String in1 = ïf I play Center Center Top Left (the green squar) then you fave to play in the center fo the main board (the yellow squar)";
 
+float xIn1, yIn1, widthIn1, heightIn1;
 float xTitle, yTitle, widthTitle, heightTitle;
 float xFooter, yFooter, widthFooter, heightFooter;
 float xHowTo, yHowTo, widthHowTo, heightHowTo;
@@ -271,6 +273,11 @@ void setup() {
   yHowTo = appHeight*1.5/4;
   widthHowTo = appWidth*1/2;
   heightHowTo = appHeight*2.5/4;
+
+  xIn1 = appwidth*0;
+  yIn1 = appHeight - gameHeigth;
+  widthIn1 = appWidth-1;
+  heightIn1 = appHeight - gameHeigth;
   
   xStart = appWidth*0;
   yStart = appHeight*1.5/4;
