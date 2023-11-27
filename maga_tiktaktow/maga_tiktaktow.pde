@@ -1,6 +1,6 @@
 String title = "Wencome to Mega Tik Tak Tow if you dont know how to play tap or clik the -how to- button if you do know how to play press -start- good luck and may the odds be in your faver";
-string footer = "By LocatedMaple38";
-string start = "START", how to = "HoW To";
+String footer = "By LocatedMaple38";
+String start = "START", how to = "HoW To";
 
 float xTitle, yTitle, widthTitle, heightTitle;
 float xFooter, yFooter, widthFooter, heightFooter;
