@@ -209,6 +209,16 @@ boolean bottemLeft1OverRide = false;
 boolean bottemCenter1OverRide = false;
 boolean bottemRight1OverRide = false;
 
+boolean topLeft2OverRide = false;
+boolean topCrnter2OverRide = false;
+boolean topRight2OverRide = false;
+boolean centerLeft2OverRide = false;
+boolean centerCenter2OverRide = false;
+boolean CenterRight2OverRide = false;
+boolean bottemLeft2OverRide = false;
+boolean bottemCenter2OverRide = false;
+boolean bottemRight2OverRide = false;
+
 boolean topLeft1O = false;
 boolean topCrnter1O = false;
 boolean topRight1O = false;
@@ -219,6 +229,16 @@ boolean bottemLeft1O = false;
 boolean bottemCenter1O = false;
 boolean bottemRight1O = false;
 
+boolean topLeft2O = false;
+boolean topCrnter2O = false;
+boolean topRight2O = false;
+boolean centerLeft2O = false;
+boolean centerCenter2O = false;
+boolean CenterRight2O = false;
+boolean bottemLeft2O = false;
+boolean bottemCenter2O = false;
+boolean bottemRight2O = false;
+
 boolean topLeftMainO = false;
 boolean topCenterMainO = false;
 boolean topRightMainO = false;
@@ -228,6 +248,9 @@ boolean centerRightMainO = false;
 boolean bottomLeftMainO = false;
 boolean bottomCenterMainO = false;
 boolean bottomRightMainO = false;
+
+Boolean winTopLeftO = false;
+
 
 boolean topLeft1X = false;
 boolean topCrnter1X = false;
