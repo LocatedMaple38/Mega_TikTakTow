@@ -1,4 +1,4 @@
-float xFirstGo, yFirstGo, widthFirstGo, heightFirstGo;
+float xBootUpText, yBootUpText, widthBootUpText, heightBootUpText;
 float xTeamGoing, yTeamGoing, widthTeamGoing, heightTeamGoing;
 float xStart, yStart, widthStart, heightStart;
 
@@ -179,8 +179,6 @@ boolean bottemRight1X = false;
 PImage playerO;
 PImage playerX;
 
-
-
 void setup() {
   size(500, 600);
   surface.setResizable(true);
@@ -198,10 +196,10 @@ void setup() {
   widthBackGround = gameWidth-1;
   heightBackGround = gameHeight-1;
 
-  xFirstGo = gameWidth*0;
-  yFirstGo = gameHeight*1/3;
-  widthFirstGo = 200;
-  heightFirstGo = 200;
+  xBootUpText = gameWidth*0;
+  yBootUpText = gameHeight*1/3;
+  widthBootUpText = gameWidth;
+  heightBootUpText = gameHeight;
   
   xStart = gameWidth*2/3;
   yStart = gameHeight*1/3;
@@ -798,8 +796,6 @@ void setup() {
   widthSquareBottemRight9 = gameWidth*1/9;
   heightSquareBottemRight9 = gameHeight*1/9;
     
-  //noStroke();
-
 }
 void draw(){
   if(start == true){
@@ -807,20 +803,12 @@ void draw(){
   }else{
     homeScreen();
   }
-  if(start == false && firstGo == true){
-    image(playerX, xFirstGo, yFirstGo, widthFirstGo, heightFirstGo);
-  }//else{
-    //image(playerO, xFirstGo, yFirstGo, widthFirstGo, heightFirstGo);
-  //}
-  
 }
 void mousePressed() {
   println(mouseX);
   println(mouseY);
+
   if(start == false && mouseX>xStart && mouseX<xStart+widthStart && mouseY>yStart && mouseY<yStart+heightStart){
     start = true;
-  }
-  if(start == true && mouseX>xFirstGo && mouseX<xFirstGo+widthFirstGo && mouseY>yFirstGo && mouseY<yFirstGo+heightFirstGo){
-    firstGo = true;
   }
 }
