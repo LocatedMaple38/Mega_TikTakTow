@@ -1,52 +1,68 @@
-float xBootUpText, yBootUpText, widthBootUpText, heightBootUpText;
+String title = "Wencome to Mega Tik Tak Tow if you dont know how to play tap or clik the -how to- button if you do know how to play press -start- good luck and may the odds be in your faver";
+string footer = "By LocatedMaple38";
+string start = "START", how to = "HoW To";
+
+float xTitle, yTitle, widthTitle, heightTitle;
+float xFooter, yFooter, widthFooter, heightFooter;
+float xHowTo, yHowTo, widthHowTo, heightHowTo;
 float xTeamGoing, yTeamGoing, widthTeamGoing, heightTeamGoing;
 float xStart, yStart, widthStart, heightStart;
 
+//topLeftMini
 float xLeft1, yLeft1, widthLeft1, heightLeft1;
 float xRight1, yRight1, widthRight1, heightRight1;
 float xTop1, yTop1, widthTop1, heightTop1;
 float xBottom1, yBottom1, widthBottom1, heightBottom1;
 
+//topCenterMini
 float xLeft2, yLeft2, widthLeft2, heightLeft2;
 float xRight2, yRight2, widthRight2, heightRight2;
 float xTop2, yTop2, widthTop2, heightTop2;
 float xBottom2, yBottom2, widthBottom2, heightBottom2;
 
+//topRightMini
 float xLeft3, yLeft3, widthLeft3, heightLeft3;
 float xRight3, yRight3, widthRight3, heightRight3;
 float xTop3, yTop3, widthTop3, heightTop3;
 float xBottom3, yBottom3, widthBottom3, heightBottom3;
 
+//centerLeftMini
 float xLeft4, yLeft4, widthLeft4, heightLeft4;
 float xRight4, yRight4, widthRight4, heightRight4;
 float xTop4, yTop4, widthTop4, heightTop4;
 float xBottom4, yBottom4, widthBottom4, heightBottom4;
 
+//centerCenterMini
 float xLeft5, yLeft5, widthLeft5, heightLeft5;
 float xRight5, yRight5, widthRight5, heightRight5;
 float xTop5, yTop5, widthTop5, heightTop5;
 float xBottom5, yBottom5, widthBottom5, heightBottom5;
 
+//centerRightMini
 float xLeft6, yLeft6, widthLeft6, heightLeft6;
 float xRight6, yRight6, widthRight6, heightRight6; 
 float xTop6, yTop6, widthTop6, heightTop6; 
 float xBottom6, yBottom6, widthBottom6, heightBottom6;
 
+//bottomLeftMini
 float xLeft7, yLeft7, widthLeft7, heightLeft7;
 float xRight7, yRight7, widthRight7, heightRight7; 
 float xTop7, yTop7, widthTop7, heightTop7; 
 float xBottom7, yBottom7, widthBottom7, heightBottom7;
 
+//bottomCenterMini
 float xLeft8, yLeft8, widthLeft8, heightLeft8;
 float xRight8, yRight8, widthRight8, heightRight8; 
 float xTop8, yTop8, widthTop8, heightTop8; 
 float xBottom8, yBottom8, widthBottom8, heightBottom8;
 
+//bottomRightMini
 float xLeft9, yLeft9, widthLeft9, heightLeft9;
 float xRight9, yRight9, widthRight9, heightRight9; 
 float xTop9, yTop9, widthTop9, heightTop9; 
 float xBottom9, yBottom9, widthBottom9, heightBottom9;
 
+//topLeftButton
 float xSquareTopLeft1, ySquareTopLeft1, widthSquareTopLeft1, heightSquareTopLeft1;
 float xSquareTopCenter1, ySquareTopCenter1, widthSquareTopCenter1, heightSquareTopCenter1;
 float xSquareTopRight1, ySquareTopRight1, widthSquareTopRight1, heightSquareTopRight1;
@@ -57,6 +73,7 @@ float xSquareBottemLeft1, ySquareBottemLeft1, widthSquareBottemLeft1, heightSqua
 float xSquareBottemCenter1, ySquareBottemCenter1, widthSquareBottemCenter1, heightSquareBottemCenter1;
 float xSquareBottemRight1, ySquareBottemRight1, widthSquareBottemRight1, heightSquareBottemRight1;
 
+//topCenterButton
 float xSquareTopLeft2, ySquareTopLeft2, widthSquareTopLeft2, heightSquareTopLeft2;
 float xSquareTopCenter2, ySquareTopCenter2, widthSquareTopCenter2, heightSquareTopCenter2;
 float xSquareTopRight2, ySquareTopRight2, widthSquareTopRight2, heightSquareTopRight2;
@@ -66,7 +83,7 @@ float xSquareCenterRight2, ySquareCenterRight2, widthSquareCenterRight2, heightS
 float xSquareBottemLeft2, ySquareBottemLeft2, widthSquareBottemLeft2, heightSquareBottemLeft2;
 float xSquareBottemCenter2, ySquareBottemCenter2, widthSquareBottemCenter2, heightSquareBottemCenter2;
 float xSquareBottemRight2, ySquareBottemRight2, widthSquareBottemRight2, heightSquareBottemRight2;
-
+//topRightButton
 float xSquareTopLeft3, ySquareTopLeft3, widthSquareTopLeft3, heightSquareTopLeft3;
 float xSquareTopCenter3, ySquareTopCenter3, widthSquareTopCenter3, heightSquareTopCenter3;
 float xSquareTopRight3, ySquareTopRight3, widthSquareTopRight3, heightSquareTopRight3;
@@ -76,7 +93,7 @@ float xSquareCenterRight3, ySquareCenterRight3, widthSquareCenterRight3, heightS
 float xSquareBottemLeft3, ySquareBottemLeft3, widthSquareBottemLeft3, heightSquareBottemLeft3;
 float xSquareBottemCenter3, ySquareBottemCenter3, widthSquareBottemCenter3, heightSquareBottemCenter3;
 float xSquareBottemRight3, ySquareBottemRight3, widthSquareBottemRight3, heightSquareBottemRight3;
-
+//centerLeftButton
 float xSquareTopLeft4, ySquareTopLeft4, widthSquareTopLeft4, heightSquareTopLeft4;
 float xSquareTopCenter4, ySquareTopCenter4, widthSquareTopCenter4, heightSquareTopCenter4;
 float xSquareTopRight4, ySquareTopRight4, widthSquareTopRight4, heightSquareTopRight4;
@@ -86,7 +103,7 @@ float xSquareCenterRight4, ySquareCenterRight4, widthSquareCenterRight4, heightS
 float xSquareBottemLeft4, ySquareBottemLeft4, widthSquareBottemLeft4, heightSquareBottemLeft4;
 float xSquareBottemCenter4, ySquareBottemCenter4, widthSquareBottemCenter4, heightSquareBottemCenter4;
 float xSquareBottemRight4, ySquareBottemRight4, widthSquareBottemRight4, heightSquareBottemRight4;
-
+//centerCenterButton
 float xSquareTopLeft5, ySquareTopLeft5, widthSquareTopLeft5, heightSquareTopLeft5;
 float xSquareTopCenter5, ySquareTopCenter5, widthSquareTopCenter5, heightSquareTopCenter5;
 float xSquareTopRight5, ySquareTopRight5, widthSquareTopRight5, heightSquareTopRight5;
@@ -97,6 +114,7 @@ float xSquareBottemLeft5, ySquareBottemLeft5, widthSquareBottemLeft5, heightSqua
 float xSquareBottemCenter5, ySquareBottemCenter5, widthSquareBottemCenter5, heightSquareBottemCenter5;
 float xSquareBottemRight5, ySquareBottemRight5, widthSquareBottemRight5, heightSquareBottemRight5;
 
+//centerRightButton
 float xSquareTopLeft6, ySquareTopLeft6, widthSquareTopLeft6, heightSquareTopLeft6;
 float xSquareTopCenter6, ySquareTopCenter6, widthSquareTopCenter6, heightSquareTopCenter6;
 float xSquareTopRight6, ySquareTopRight6, widthSquareTopRight6, heightSquareTopRight6;
@@ -107,6 +125,7 @@ float xSquareBottemLeft6, ySquareBottemLeft6, widthSquareBottemLeft6, heightSqua
 float xSquareBottemCenter6, ySquareBottemCenter6, widthSquareBottemCenter6, heightSquareBottemCenter6;
 float xSquareBottemRight6, ySquareBottemRight6, widthSquareBottemRight6, heightSquareBottemRight6;
 
+//bottomLeftButton
 float xSquareTopLeft7, ySquareTopLeft7, widthSquareTopLeft7, heightSquareTopLeft7;
 float xSquareTopCenter7, ySquareTopCenter7, widthSquareTopCenter7, heightSquareTopCenter7;
 float xSquareTopRight7, ySquareTopRight7, widthSquareTopRight7, heightSquareTopRight7;
@@ -117,6 +136,7 @@ float xSquareBottemLeft7, ySquareBottemLeft7, widthSquareBottemLeft7, heightSqua
 float xSquareBottemCenter7, ySquareBottemCenter7, widthSquareBottemCenter7, heightSquareBottemCenter7;
 float xSquareBottemRight7, ySquareBottemRight7, widthSquareBottemRight7, heightSquareBottemRight7;
 
+//bottomCenterButton
 float xSquareTopLeft8, ySquareTopLeft8, widthSquareTopLeft8, heightSquareTopLeft8;
 float xSquareTopCenter8, ySquareTopCenter8, widthSquareTopCenter8, heightSquareTopCenter8;
 float xSquareTopRight8, ySquareTopRight8, widthSquareTopRight8, heightSquareTopRight8;
@@ -127,6 +147,7 @@ float xSquareBottemLeft8, ySquareBottemLeft8, widthSquareBottemLeft8, heightSqua
 float xSquareBottemCenter8, ySquareBottemCenter8, widthSquareBottemCenter8, heightSquareBottemCenter8;
 float xSquareBottemRight8, ySquareBottemRight8, widthSquareBottemRight8, heightSquareBottemRight8;
 
+//bottomRightButton
 float xSquareTopLeft9, ySquareTopLeft9, widthSquareTopLeft9, heightSquareTopLeft9;
 float xSquareTopCenter9, ySquareTopCenter9, widthSquareTopCenter9, heightSquareTopCenter9;
 float xSquareTopRight9, ySquareTopRight9, widthSquareTopRight9, heightSquareTopRight9;
@@ -137,6 +158,16 @@ float xSquareBottemLeft9, ySquareBottemLeft9, widthSquareBottemLeft9, heightSqua
 float xSquareBottemCenter9, ySquareBottemCenter9, widthSquareBottemCenter9, heightSquareBottemCenter9;
 float xSquareBottemRight9, ySquareBottemRight9, widthSquareBottemRight9, heightSquareBottemRight9;
 
+float xSquareTopLeftMain, ySquareTopLeftMain, widthSquareTopLeftMain, heightSquareTopLeftMain;
+float xSquareTopCenterMain, ySquareTopCenterMain, widthSquareTopCenterMain, heightSquareTopCenterMain;
+float xSquareTopRightMain, ySquareTopRightMain, widthSquareTopRightMain, heightSquareTopRightMain;
+float xSquareCenterLeftMain, ySquareCenterLeftMain, widthSquareCenterLeftMain, heightSquareCenterLeftMain;
+float xSquareCenterCenterMain, ySquareCenterCenterMain, widthSquareCenterCenterMain, heightSquareCenterCenterMain;
+float xSquareCenterRightMain, ySquareCenterRightMain, widthSquareCenterRightMain, heightSquareCenterRightMain;
+float xSquareBottemLeftMain, ySquareBottemLeftMain, widthSquareBottemLeftMain, heightSquareBottemLeftMain;
+float xSquareBottemCenterMain, ySquareBottemCenterMain, widthSquareBottemCenterMain, heightSquareBottemCenterMain;
+float xSquareBottemRightMain, ySquareBottemRightMain, widthSquareBottemRightMain, heightSquareBottemRightMain; 
+
 float xBackGround, yBackGround, widthBackGround, heightBackGround;
 
 int appWidth, appHeight;
@@ -145,6 +176,16 @@ int gameWidth, gameHeight;
 boolean start = false;
 boolean firstGo = false;
 boolean TeamGoing = false;
+
+boolean topLeftActive = false;
+boolean topCenterActive = false;
+boolean topRightActive = false;
+boolean centerLeftActive = false;
+boolean centerCenterActive = false;
+boolean centerRightActive = false;
+boolean bottomLeftActive = false;
+boolean bottemCenterActive = false;
+boolean botterRightActive = false;
 
 boolean topLeft1OverRide = false;
 boolean topCrnter1OverRide = false;
@@ -166,6 +207,16 @@ boolean bottemLeft1O = false;
 boolean bottemCenter1O = false;
 boolean bottemRight1O = false;
 
+boolean topLeftMainO = false;
+boolean topCenterMainO = false;
+boolean topRightMainO = false;
+boolean centerLeftMainO = false;
+boolean centerCenterMainO = false;
+boolean centerRightMainO = false;
+boolean bottomLeftMainO = false;
+boolean bottomCenterMainO = false;
+boolean bottomRightMainO = false;
+
 boolean topLeft1X = false;
 boolean topCrnter1X = false;
 boolean topRight1X = false;
@@ -175,6 +226,16 @@ boolean CenterRight1X = false;
 boolean bottemLeft1X = false;
 boolean bottemCenter1X = false;
 boolean bottemRight1X = false;
+
+boolean topLeftMainX = false;
+boolean topCenterMainX = false;
+boolean topRightMainX = false;
+boolean centerLeftMainX = false;
+boolean centerCenterMainX = false;
+boolean centerRightMainX = false;
+boolean bottomLeftMainX = false;
+boolean bottomCenterMainX = false;
+boolean bottomRightMainX = false;
 
 PImage playerO;
 PImage playerX;
@@ -196,15 +257,25 @@ void setup() {
   widthBackGround = gameWidth-1;
   heightBackGround = gameHeight-1;
 
-  xBootUpText = gameWidth*0;
-  yBootUpText = gameHeight*1/3;
-  widthBootUpText = gameWidth;
-  heightBootUpText = gameHeight;
+  xTitle = appWidth*0;
+  yTitle = appHeight*0;
+  widthTitle = appWidth-1;
+  heightTitle = appHeight*1/4;
   
-  xStart = gameWidth*2/3;
-  yStart = gameHeight*1/3;
-  widthStart = gameWidth*1/3;
-  heightStart =gameHeight*1/3;
+  xFooter = appWidth*0;
+  yFooter = appHeight*1/2;
+  widthFooter = appWidth-1;
+  heightFooter = appHeight*0.5/4;
+
+  xHowTo = appWidth*1/2;
+  yHowTo = appHeight*1.5/4;
+  widthHowTo = appWidth*1/2;
+  heightHowTo = appHeight*2.5/4;
+  
+  xStart = appWidth*0;
+  yStart = appHeight*1.5/4;
+  widthStart = appWidth*1/2;
+  heightStart = appHeight*2.5/4;
 
   xTeamGoing = appWidth*0;
   yTeamGoing = appHeight*9/10;
@@ -795,7 +866,51 @@ void setup() {
   ySquareBottemRight9 = gameHeight*
   widthSquareBottemRight9 = gameWidth*1/9;
   heightSquareBottemRight9 = gameHeight*1/9;
-    
+
+  xSquareTopLeftMain = gameWidth*0;
+  ySquareTopLeftMain = gameHeight*0;
+  widthSquareTopLeftMain = gameWidth*1/3;
+  heightSquareTopLeftMain = gameHeight*1/3;
+  
+  xSquareTopCenterMain = gameWidth*1/3+1;
+  ySquareTopCenterMain = gameHeight*0;
+  widthSquareTopCenterMain = gameWidth*1/3;
+  heightSquareTopCenterMain = gameHeight*1/3;
+
+  xSquareTopRightMain = gameWidth*2/3+1;
+  ySquareTopRightMain = gameHeight*0;
+  widthSquareTopRightMain = gameWidth*1/3;
+  heightSquareTopRightMain = gameHeight*1/3;
+  
+  xSquareCenterLeftMain = gameWidth*0;
+  ySquareCenterLeftMain = gameHeight*1/3+1;
+  widthSquareCenterLeftMain = gameWidth*1/3;
+  heightSquareCenterLeftMain = gameHeight*1/3;
+
+  xSquareCenterCenterMain = gameWidth*1/3+1;
+  ySquareCenterCenterMain = gameHeight*1/3+1;
+  widthSquareCenterCenterMain = gameWidth*1/3;
+  heightSquareCenterCenterMain = gameHeight*1/3;
+  
+  xSquareCenterRightMain = gameWidth*2/3+1;
+  ySquareCenterRightMain = gameHeight*1/3+1;
+  widthSquareCenterRightMain = gameWidth*1/3;
+  heightSquareCenterRightMain = gameHeight*1/3;
+
+  xSquareBottemLeftMain = gameWidth*0;
+  ySquareBottemLeftMain = gameHeight*2/3+1;
+  widthSquareBottemLeftMain = gameWidth*1/3;
+  heightSquareBottemLeftMain = gameHeight*1/3;
+
+  xSquareBottemCenterMain = gameWidth*1/3+1;
+  ySquareBottemCenterMain = gameHeight*2/3+1;
+  widthSquareBottemCenterMain = gameWidth*1/3;
+  heightSquareBottemCenterMain = gameHeight*1/3;
+
+  xSquareBottemRightMain = gameWidth*2/3+1;
+  ySquareBottemRightMain = gameHeight*2/3+1;
+  widthSquareBottemRightMain = gameWidth*1/3;
+  heightSquareBottemRightMain = gameHeight*1/3;
 }
 void draw(){
   if(start == true){
