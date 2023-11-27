@@ -1,6 +1,5 @@
 String title = "Wencome to Mega Tik Tak Toe if you dont know how to play tap or clik the -how to- button if you do know how to play press -start- good luck and may the odds be in your faver";
-String footer = "By LocatedMaple38";
-String startText = "START", howTo = "How To";
+String footer = "By LocatedMaple38", startText = "START", howTo = "How To", OK = "OK", quit = "Quit", end = "End Game";
 String HowToText = "ïf I play Center Center Top Left (the green squar) then you fave to play in the center fo the main board (the yellow squar)";
 PFont titleFont, footrFont, startFont, howToFont;
 
@@ -255,7 +254,9 @@ void setup() {
   appHeight = height;
   gameWidth = appWidth;
   gameHeight = appHeight*500/600;
-  
+
+  OK = quit = end = howToFont = startFont = footrFont = titleFont = createFont("ArialMT", 55);
+
   xBackGround = appWidth*0;
   yBackGround = appHeight*0;
   widthBackGround = appWidth-1;
@@ -921,7 +922,7 @@ void setup() {
   widthSquareBottemRightMain = gameWidth*1/3;
   heightSquareBottemRightMain = gameHeight*1/3;
   
-  howToFont = startFont = footrFont = titleFont = createFont("ArialMT", 55);
+  
 }
 void draw(){
   if(start == true){
