@@ -1,8 +1,17 @@
 String title = "Wencome to Mega Tik Tak Toe if you dont know how to play tap or clik the -how to- button if you do know how to play press -start- good luck and may the odds be in your faver";
-String footer = "By LocatedMaple38", startText = "START", howTo = "How To", OK = "OK", quit = "Quit", end = "End Game";
+String startText = "START";
+String howTo = "How To";
+String OK = "OK";
+String quit = "Quit";
+String end = "End Game";
 String HowToText = "ïf I play Center Center Top Left (the green squar) then you fave to play in the center fo the main board (the yellow squar)";
-PFont titleFont, footrFont, startFont, howToFont;
+String footer = "By LocatedMaple38";
 
+PFont titleFont, footrFont, startFont, howToFont, OKFont, quitFont, endFont, nextFont;
+
+float xOK, yOK, widthOK, heightOK;
+float xQuit, yQuit, widthQuit, heightQuit;
+float xEnd, yEnd, widthEnd, heightEnd;
 float xHowToTextBox, yHowToTextBox, widthHowToTextBox, heightHowToTextBox;
 float xTitle, yTitle, widthTitle, heightTitle;
 float xFooter, yFooter, widthFooter, heightFooter;
@@ -255,7 +264,22 @@ void setup() {
   gameWidth = appWidth;
   gameHeight = appHeight*500/600;
 
-  OK = quit = end = howToFont = startFont = footrFont = titleFont = createFont("ArialMT", 55);
+  OKFont = quitFont = endFont = howToFont = startFont = footrFont = titleFont = createFont("ArialMT", 55);
+
+  xOK = appWidth*1/2;
+  yOK = gameHeight - appHeight;
+  widthOK = appWidth*1/2;
+  heightOK = gameHeight - appHeight;
+   
+  xQuit = appWidth*1/4;
+  yQuit = gameHeight - appHeight;
+  widthQuit = appWidth*1/4;
+  heightQuit = gameHeight - appHeight;
+  
+  xEnd = appWidth*0;
+  yEnd = gameHeight - appHeight;
+  widthEnd = appWidth*1/4;
+  heightEnd = gameHeight - appHeight;
 
   xBackGround = appWidth*0;
   yBackGround = appHeight*0;
@@ -279,7 +303,7 @@ void setup() {
 
   xHowToTextBox = appWidth*0;
   yHowToTextBox = gameHeight - appHeight;
-  widthHowToTextBox = appWidth-1;
+  widthHowToTextBox = appWidth*1/2;
   heightHowToTextBox = gameHeight - appHeight;
   
   xStart = appWidth*0;
@@ -801,44 +825,44 @@ void setup() {
   ySquareTopRight8 = gameHeight*2/3+1;
   widthSquareTopRight8 = gameWidth*1/9;
   heightSquareTopRight8 = gameHeight*1/9;
-  /*
-  xSquareCenterLeft8 = gameWidth*
-  ySquareCenterLeft8 = gameHeight*
+  
+  xSquareCenterLeft8 = gameWidth*3/9+1;
+  ySquareCenterLeft8 = gameHeight*7/9-+1;
   widthSquareCenterLeft8 = gameWidth*1/9;
   heightSquareCenterLeft8 = gameHeight*1/9;
   
-  xSquareCenterCenter8 = gameWidth*
-  ySquareCenterCenter8 = gameHeight*
+  xSquareCenterCenter8 = gameWidth*4/9+1;
+  ySquareCenterCenter8 = gameHeight*7/9+1;
   widthSquareCenterCenter8 = gameWidth*1/9;
   heightSquareCenterCenter8 = gameHeight*1/9;
   
-  xSquareCenterRight8 = gameWidth*
-  ySquareCenterRight8 = gameHeight*
+  xSquareCenterRight8 = gameWidth*5/9+1;
+  ySquareCenterRight8 = gameHeight*7/9+1;
   widthSquareCenterRight8 = gameWidth*1/9;
   heightSquareCenterRight8 = gameHeight*1/9;
   
-  xSquareBottemLeft8 = gameWidth*
-  ySquareBottemLeft8 = gameHeight*
+  xSquareBottemLeft8 = gameWidth*3/9+1;
+  ySquareBottemLeft8 = gameHeight*8/9+1;
   widthSquareBottemLeft8 = gameWidth*1/9;
   heightSquareBottemLeft8 = gameHeight*1/9;
   
-  xSquareBottemCenter8 = gameWidth*
-  ySquareBottemCenter8 = gameHeight*
+  xSquareBottemCenter8 = gameWidth*4/9+1;
+  ySquareBottemCenter8 = gameHeight*8/9+1;
   widthSquareBottemCenter8 = gameWidth*1/9;
   heightSquareBottemCenter8 = gameHeight*1/9;
   
-  xSquareBottemRight8 = gameWidth*
-  ySquareBottemRight8 = gameHeight*
+  xSquareBottemRight8 = gameWidth*5/9+1;
+  ySquareBottemRight8 = gameHeight*8/9+1;
   widthSquareBottemRight8 = gameWidth*1/9;
   heightSquareBottemRight8 = gameHeight*1/9;
 
-  xSquareTopLeft9 = gameWidth*
-  ySquareTopLeft9 = gameHeight*
+  xSquareTopLeft9 = gameWidth*3/9+1;
+  ySquareTopLeft9 = gameHeight*8/9+1;
   widthSquareTopLeft9 = gameWidth*1/9;
   heightSquareTopLeft9 = gameHeight*1/9;
   
-  xSquareTopCenter9 = gameWidth*
-  ySquareTopCenter9 = gameHeight*
+  xSquareTopCenter9 = gameWidth*4/9+1;
+  ySquareTopCenter9 = gameHeight*8/9+1;
   widthSquareTopCenter9 = gameWidth*1/9;
   heightSquareTopCenter9 = gameHeight*1/9;
   
@@ -876,7 +900,7 @@ void setup() {
   ySquareBottemRight9 = gameHeight*
   widthSquareBottemRight9 = gameWidth*1/9;
   heightSquareBottemRight9 = gameHeight*1/9;
-*/
+  
   xSquareTopLeftMain = gameWidth*0;
   ySquareTopLeftMain = gameHeight*0;
   widthSquareTopLeftMain = gameWidth*1/3;
@@ -925,6 +949,7 @@ void setup() {
   
 }
 void draw(){
+  rect(xBackGround, yBackGround, widthBackGround, heightBackGround);
   if(start == true){
     Game();
   }else{
@@ -933,6 +958,7 @@ void draw(){
   if(howToPlay == true){
     howTo();
   }
+  noStroke();
 }
 void mousePressed(){
   println(mouseX);
