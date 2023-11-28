@@ -7,7 +7,7 @@ String end = "End Game";
 String HowToText = "ïf I play Center Center Top Left (the green squar) then you fave to play in the center fo the main board (the yellow squar)";
 String footer = "By LocatedMaple38";
 String maga = "Meag Tik Tak Toe";
-string normole = "normole Tik Tak Toe";
+String normole = "normole Tik Tak Toe";
 
 PFont titleFont, footrFont, startFont, howToFont, OKFont, quitFont, endFont, nextFont;
 
