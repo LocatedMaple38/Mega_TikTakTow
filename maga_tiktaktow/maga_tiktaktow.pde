@@ -185,6 +185,8 @@ float xBackGround, yBackGround, widthBackGround, heightBackGround;
 int appWidth, appHeight;
 int gameWidth, gameHeight;
 
+boolean quit = false;
+boolean exet = false;
 boolean start = false;
 boolean TeamGoing = false;
 boolean howToPlay = false;
