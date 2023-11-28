@@ -33,4 +33,7 @@ void Game(){
   if(mouseX>xEnd && mouseX<xEnd+widthEnd && mouseY>yEnd && mouseY<yEnd+heightEnd){
     exet = true;
   }
+  if(exet == true){
+    endGameComf();
+  }
 }
