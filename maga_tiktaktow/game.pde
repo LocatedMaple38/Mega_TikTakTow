@@ -37,8 +37,8 @@ void Game(){
     endGameComf();
   }
   if(TeamGoing == false){
-    
+    image(playerO, xTeamGoing, yTeamGoing, widthTeamGoing, heightTeamGoing);
   }else{
-    
+    image(playerX, xTeamGoing, yTeamGoing, widthTeamGoing, heightTeamGoing);
   }
 }
