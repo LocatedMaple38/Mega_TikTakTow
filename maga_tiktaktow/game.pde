@@ -30,4 +30,5 @@ void Game(){
   textFont(endFont, 20);
   text(end, xEnd, yEnd, widthEnd, heightEnd);
   fill(255);
+  if(exet == false && 
 }
