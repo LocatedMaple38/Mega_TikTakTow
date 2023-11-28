@@ -6,8 +6,13 @@ String quit = "Quit";
 String end = "End Game";
 String HowToText = "ïf I play Center Center Top Left (the green squar) then you fave to play in the center fo the main board (the yellow squar)";
 String footer = "By LocatedMaple38";
+String maga = "Meag Tik Tak Toe";
+string normole = "normole Tik Tak Toe";
 
 PFont titleFont, footrFont, startFont, howToFont, OKFont, quitFont, endFont, nextFont;
+
+float xMega, yMega, widthMega, heightMega;
+float xNormole, yNormole, widthNormole, heightNormole;
 
 float xOK, yOK, widthOK, heightOK;
 float xQuitNo, yQuitNo, widthQuitNo, heightQuitNo;
@@ -319,9 +324,8 @@ void setup() {
 
   xTeamGoing = appWidth*2/4;
   yTeamGoing = appHeight*8.3/10;
-  widthTeamGoing = appWidht*1/4;
+  widthTeamGoing = appWidht*1/7/10;
   heightTeamGoing = appHeight*1.7/10;
-
 
   xQuit = appWidth*1/4;
   yQuit = appHeight*8.3/10;
@@ -362,11 +366,6 @@ void setup() {
   yStart = appHeight*1.5/4;
   widthStart = appWidth*1/2;
   heightStart = appHeight*1/4-1;
-
-  xTeamGoing = appWidth*0;
-  yTeamGoing = appHeight*9/10;
-  widthTeamGoing = appWidth*1/6;
-  heightTeamGoing = appHeight-1;
   
   xLeft1 = gameWidth*1/9;
   yLeft1 = gameHeight*0;
