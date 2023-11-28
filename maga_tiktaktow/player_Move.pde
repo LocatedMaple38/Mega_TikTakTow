@@ -1,2 +1,5 @@
-
+void playerMove(){
+  playerOMove();
+  playerXMove();
+}
   

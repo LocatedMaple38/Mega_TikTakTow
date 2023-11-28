@@ -9,6 +9,7 @@ String footer = "By LocatedMaple38";
 
 PFont titleFont, footrFont, startFont, howToFont, OKFont, quitFont, endFont, nextFont;
 
+float xEndComf, yEndComf, widthEndComf, heightEndComf;
 float xOK, yOK, widthOK, heightOK;
 float xQuit, yQuit, widthQuit, heightQuit;
 float xEnd, yEnd, widthEnd, heightEnd;
@@ -185,7 +186,6 @@ int appWidth, appHeight;
 int gameWidth, gameHeight;
 
 boolean start = false;
-boolean firstGo = false;
 boolean TeamGoing = false;
 boolean howToPlay = false;
 
@@ -276,12 +276,13 @@ PImage playerO;
 PImage playerX;
 
 void setup() {
+  windowRatio(500, 600);
   size(500, 600);
   surface.setResizable(true);
 
   playerO = loadImage("playerO.png");
   playerX = loadImage("playerX.png");
-
+  
   appWidth = width;
   appHeight = height;
   gameWidth = appWidth;
@@ -289,20 +290,25 @@ void setup() {
 
   OKFont = quitFont = endFont = howToFont = startFont = footrFont = titleFont = createFont("ArialMT", 55);
 
+  xEndComf = appWidth*1/4;
+  yEndComf = appHeight*1/4;
+  widthEndComf = appWidth*1/2;
+  heightEndComf = appHeight*1/2;
+
   xOK = appWidth*1/2;
-  yOK = gameHeight - appHeight;
+  yOK = appHeight*8.3/10;
   widthOK = appWidth*1/2;
-  heightOK = gameHeight - appHeight;
+  heightOK = appHeight*1.7/10;
    
   xQuit = appWidth*1/4;
-  yQuit = gameHeight - appHeight;
+  yQuit = appHeight*8.3/10;
   widthQuit = appWidth*1/4;
-  heightQuit = gameHeight - appHeight;
+  heightQuit = appHeight*1.7/10;
   
   xEnd = appWidth*0;
-  yEnd = gameHeight - appHeight;
+  yEnd = appHeight*8.3/10;
   widthEnd = appWidth*1/4;
-  heightEnd = gameHeight - appHeight;
+  heightEnd = appHeight*1.7/10;
 
   xBackGround = appWidth*0;
   yBackGround = appHeight*0;

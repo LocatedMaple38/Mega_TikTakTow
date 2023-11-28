@@ -20,13 +20,17 @@ void playerOMousePress(){
     TeamGoing = true;
     centerLeft2OverRide = true;
   }
-  if(TeamGoing == false && centerCenter2OverRide == false && mouseX>xSquareCenterCenter2 && mouseX<   ySquareCenterCenter2, widthSquareCenterCenter2, heightSquareCenterCenter2
+  if(TeamGoing == false && centerCenter2OverRide == false && mouseX>xSquareCenterCenter2 && mouseX<xSquareCenterCenter2+widthSquareCenterCenter2 && mouseY>ySquareCenterCenter2 && mouseY<ySquareCenterCenter2+heightSquareCenterCenter2){
+    centerCenter2O = true;
+    centerCenter2OverRide = true;
+    TeamGoing = true;
+  }
 }/*
 
 
 
 
-boolean centerCenter2O = false;
+
 boolean CenterRight2O = false;
 boolean bottemLeft2O = false;
 boolean bottemCenter2O = false;
@@ -36,7 +40,7 @@ boolean bottemRight2O = false;
 
 
 
-boolean centerCenter2OverRide = false;
+
 boolean CenterRight2OverRide = false;
 boolean bottemLeft2OverRide = false;
 boolean bottemCenter2OverRide = false;
@@ -46,7 +50,7 @@ boolean bottemRight2OverRide = false;
 
 
 
-float xSquareCenterCenter2, ySquareCenterCenter2, widthSquareCenterCenter2, heightSquareCenterCenter2;
+
 float xSquareCenterRight2, ySquareCenterRight2, widthSquareCenterRight2, heightSquareCenterRight2;
 float xSquareBottemLeft2, ySquareBottemLeft2, widthSquareBottemLeft2, heightSquareBottemLeft2;
 float xSquareBottemCenter2, ySquareBottemCenter2, widthSquareBottemCenter2, heightSquareBottemCenter2;

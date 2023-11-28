@@ -1,10 +1,4 @@
-void Game() {
-  /*if(topCrnter1O == true){
-   image(playerO, xSquareTopLeft1, ySquareTopLeft1, widthSquareTopLeft1, heightSquareTopLeft1);
-   }
-   if(topCrnter1O == true){
-   image(playerO, xSquareTopLeft1, ySquareTopLeft1, widthSquareTopLeft1, heightSquareTopLeft1);
-   }*/
+void Game(){
   fill(255, 0, 0);
   gameTopLeftButtons();
   gameTopCenterButtons();
@@ -26,4 +20,14 @@ void Game() {
   gameButtomLeftOutline();
   gameBottemCenterOutline();
   gameButtomRightOutline();
+  
+  playerMove();
+  
+  fill(0, 0, 0);
+  textAlign(CENTER, CENTER);
+  textFont(quitFont, 20);
+  text(quit, xQuit, yQuit, widthQuit, heightQuit);
+  textFont(endFont, 20);
+  text(end, xEnd, yEnd, widthEnd, heightEnd);
+  fill(255);
 }
