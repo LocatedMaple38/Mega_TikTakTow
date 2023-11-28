@@ -1,4 +1,4 @@
-void Game(){
+void Game1(){
   fill(255, 0, 0);
   gameTopLeftButtons();
   gameTopCenterButtons();
@@ -26,13 +26,10 @@ void Game(){
   fill(0, 0, 0);
   textAlign(CENTER, CENTER);
   textFont(quitFont, 20);
-  text(quit, xQuit, yQuit, widthQuit, heightQuit);
+  text(quitText, xQuit, yQuit, widthQuit, heightQuit);
   textFont(endFont, 20);
   text(end, xEnd, yEnd, widthEnd, heightEnd);
   fill(255);
-  if(mouseX>xEnd && mouseX<xEnd+widthEnd && mouseY>yEnd && mouseY<yEnd+heightEnd){
-    exet = true;
-  }
   if(exet == true){
     endGameComf();
   }

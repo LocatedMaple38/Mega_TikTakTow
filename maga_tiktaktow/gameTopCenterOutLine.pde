@@ -1,5 +1,5 @@
 void gameTopCenterOutLine(){
-  stroke(100);
+  stroke(0);
   line(xLeft2, yLeft2, widthLeft2, heightLeft2);
   line(xRight2, yRight2, widthRight2, heightRight2);
   line(xTop2, yTop2, widthTop2, heightTop2);

@@ -1,7 +1,7 @@
 void homeScreen(){
-  fill(0, 255, 0);
+  fill(255, 130, 255);
   rect(xStart, yStart, widthStart, heightStart);
-  fill(0, 0, 255);
+  fill(0, 255, 255);
   rect(xHowTo, yHowTo, widthHowTo, heightHowTo);
   fill(0);
   textAlign(CENTER, CENTER);

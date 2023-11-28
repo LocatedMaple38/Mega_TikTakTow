@@ -1,12 +1,11 @@
 void gameCenterRightButtons(){
-  
-  rect(xSquareTopLeft4, ySquareTopLeft4, widthSquareTopLeft4, heightSquareTopLeft4);
-  rect(xSquareTopCenter4, ySquareTopCenter4, widthSquareTopCenter4, heightSquareTopCenter4);
-  rect(xSquareTopRight4, ySquareTopRight4, widthSquareTopRight4, heightSquareTopRight4);
-  rect(xSquareCenterLeft4, ySquareCenterLeft4, widthSquareCenterLeft4, heightSquareCenterLeft4);
-  rect(xSquareCenterCenter4, ySquareCenterCenter4, widthSquareCenterCenter4, heightSquareCenterCenter4);
-  rect(xSquareCenterRight4, ySquareCenterRight4, widthSquareCenterRight4, heightSquareCenterRight4);
-  rect(xSquareBottemLeft4, ySquareBottemLeft4, widthSquareBottemLeft4, heightSquareBottemLeft4);
-  rect(xSquareBottemCenter4, ySquareBottemCenter4, widthSquareBottemCenter4, heightSquareBottemCenter4);
-  rect(xSquareBottemRight4, ySquareBottemRight4, widthSquareBottemRight4, heightSquareBottemRight4);
+  rect(xSquareTopLeft6, ySquareTopLeft6, widthSquareTopLeft6, heightSquareTopLeft6);
+  rect(xSquareTopCenter6, ySquareTopCenter6, widthSquareTopCenter6, heightSquareTopCenter6);
+  rect(xSquareTopRight6, ySquareTopRight6, widthSquareTopRight6, heightSquareTopRight6);
+  rect(xSquareCenterLeft6, ySquareCenterLeft6, widthSquareCenterLeft6, heightSquareCenterLeft6);
+  rect(xSquareCenterCenter6, ySquareCenterCenter6, widthSquareCenterCenter6, heightSquareCenterCenter6);
+  rect(xSquareCenterRight6, ySquareCenterRight6, widthSquareCenterRight6, heightSquareCenterRight6);
+  rect(xSquareBottemLeft6, ySquareBottemLeft6, widthSquareBottemLeft6, heightSquareBottemLeft6);
+  rect(xSquareBottemCenter6, ySquareBottemCenter6, widthSquareBottemCenter6, heightSquareBottemCenter6);
+  rect(xSquareBottemRight6, ySquareBottemRight6, widthSquareBottemRight6, heightSquareBottemRight6);
 }

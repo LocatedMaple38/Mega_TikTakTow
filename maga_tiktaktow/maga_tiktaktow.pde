@@ -2,17 +2,13 @@ String title = "Wencome to Mega Tik Tak Toe if you dont know how to play tap or 
 String startText = "START";
 String howTo = "How To";
 String OK = "OK";
-String quit = "Quit";
+String quitText = "Quit";
 String end = "End Game";
 String HowToText = "ïf I play Center Center Top Left (the green squar) then you fave to play in the center fo the main board (the yellow squar)";
 String footer = "By LocatedMaple38";
-String maga = "Meag Tik Tak Toe";
-String normole = "normole Tik Tak Toe";
 
 PFont titleFont, footrFont, startFont, howToFont, OKFont, quitFont, endFont, nextFont;
 
-float xMega, yMega, widthMega, heightMega;
-float xNormole, yNormole, widthNormole, heightNormole;
 
 float xOK, yOK, widthOK, heightOK;
 float xQuitNo, yQuitNo, widthQuitNo, heightQuitNo;
@@ -83,6 +79,12 @@ float xLeft9, yLeft9, widthLeft9, heightLeft9;
 float xRight9, yRight9, widthRight9, heightRight9; 
 float xTop9, yTop9, widthTop9, heightTop9; 
 float xBottom9, yBottom9, widthBottom9, heightBottom9;
+
+//mainBord
+float xLeft, yLeft, widthLeft, heightLeft;
+float xRight, yRight, widthRight, heightRitht;
+float xTop, yTop, widthTop, heightTop;
+float xBottom, yBottom, widthBottom, heightBottom;
 
 //topLeftButton
 float xSquareTopLeft1, ySquareTopLeft1, widthSquareTopLeft1, heightSquareTopLeft1;
@@ -200,6 +202,8 @@ boolean exet = false;
 boolean start = false;
 boolean TeamGoing = false;
 boolean howToPlay = false;
+boolean maga = false;
+boolean norm = false;
 
 boolean topLeftActive = false;
 boolean topCenterActive = false;
@@ -263,7 +267,6 @@ boolean bottomRightMainO = false;
 
 Boolean winTopLeftO = false;
 
-
 boolean topLeft1X = false;
 boolean topCrnter1X = false;
 boolean topRight1X = false;
@@ -322,10 +325,10 @@ void setup() {
   widthOK = appWidth*1/2;
   heightOK = appHeight*1.7/10;
 
-  xTeamGoing = appWidth*2/4;
-  yTeamGoing = appHeight*8.3/10;
-  widthTeamGoing = appWidht*1/7/10;
-  heightTeamGoing = appHeight*1.7/10;
+  xTeamGoing = appWidth*1/2;
+  yTeamGoing = appHeight*8.35/10;
+  widthTeamGoing = appWidth*1.7/10-1;
+  heightTeamGoing = appHeight*1.7/10-1;
 
   xQuit = appWidth*1/4;
   yQuit = appHeight*8.3/10;
@@ -355,17 +358,38 @@ void setup() {
   xHowTo = appWidth*1/2;
   yHowTo = appHeight*1.5/4;
   widthHowTo = appWidth*1/2;
-  heightHowTo = appHeight*1/4-1;
+  heightHowTo = appHeight*1/4;
 
   xHowToTextBox = appWidth*0;
-  yHowToTextBox = gameHeight - appHeight;
+  yHowToTextBox = appHeight*8.3/10;
   widthHowToTextBox = appWidth*1/2;
-  heightHowToTextBox = gameHeight - appHeight;
+  heightHowToTextBox = appHeight*1.7/10;
   
   xStart = appWidth*0;
   yStart = appHeight*1.5/4;
   widthStart = appWidth*1/2;
-  heightStart = appHeight*1/4-1;
+  heightStart = appHeight*1/4;
+  
+  
+  xLeft = gameWidth*1/3;
+  yLeft = gameHeight*0;
+  widthLeft = gameWidth*1/3;
+  heightLeft = gameHeight-1;
+  
+  xRight = gameWidth*2/3;
+  yRight = gameHeight*0;
+  widthRight = gameWidth*2/3;
+  heightRitht = gameHeight-1;
+  
+  xTop = gameWidth*0;
+  yTop = gameHeight*1/3;
+  widthTop = gameWidth-1;
+  heightTop = gameHeight*1/3;
+  
+  xBottom = gameWidth*0;
+  yBottom = gameHeight*2/3;
+  widthBottom = gameWidth-1;
+  heightBottom = gameHeight*2/3;
   
   xLeft1 = gameWidth*1/9;
   yLeft1 = gameHeight*0;
@@ -537,14 +561,14 @@ void setup() {
   widthRight9 = gameWidth*8/9;
   heightRight9 = gameHeight-1;
   
-  xTop9 = gameWidth*7/9;
-  yTop9 = gameHeight*2/3;
+  xTop9 = gameWidth*2/3;
+  yTop9 = gameHeight*7/9;
   widthTop9 = gameWidth*7/9;
   heightTop9 = gameHeight-1;
   
-  xBottom9 = gameWidth*8/9;
-  yBottom9 = gameHeight*2/3;
-  widthBottom9 = gameWidth*8/9;
+  xBottom9 = gameWidth*2/3;
+  yBottom9 = gameHeight*8/9;
+  widthBottom9 = gameWidth*2/3;
   heightBottom9 = gameHeight-1;
 
   xSquareTopLeft1 = gameWidth*0;
@@ -637,7 +661,7 @@ void setup() {
   widthSquareBottemRight2 = gameWidth*1/9;
   heightSquareBottemRight2 = gameHeight*1/9;
   
-  xSquareTopLeft3 = gameWidth*6/9;
+  xSquareTopLeft3 = gameWidth*6/9+1;
   ySquareTopLeft3 = gameHeight*0;
   widthSquareTopLeft3 = gameWidth*1/9;
   heightSquareTopLeft3 = gameHeight*1/9;
@@ -652,7 +676,7 @@ void setup() {
   widthSquareTopRight3 = gameWidth*1/9;
   heightSquareTopRight3 = gameHeight*1/9;
   
-  xSquareCenterLeft3 = gameWidth*6/9;
+  xSquareCenterLeft3 = gameWidth*6/9+1;
   ySquareCenterLeft3 = gameHeight*1/9+1;
   widthSquareCenterLeft3 = gameWidth*1/9;
   heightSquareCenterLeft3 = gameHeight*1/9;
@@ -667,7 +691,7 @@ void setup() {
   widthSquareCenterRight3 = gameWidth*1/9;
   heightSquareCenterRight3 = gameHeight*1/9;
   
-  xSquareBottemLeft3 = gameWidth*6/9;
+  xSquareBottemLeft3 = gameWidth*6/9+1;
   ySquareBottemLeft3 = gameHeight*2/9+1;
   widthSquareBottemLeft3 = gameWidth*1/9;
   heightSquareBottemLeft3 = gameHeight*1/9;
@@ -738,7 +762,7 @@ void setup() {
   heightSquareTopCenter5 = gameHeight*1/9;
   
   xSquareTopRight5 = gameWidth*5/9+1;
-  ySquareTopRight5 = gameHeight*3/9;
+  ySquareTopRight5 = gameHeight*3/9+1;
   widthSquareTopRight5 = gameWidth*1/9;
   heightSquareTopRight5 = gameHeight*1/9;
   
@@ -802,18 +826,18 @@ void setup() {
   widthSquareCenterRight6 = gameWidth*1/9;
   heightSquareCenterRight6 = gameHeight*1/9;
   
-  xSquareBottemLeft6 = gameWidth*0;
-  ySquareBottemLeft6 = gameHeight*6/9+1;
+  xSquareBottemLeft6 = gameWidth*6/9+1;
+  ySquareBottemLeft6 = gameHeight*5/9+1;
   widthSquareBottemLeft6 = gameWidth*1/9;
   heightSquareBottemLeft6 = gameHeight*1/9;
   
-  xSquareBottemCenter6 = gameWidth*1/9+1;
-  ySquareBottemCenter6 = gameHeight*6/9+1;
+  xSquareBottemCenter6 = gameWidth*7/9+1;
+  ySquareBottemCenter6 = gameHeight*5/9+1;
   widthSquareBottemCenter6 = gameWidth*1/9;
   heightSquareBottemCenter6 = gameHeight*1/9;
   
-  xSquareBottemRight6 = gameWidth*2/9+1;
-  ySquareBottemRight6 = gameHeight*6/9+1;
+  xSquareBottemRight6 = gameWidth*8/9+1;
+  ySquareBottemRight6 = gameHeight*5/9+1;
   widthSquareBottemRight6 = gameWidth*1/9;
   heightSquareBottemRight6 = gameHeight*1/9;
 
@@ -848,37 +872,37 @@ void setup() {
   heightSquareCenterRight7 = gameHeight*1/9;
   
   xSquareBottemLeft7 = gameWidth*0;
-  ySquareBottemLeft7 = gameHeight*6/9+1;
+  ySquareBottemLeft7 = gameHeight*8/9+1;
   widthSquareBottemLeft7 = gameWidth*1/9;
   heightSquareBottemLeft7 = gameHeight*1/9;
   
   xSquareBottemCenter7 = gameWidth*1/9+1;
-  ySquareBottemCenter7 = gameHeight*6/9+1;
+  ySquareBottemCenter7 = gameHeight*8/9+1;
   widthSquareBottemCenter7 = gameWidth*1/9;
   heightSquareBottemCenter7 = gameHeight*1/9;
   
   xSquareBottemRight7 = gameWidth*2/9+1;
-  ySquareBottemRight7 = gameHeight*6/9+1;
+  ySquareBottemRight7 = gameHeight*8/9+1;
   widthSquareBottemRight7 = gameWidth*1/9;
   heightSquareBottemRight7 = gameHeight*1/9;
 
   xSquareTopLeft8 = gameWidth*3/9+1;
-  ySquareTopLeft8 = gameHeight*2/3+1;
+  ySquareTopLeft8 = gameHeight*6/3+1;
   widthSquareTopLeft8 = gameWidth*1/9;
   heightSquareTopLeft8 = gameHeight*1/9;
   
   xSquareTopCenter8 = gameWidth*4/9+1;
-  ySquareTopCenter8 = gameHeight*2/3+1;
+  ySquareTopCenter8 = gameHeight*6/3+1;
   widthSquareTopCenter8 = gameWidth*1/9;
   heightSquareTopCenter8 = gameHeight*1/9;
   
   xSquareTopRight8 = gameWidth*5/9+1;
-  ySquareTopRight8 = gameHeight*2/3+1;
+  ySquareTopRight8 = gameHeight*6/3+1;
   widthSquareTopRight8 = gameWidth*1/9;
   heightSquareTopRight8 = gameHeight*1/9;
   
   xSquareCenterLeft8 = gameWidth*3/9+1;
-  ySquareCenterLeft8 = gameHeight*7/9-+1;
+  ySquareCenterLeft8 = gameHeight*7/9+1;
   widthSquareCenterLeft8 = gameWidth*1/9;
   heightSquareCenterLeft8 = gameHeight*1/9;
   
@@ -1002,7 +1026,7 @@ void setup() {
 void draw(){
   rect(xBackGround, yBackGround, widthBackGround, heightBackGround);
   if(start == true){
-    Game();
+    Game1();
   }else{
     homeScreen();
   }
@@ -1020,5 +1044,8 @@ void mousePressed(){
   }
   if(start == false && mouseX>xStart && mouseX<xStart+widthStart && mouseY>yStart && mouseY<yStart+heightStart){
     start = true;
+  }
+  if(mouseX>xEnd && mouseX<xEnd+widthEnd && mouseY>yEnd && mouseY<yEnd+heightEnd){
+    exet = true;
   }
 }

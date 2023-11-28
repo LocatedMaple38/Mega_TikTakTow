@@ -1,4 +1,5 @@
 void gameCenterRightOutline(){
+  stroke(0);
   line(xLeft6, yLeft6, widthLeft6, heightLeft6);
   line(xRight6, yRight6, widthRight6, heightRight6);
   line(xTop6, yTop6, widthTop6, heightTop6);
