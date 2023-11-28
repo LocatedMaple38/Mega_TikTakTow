@@ -20,6 +20,7 @@ void playerOMousePress(){
     TeamGoing = true;
     centerLeft2OverRide = true;
   }
+  if(TeamGoing == false && centerCenter2OverRide == false && mouseX>xSquareCenterCenter2 && mouseX<   ySquareCenterCenter2, widthSquareCenterCenter2, heightSquareCenterCenter2
 }/*
 
 
