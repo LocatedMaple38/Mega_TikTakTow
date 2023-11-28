@@ -36,4 +36,9 @@ void Game(){
   if(exet == true){
     endGameComf();
   }
+  if(TeamGoing == false){
+    
+  }else{
+    
+  }
 }
