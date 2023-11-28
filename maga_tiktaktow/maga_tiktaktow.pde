@@ -9,6 +9,8 @@ String footer = "By LocatedMaple38";
 
 PFont titleFont, footrFont, startFont, howToFont, OKFont, quitFont, endFont, nextFont;
 
+float xEndNo, yEndNo, widthEndNo, heightEndNo;
+float xEndYes, yEndYes, widthEndYes, heightEndYes;
 float xEndComf, yEndComf, widthEndComf, heightEndComf;
 float xOK, yOK, widthOK, heightOK;
 float xQuit, yQuit, widthQuit, heightQuit;
@@ -291,6 +293,16 @@ void setup() {
   gameHeight = appHeight*500/600;
 
   OKFont = quitFont = endFont = howToFont = startFont = footrFont = titleFont = createFont("ArialMT", 55);
+  
+  xEndNo = xEndComf*1/4;
+  yEndNo = yEndYes*3/4;
+  widthEndNo = xEndComf*1/4;
+  heightEndNo = yEndYes*1/4;
+
+  xEndYes = xEndComf*3/4;
+  yEndYes = yEndYes*3/4;
+  widthEndYes = xEndComf*1/4;
+  heightEndYes = yEndYes*1/4;
 
   xEndComf = appWidth*1/4;
   yEndComf = appHeight*1/4;
