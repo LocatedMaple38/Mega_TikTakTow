@@ -316,7 +316,13 @@ void setup() {
   yOK = appHeight*8.3/10;
   widthOK = appWidth*1/2;
   heightOK = appHeight*1.7/10;
-   
+
+  xTeamGoing = appWidth*2/4;
+  yTeamGoing = appHeight*8.3/10;
+  widthTeamGoing = appWidht*1/4;
+  heightTeamGoing = appHeight*1.7/10;
+
+
   xQuit = appWidth*1/4;
   yQuit = appHeight*8.3/10;
   widthQuit = appWidth*1/4;
