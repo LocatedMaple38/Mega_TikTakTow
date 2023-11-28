@@ -9,11 +9,14 @@ String footer = "By LocatedMaple38";
 
 PFont titleFont, footrFont, startFont, howToFont, OKFont, quitFont, endFont, nextFont;
 
+float xOK, yOK, widthOK, heightOK;
+float xQuitNo, yQuitNo, widthQuitNo, heightQuitNo;
+float xQuitYes, yQuitYes, widthQuitYes, heightQuitYes;
+float xQuitComf, yQuitComf, widhtQuitComf, heightQuitComf;
+float xQuit, yQuit, widthQuit, heightQuit;
 float xEndNo, yEndNo, widthEndNo, heightEndNo;
 float xEndYes, yEndYes, widthEndYes, heightEndYes;
 float xEndComf, yEndComf, widthEndComf, heightEndComf;
-float xOK, yOK, widthOK, heightOK;
-float xQuit, yQuit, widthQuit, heightQuit;
 float xEnd, yEnd, widthEnd, heightEnd;
 float xHowToTextBox, yHowToTextBox, widthHowToTextBox, heightHowToTextBox;
 float xTitle, yTitle, widthTitle, heightTitle;
@@ -293,21 +296,21 @@ void setup() {
   gameHeight = appHeight*500/600;
 
   OKFont = quitFont = endFont = howToFont = startFont = footrFont = titleFont = createFont("ArialMT", 55);
-  
-  xEndNo = xEndComf*1/4;
-  yEndNo = yEndYes*3/4;
-  widthEndNo = xEndComf*1/4;
-  heightEndNo = yEndYes*1/4;
 
-  xEndYes = xEndComf*3/4;
-  yEndYes = yEndYes*3/4;
-  widthEndYes = xEndComf*1/4;
-  heightEndYes = yEndYes*1/4;
+  xQuitNo = xEndNo = xEndComf*1/4;
+  yQuitNo = yEndNo = yEndYes*3/4;
+  widthQuitNo = widthEndNo = xEndComf*1/4;
+  heightQuitNo = heightEndNo = yEndYes*1/4;
 
-  xEndComf = appWidth*1/4;
-  yEndComf = appHeight*1/4;
-  widthEndComf = appWidth*1/2;
-  heightEndComf = appHeight*1/2;
+  xQuitYes = xEndYes = xEndComf*3/4;
+  yQuitYes = yEndYes = yEndYes*3/4;
+  widthQuitYes = widthEndYes = xEndComf*1/4;
+  heightQuitYes = heightEndYes = yEndYes*1/4;
+
+  xQuitComf = xEndComf = appWidth*1/4;
+  yQuitComf = yEndComf = appHeight*1/4;
+  widhtQuitComf = widthEndComf = appWidth*1/2;
+  heightQuitComf = heightEndComf = appHeight*1/2;
 
   xOK = appWidth*1/2;
   yOK = appHeight*8.3/10;
