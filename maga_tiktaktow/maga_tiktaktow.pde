@@ -1048,4 +1048,101 @@ void mousePressed(){
   if(mouseX>xEnd && mouseX<xEnd+widthEnd && mouseY>yEnd && mouseY<yEnd+heightEnd){
     exet = true;
   }
+  if(exet == true && mouseX>xEndNo && mouseX<xEndNo+widthEndNo && mouseY>yEndNo && mouseY<yEndNo+heightEndNo){
+    start = false;
+    exet = false;
+    howToPlay = false;
+    quit = false;
+    exet = false;
+    start = false;
+    TeamGoing = false;
+    howToPlay = false;
+    maga = false;
+    norm = false;
+
+    topLeftActive = false;
+    topCenterActive = false;
+    topRightActive = false;
+    centerLeftActive = false;
+    centerCenterActive = false;
+    centerRightActive = false;
+    bottomLeftActive = false;
+    bottemCenterActive = false;
+    botterRightActive = false;
+
+    topLeft1OverRide = false;
+    topCrnter1OverRide = false;
+    topRight1OverRide = false;
+    centerLeft1OverRide = false;
+    centerCenter1OverRide = false;
+    CenterRight1OverRide = false;
+    bottemLeft1OverRide = false;
+    bottemCenter1OverRide = false;
+    bottemRight1OverRide = false;
+
+    topLeft2OverRide = false;
+    topCrnter2OverRide = false;
+    topRight2OverRide = false;
+    centerLeft2OverRide = false;
+    centerCenter2OverRide = false;
+    CenterRight2OverRide = false;
+    bottemLeft2OverRide = false;
+    bottemCenter2OverRide = false;
+    bottemRight2OverRide = false;
+
+    topLeft1O = false;
+    topCrnter1O = false;
+    topRight1O = false;
+    centerLeft1O = false;
+    centerCenter1O = false;
+    CenterRight1O = false;
+    bottemLeft1O = false;
+    bottemCenter1O = false;
+    bottemRight1O = false;
+
+    topLeft2O = false;
+    topCrnter2O = false;
+    topRight2O = false;
+    centerLeft2O = false;
+    centerCenter2O = false;
+    CenterRight2O = false;
+    bottemLeft2O = false;
+    bottemCenter2O = false;
+    bottemRight2O = false;
+
+    topLeftMainO = false;
+    topCenterMainO = false;
+    topRightMainO = false;
+    centerLeftMainO = false;
+    centerCenterMainO = false;
+    centerRightMainO = false;
+    bottomLeftMainO = false;
+    bottomCenterMainO = false;
+    bottomRightMainO = false;
+
+    winTopLeftO = false;
+
+    topLeft1X = false;
+    topCrnter1X = false;
+    topRight1X = false;
+    centerLeft1X = false;
+    centerCenter1X = false;
+    CenterRight1X = false;
+    bottemLeft1X = false;
+    bottemCenter1X = false;
+    bottemRight1X = false;
+
+    topLeftMainX = false;
+    topCenterMainX = false;
+    topRightMainX = false;
+    centerLeftMainX = false;
+    centerCenterMainX = false;
+    centerRightMainX = false;
+    bottomLeftMainX = false;
+    bottomCenterMainX = false;
+    bottomRightMainX = false;
+
+  }
 }
+float , , , ;
+float xEndYes, yEndYes, widthEndYes, heightEndYes;
