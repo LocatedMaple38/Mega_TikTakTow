@@ -23,7 +23,7 @@ void Game1(){
   
   playerMove();
   
-  fill(0, 0, 0);
+  fill(0);
   textAlign(CENTER, CENTER);
   textFont(quitFont, 20);
   text(quitText, xQuit, yQuit, widthQuit, heightQuit);

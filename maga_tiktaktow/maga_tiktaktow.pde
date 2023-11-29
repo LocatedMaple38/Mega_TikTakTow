@@ -3,18 +3,22 @@ String startText = "START";
 String howTo = "How To";
 String OK = "OK";
 String quitText = "Quit";
+String quitComf = "are You sher you want to quit the game";
 String end = "End Game";
+String endComf  = "are you sher you want to end the game";
 String HowToText = "ïf I play Center Center Top Left (the green squar) then you fave to play in the center fo the main board (the yellow squar)";
 String footer = "By LocatedMaple38";
+String yesText = "YES", noText = "NO";
 
-PFont titleFont, footrFont, startFont, howToFont, OKFont, quitFont, endFont, nextFont;
-
+PFont yesFont, noFont, endComfFont, quitComfFont, titleFont, footrFont, startFont, howToFont, OKFont, quitFont, endFont, nextFont;
 
 float xOK, yOK, widthOK, heightOK;
+float xQuitText, yQuitText, widthQuitText, heightQuitText;
 float xQuitNo, yQuitNo, widthQuitNo, heightQuitNo;
 float xQuitYes, yQuitYes, widthQuitYes, heightQuitYes;
 float xQuitComf, yQuitComf, widhtQuitComf, heightQuitComf;
 float xQuit, yQuit, widthQuit, heightQuit;
+float xEndText, yEndText, widthEndText, heightEndText;
 float xEndNo, yEndNo, widthEndNo, heightEndNo;
 float xEndYes, yEndYes, widthEndYes, heightEndYes;
 float xEndComf, yEndComf, widthEndComf, heightEndComf;
@@ -303,17 +307,22 @@ void setup() {
   gameWidth = appWidth;
   gameHeight = appHeight*500/600;
 
-  OKFont = quitFont = endFont = howToFont = startFont = footrFont = titleFont = createFont("ArialMT", 55);
+  endComfFont = quitComfFont = endFont = howToFont = startFont = footrFont = titleFont = createFont("ArialMT", 55);
 
-  xQuitNo = xEndNo = xEndComf*1/4;
-  yQuitNo = yEndNo = yEndYes*3/4;
-  widthQuitNo = widthEndNo = xEndComf*1/4;
-  heightQuitNo = heightEndNo = yEndYes*1/4;
+  xEndText = appWidth*1.5/4;
+  yEndText = appHeight*1.5/4;
+  widthEndText = appWidth*1/3;
+  heightEndText = appHeight*1/4;
 
-  xQuitYes = xEndYes = xEndComf*3/4;
-  yQuitYes = yEndYes = yEndYes*3/4;
-  widthQuitYes = widthEndYes = xEndComf*1/4;
-  heightQuitYes = heightEndYes = yEndYes*1/4;
+  xQuitNo = xEndNo = appWidth*1.25/4;
+  yQuitNo = yEndNo = appHeight*2.25/4;
+  widthQuitNo = widthEndNo = appWidth*0.5/4;
+  heightQuitNo = heightEndNo = appHeight*0.5/4;
+
+  xQuitYes = xEndYes = appWidth*2.25/4;
+  yQuitYes = yEndYes = appHeight*2.25/4;
+  widthQuitYes = widthEndYes = appWidth*0.5/4;
+  heightQuitYes = heightEndYes = appHeight*0.5/4;
 
   xQuitComf = xEndComf = appWidth*1/4;
   yQuitComf = yEndComf = appHeight*1/4;
@@ -1049,100 +1058,9 @@ void mousePressed(){
     exet = true;
   }
   if(exet == true && mouseX>xEndNo && mouseX<xEndNo+widthEndNo && mouseY>yEndNo && mouseY<yEndNo+heightEndNo){
-    start = false;
     exet = false;
-    howToPlay = false;
-    quit = false;
-    exet = false;
-    start = false;
-    TeamGoing = false;
-    howToPlay = false;
-    maga = false;
-    norm = false;
-
-    topLeftActive = false;
-    topCenterActive = false;
-    topRightActive = false;
-    centerLeftActive = false;
-    centerCenterActive = false;
-    centerRightActive = false;
-    bottomLeftActive = false;
-    bottemCenterActive = false;
-    botterRightActive = false;
-
-    topLeft1OverRide = false;
-    topCrnter1OverRide = false;
-    topRight1OverRide = false;
-    centerLeft1OverRide = false;
-    centerCenter1OverRide = false;
-    CenterRight1OverRide = false;
-    bottemLeft1OverRide = false;
-    bottemCenter1OverRide = false;
-    bottemRight1OverRide = false;
-
-    topLeft2OverRide = false;
-    topCrnter2OverRide = false;
-    topRight2OverRide = false;
-    centerLeft2OverRide = false;
-    centerCenter2OverRide = false;
-    CenterRight2OverRide = false;
-    bottemLeft2OverRide = false;
-    bottemCenter2OverRide = false;
-    bottemRight2OverRide = false;
-
-    topLeft1O = false;
-    topCrnter1O = false;
-    topRight1O = false;
-    centerLeft1O = false;
-    centerCenter1O = false;
-    CenterRight1O = false;
-    bottemLeft1O = false;
-    bottemCenter1O = false;
-    bottemRight1O = false;
-
-    topLeft2O = false;
-    topCrnter2O = false;
-    topRight2O = false;
-    centerLeft2O = false;
-    centerCenter2O = false;
-    CenterRight2O = false;
-    bottemLeft2O = false;
-    bottemCenter2O = false;
-    bottemRight2O = false;
-
-    topLeftMainO = false;
-    topCenterMainO = false;
-    topRightMainO = false;
-    centerLeftMainO = false;
-    centerCenterMainO = false;
-    centerRightMainO = false;
-    bottomLeftMainO = false;
-    bottomCenterMainO = false;
-    bottomRightMainO = false;
-
-    winTopLeftO = false;
-
-    topLeft1X = false;
-    topCrnter1X = false;
-    topRight1X = false;
-    centerLeft1X = false;
-    centerCenter1X = false;
-    CenterRight1X = false;
-    bottemLeft1X = false;
-    bottemCenter1X = false;
-    bottemRight1X = false;
-
-    topLeftMainX = false;
-    topCenterMainX = false;
-    topRightMainX = false;
-    centerLeftMainX = false;
-    centerCenterMainX = false;
-    centerRightMainX = false;
-    bottomLeftMainX = false;
-    bottomCenterMainX = false;
-    bottomRightMainX = false;
-
+  }
+  if(exet == true && mouseX>xEndYes && mouseX<xEndYes+widthEndYes && mouseY>yEndYes && mouseY<yEndYes+heightEndYes){
+    reset();
   }
 }
-float , , , ;
-float xEndYes, yEndYes, widthEndYes, heightEndYes;
