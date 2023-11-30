@@ -3,27 +3,27 @@ void playerOMove(){
     image(playerO, xSquareTopLeft1, ySquareTopLeft1, widthSquareTopLeft1, heightSquareTopLeft1);
   }
   if(topCrnter1O == true){
-    image(playerO, xSquareTopCenter2, ySquareTopCenter2, widthSquareTopCenter2, heightSquareTopCenter2);
+    image(playerO, xSquareTopCenter1, ySquareTopCenter1, widthSquareTopCenter1, heightSquareTopCenter1);
   }
   if(topRight1O == true){
-    image(playerO, xSquareTopRight2, ySquareTopRight2, widthSquareTopRight2, heightSquareTopRight2);
+    image(playerO, xSquareTopRight1, ySquareTopRight1, widthSquareTopRight1, heightSquareTopRight1);
   }
   if(centerLeft1O == true){
-    image(playerO, xSquareCenterLeft2, ySquareCenterLeft2, widthSquareCenterLeft2, heightSquareCenterLeft2);
+    image(playerO, xSquareCenterLeft1, ySquareCenterLeft1, widthSquareCenterLeft1, heightSquareCenterLeft1);
   }
   if(centerCenter1O == true){
-    image(playerO, xSquareCenterCenter2, ySquareCenterCenter2, widthSquareCenterCenter2, heightSquareCenterCenter2);
+    image(playerO, xSquareCenterCenter1, ySquareCenterCenter1, widthSquareCenterCenter1, heightSquareCenterCenter1);
   }
   if(CenterRight1O == true){
-    image(playerO, xSquareCenterRight2, ySquareCenterRight2, widthSquareCenterRight2, heightSquareCenterRight2);
+    image(playerO, xSquareCenterRight1, ySquareCenterRight1, widthSquareCenterRight1, heightSquareCenterRight1);
   }
   if(bottemLeft1O == true){
-    image(playerO, xSquareBottemLeft2, ySquareBottemLeft2, widthSquareBottemLeft2, heightSquareBottemLeft2);
+    image(playerO, xSquareBottemLeft1, ySquareBottemLeft1, widthSquareBottemLeft1, heightSquareBottemLeft1);
   }
   if(bottemCenter1O == true){
-    image(playerO, xSquareBottemCenter2, ySquareBottemCenter2, widthSquareBottemCenter2, heightSquareBottemCenter2);
+    image(playerO, xSquareBottemCenter1, ySquareBottemCenter1, widthSquareBottemCenter1, heightSquareBottemCenter1);
   }
   if(bottemRight1O){
-    image(playerO, xSquareBottemRight2, ySquareBottemRight2, widthSquareBottemRight2, heightSquareBottemRight2);
+    image(playerO, xSquareBottemRight1, ySquareBottemRight1, widthSquareBottemRight1, heightSquareBottemRight1);
   }
 }

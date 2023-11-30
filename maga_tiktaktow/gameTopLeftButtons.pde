@@ -1,6 +1,5 @@
 void gameTopLeftButtons(){
   noStroke();
-  fill(255, 0, 0);
   rect(xSquareTopLeft1, ySquareTopLeft1, widthSquareTopLeft1, heightSquareTopLeft1);
   rect(xSquareTopCenter1, ySquareTopCenter1, widthSquareTopCenter1, heightSquareTopCenter1);
   rect(xSquareTopRight1, ySquareTopRight1, widthSquareTopRight1, heightSquareTopRight1);
@@ -12,8 +11,7 @@ void gameTopLeftButtons(){
   if(howToPlay == true){
     fill(255, 255, 0);
   }else{
-    fill(255, 0, 0);
+    
   }
   rect(xSquareBottemRight1, ySquareBottemRight1, widthSquareBottemRight1, heightSquareBottemRight1);
-  fill(255, 0, 0);
 }

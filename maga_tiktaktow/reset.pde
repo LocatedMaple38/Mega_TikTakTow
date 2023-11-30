@@ -7,8 +7,6 @@ void reset(){
   start = false;  
   TeamGoing = false;  
   howToPlay = false;  
-  maga = false;  
-  norm = false;  
   topLeftActive = false;  
   topCenterActive = false;  
   topRightActive = false;  
@@ -16,8 +14,8 @@ void reset(){
   centerCenterActive = false;  
   centerRightActive = false;  
   bottomLeftActive = false;  
-  bottemCenterActive = false;  
-  botterRightActive = false;  
+  bottomCenterActive = false;  
+  bottomRightActive = false;  
   topLeft1OverRide = false;  
   topCrnter1OverRide = false;  
   topRight1OverRide = false;  
