@@ -2,7 +2,7 @@ void playerOmoveCenterLeft1(){
  if(topLeft4O == true){
   image(playerO, xSquareTopLeft4, ySquareTopLeft4, widthSquareTopLeft4, heightSquareTopLeft4);
  }
- if(topCrnter4O == true){
+ if(topCenter4O == true){
   image(playerO, xSquareTopCenter4, ySquareTopCenter4, widthSquareTopCenter4, heightSquareTopCenter4);
  }
  if(topRight4O == true){
@@ -14,7 +14,7 @@ void playerOmoveCenterLeft1(){
  if(centerCenter4O == true){
   image(playerO, xSquareCenterCenter4, ySquareCenterCenter4, widthSquareCenterCenter4, heightSquareCenterCenter4);
  }
- if(CenterRight4O == true){
+ if(centerRight4O == true){
   image(playerO, xSquareCenterRight4, ySquareCenterRight4, widthSquareCenterRight4, heightSquareCenterRight4);
  }
  if(bottemLeft4O == true){
