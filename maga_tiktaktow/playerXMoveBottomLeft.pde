@@ -24,6 +24,6 @@ void playerXMoveBottomLeft(){
     image(playerX, xSquareBottemCenter7, ySquareBottemCenter7, widthSquareBottemCenter7, heightSquareBottemCenter7);
   }
   if(bottemRight7X == true){
-    image(playerX, xSquareBottemRight7, ySquareBottemRight7, widthSquareBottemRight7, heightSquareBottemRight7
+    image(playerX, xSquareBottemRight7, ySquareBottemRight7, widthSquareBottemRight7, heightSquareBottemRight7);
   }
 }
