@@ -111,6 +111,7 @@ float xSquareCenterRight2, ySquareCenterRight2, widthSquareCenterRight2, heightS
 float xSquareBottemLeft2, ySquareBottemLeft2, widthSquareBottemLeft2, heightSquareBottemLeft2;
 float xSquareBottemCenter2, ySquareBottemCenter2, widthSquareBottemCenter2, heightSquareBottemCenter2;
 float xSquareBottemRight2, ySquareBottemRight2, widthSquareBottemRight2, heightSquareBottemRight2;
+
 //topRightButton
 float xSquareTopLeft3, ySquareTopLeft3, widthSquareTopLeft3, heightSquareTopLeft3;
 float xSquareTopCenter3, ySquareTopCenter3, widthSquareTopCenter3, heightSquareTopCenter3;
@@ -121,6 +122,7 @@ float xSquareCenterRight3, ySquareCenterRight3, widthSquareCenterRight3, heightS
 float xSquareBottemLeft3, ySquareBottemLeft3, widthSquareBottemLeft3, heightSquareBottemLeft3;
 float xSquareBottemCenter3, ySquareBottemCenter3, widthSquareBottemCenter3, heightSquareBottemCenter3;
 float xSquareBottemRight3, ySquareBottemRight3, widthSquareBottemRight3, heightSquareBottemRight3;
+
 //centerLeftButton
 float xSquareTopLeft4, ySquareTopLeft4, widthSquareTopLeft4, heightSquareTopLeft4;
 float xSquareTopCenter4, ySquareTopCenter4, widthSquareTopCenter4, heightSquareTopCenter4;
@@ -131,6 +133,7 @@ float xSquareCenterRight4, ySquareCenterRight4, widthSquareCenterRight4, heightS
 float xSquareBottemLeft4, ySquareBottemLeft4, widthSquareBottemLeft4, heightSquareBottemLeft4;
 float xSquareBottemCenter4, ySquareBottemCenter4, widthSquareBottemCenter4, heightSquareBottemCenter4;
 float xSquareBottemRight4, ySquareBottemRight4, widthSquareBottemRight4, heightSquareBottemRight4;
+
 //centerCenterButton
 float xSquareTopLeft5, ySquareTopLeft5, widthSquareTopLeft5, heightSquareTopLeft5;
 float xSquareTopCenter5, ySquareTopCenter5, widthSquareTopCenter5, heightSquareTopCenter5;
@@ -258,6 +261,76 @@ boolean bottemLeft2O = false;
 boolean bottemCenter2O = false;
 boolean bottemRight2O = false;
 
+boolean topLeft3O = false;
+boolean topCrnter3O = false;
+boolean topRight3O = false;
+boolean centerLeft3O = false;
+boolean centerCenter3O = false;
+boolean CenterRight3O = false;
+boolean bottemLeft3O = false;
+boolean bottemCenter3O = false;
+boolean bottemRight3O = false;
+
+boolean topLeft4O = false;
+boolean topCrnter4O = false;
+boolean topRight4O = false;
+boolean centerLeft4O = false;
+boolean centerCenter4O = false;
+boolean CenterRight4O = false;
+boolean bottemLeft4O = false;
+boolean bottemCenter4O = false;
+boolean bottemRight4O = false;
+
+boolean topLeft5O = false;
+boolean topCrnter5O = false;
+boolean topRight5O = false;
+boolean centerLeft5O = false;
+boolean centerCenter5O = false;
+boolean CenterRight5O = false;
+boolean bottemLeft5O = false;
+boolean bottemCenter5O = false;
+boolean bottemRight5O = false;
+
+boolean topLeft6O = false;
+boolean topCrnter6O = false;
+boolean topRight6O = false;
+boolean centerLeft6O = false;
+boolean centerCenter6O = false;
+boolean CenterRight6O = false;
+boolean bottemLeft6O = false;
+boolean bottemCenter6O = false;
+boolean bottemRight6O = false;
+
+boolean topLeft7O = false;
+boolean topCrnter7O = false;
+boolean topRight7O = false;
+boolean centerLeft7O = false;
+boolean centerCenter7O = false;
+boolean CenterRight7O = false;
+boolean bottemLeft7O = false;
+boolean bottemCenter7O = false;
+boolean bottemRight7O = false;
+
+boolean topLeft8O = false;
+boolean topCrnter8O = false;
+boolean topRight8O = false;
+boolean centerLeft8O = false;
+boolean centerCenter8O = false;
+boolean CenterRight8O = false;
+boolean bottemLeft8O = false;
+boolean bottemCenter8O = false;
+boolean bottemRight8O = false;
+
+boolean topLeft9O = false;
+boolean topCrnter9O = false;
+boolean topRight9O = false;
+boolean centerLeft9O = false;
+boolean centerCenter9O = false;
+boolean CenterRight9O = false;
+boolean bottemLeft9O = false;
+boolean bottemCenter9O = false;
+boolean bottemRight9O = false;
+
 boolean topLeftMainO = false;
 boolean topCenterMainO = false;
 boolean topRightMainO = false;
@@ -307,6 +380,76 @@ boolean CenterRight2X = false;
 boolean bottemLeft2X = false;
 boolean bottemCenter2X = false;
 boolean bottemRight2X = false;
+
+boolean topLeft3X = false;
+boolean topCrnter3X = false;
+boolean topRight3X = false;
+boolean centerLeft3X = false;
+boolean centerCenter3X = false;
+boolean CenterRight3X = false;
+boolean bottemLeft3X = false;
+boolean bottemCenter3X = false;
+boolean bottemRight3X = false;
+
+boolean topLeft4X = false;
+boolean topCrnter4X = false;
+boolean topRight4X = false;
+boolean centerLeft4X = false;
+boolean centerCenter4X = false;
+boolean CenterRight4X = false;
+boolean bottemLeft4X = false;
+boolean bottemCenter4X = false;
+boolean bottemRight4X = false;
+
+boolean topLeft5X = false;
+boolean topCrnter5X = false;
+boolean topRight5X = false;
+boolean centerLeft5X = false;
+boolean centerCenter5X = false;
+boolean CenterRight5X = false;
+boolean bottemLeft5X = false;
+boolean bottemCenter5X = false;
+boolean bottemRight5X = false;
+
+boolean topLeft6X = false;
+boolean topCrnter6X = false;
+boolean topRight6X = false;
+boolean centerLeft6X = false;
+boolean centerCenter6X = false;
+boolean CenterRight6X = false;
+boolean bottemLeft6X = false;
+boolean bottemCenter6X = false;
+boolean bottemRight6X = false;
+
+boolean topLeft7X = false;
+boolean topCrnter7X = false;
+boolean topRight7X = false;
+boolean centerLeft7X = false;
+boolean centerCenter7X = false;
+boolean CenterRight7X = false;
+boolean bottemLeft7X = false;
+boolean bottemCenter7X = false;
+boolean bottemRight7X = false;
+
+boolean topLeft8X = false;
+boolean topCrnter8X = false;
+boolean topRight8X = false;
+boolean centerLeft8X = false;
+boolean centerCenter8X = false;
+boolean CenterRight8X = false;
+boolean bottemLeft8X = false;
+boolean bottemCenter8X = false;
+boolean bottemRight8X = false;
+
+boolean topLeft9X = false;
+boolean topCrnter9X = false;
+boolean topRight9X = false;
+boolean centerLeft9X = false;
+boolean centerCenter9X = false;
+boolean CenterRight9X = false;
+boolean bottemLeft9X = false;
+boolean bottemCenter9X = false;
+boolean bottemRight9X = false;
 
 boolean topLeftMainX = false;
 boolean topCenterMainX = false;
