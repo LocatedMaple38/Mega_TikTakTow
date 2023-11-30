@@ -5,9 +5,9 @@ void playerOMousePress(){
     topLeft2OverRide = true;
     TeamGoing = true;
   }
-  if(TeamGoing == false && topCrnter2OverRide == false && mouseX>xSquareTopCenter2 && mouseX<xSquareTopCenter2+widthSquareTopCenter2 && mouseY>ySquareTopCenter2 && mouseY<ySquareTopCenter2+heightSquareTopCenter2){
-    topCrnter2O = true;
-    topCrnter2OverRide = true;
+  if(TeamGoing == false && topCenter2OverRide == false && mouseX>xSquareTopCenter2 && mouseX<xSquareTopCenter2+widthSquareTopCenter2 && mouseY>ySquareTopCenter2 && mouseY<ySquareTopCenter2+heightSquareTopCenter2){
+    topCenter2O = true;
+    topCenter2OverRide = true;
     TeamGoing = true;
   }
   if(TeamGoing == false && topRight2OverRide == false && mouseX>xSquareTopRight2 && mouseX<xSquareTopRight2+widthSquareTopRight2 && mouseY>ySquareTopRight2 && mouseY<ySquareTopRight2+heightSquareTopRight2){
