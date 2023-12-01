@@ -5,7 +5,7 @@ void reset(){
   quit = false;  
   exet = false;  
   start = false;  
-  TeamGoing = false;  
+  teamGoing = false;  
   howToPlay = false;  
   topLeftActive = false;  
   topCenterActive = false;  
