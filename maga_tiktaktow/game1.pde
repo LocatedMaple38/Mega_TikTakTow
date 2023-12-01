@@ -27,10 +27,10 @@ void Game1(){
   
   playerMove();
   
-  if(TeamGoing == false){
-    image(playerO, xTeamGoing, yTeamGoing, widthTeamGoing, heightTeamGoing);
+  if(teamGoing == false){
+    image(playerO, xteamGoing, yteamGoing, widthteamGoing, heightteamGoing);
   }else{
-    image(playerX, xTeamGoing, yTeamGoing, widthTeamGoing, heightTeamGoing);
+    image(playerX, xteamGoing, yteamGoing, widthteamGoing, heightteamGoing);
   }
   if(topLeftActive == false && topCenterActive == false && topRightActive == false && centerLeftActive == false && centerCenterActive == false && centerRightActive == false && bottomLeftActive == false && bottomCenterActive == false && bottomRightActive == false){
     startGame = true;
