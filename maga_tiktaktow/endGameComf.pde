@@ -8,5 +8,4 @@ void endGameComf(){
   textAlign(CENTER, CENTER);
   textFont(endComfFont, 20);
   text(endComf, xEndText, yEndText, widthEndText, heightEndText);
-  
 }
