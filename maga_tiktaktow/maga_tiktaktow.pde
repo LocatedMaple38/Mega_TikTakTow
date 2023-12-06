@@ -1359,7 +1359,7 @@ void mousePressed(){
       topRight1O = true;
       teamGoing = true;
       topRightActive = true;
-      topLeftActive = false;
+      topLeftActive = false
     }
     if(topLeftActive == true && centerLeft1OverRide == false && teamGoing == false && mouseX>xSquareCenterLeft1 && mouseX<xSquareCenterLeft1+widthSquareCenterLeft1 && mouseY>ySquareCenterLeft1 && mouseY<ySquareCenterLeft1+heightSquareCenterLeft1){
       centerLeft1OverRide = true;
