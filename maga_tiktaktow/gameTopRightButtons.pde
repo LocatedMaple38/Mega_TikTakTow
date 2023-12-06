@@ -1,4 +1,6 @@
 void gameTopRightButtons(){
+  noStroke();
+  fill(255, 0, 0);
   rect(xSquareTopLeft3, ySquareTopLeft3, widthSquareTopLeft3, heightSquareTopLeft3);
   rect(xSquareTopCenter3, ySquareTopCenter3, widthSquareTopCenter3, heightSquareTopCenter3);
   rect(xSquareTopRight3, ySquareTopRight3, widthSquareTopRight3, heightSquareTopRight3);
