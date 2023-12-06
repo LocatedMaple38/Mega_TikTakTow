@@ -1,5 +1,5 @@
 void gameBottemCenterOutline(){
-  stroke(0);
+  stroke(100);
   line(xLeft8, yLeft8, widthLeft8, heightLeft8);
   line(xRight8, yRight8, widthRight8, heightRight8);
   line(xTop8, yTop8, widthTop8, heightTop8);
