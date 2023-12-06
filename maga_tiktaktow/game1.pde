@@ -1,5 +1,4 @@
 void Game1(){
-  fill(255, 0, 0);
   gameTopLeftButtons();
   gameTopCenterButtons();
   gameTopRightButtons();
@@ -20,6 +19,7 @@ void Game1(){
   gameButtomLeftOutline();
   gameBottemCenterOutline();
   gameButtomRightOutline();
+  mainBoard();
   
   if(startGame == true){
     startGame();
