@@ -1,4 +1,6 @@
 void gameCenterCenterButtons(){
+  noStroke();
+  fill(255, 0, 0);
   rect(xSquareTopLeft5, ySquareTopLeft5, widthSquareTopLeft5, heightSquareTopLeft5);
   rect(xSquareTopCenter5, ySquareTopCenter5, widthSquareTopCenter5, heightSquareTopCenter5);
   rect(xSquareTopRight5, ySquareTopRight5, widthSquareTopRight5, heightSquareTopRight5);
