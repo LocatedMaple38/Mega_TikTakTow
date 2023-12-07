@@ -17,13 +17,13 @@ void playerXMoveCenterLeft(){
   if(centerRight4X == true){
     image(playerX, xSquareCenterRight4, ySquareCenterRight4, widthSquareCenterRight4, heightSquareCenterRight4);
   }
-  if(bottemLeft4X == true){
-    image(playerX, xSquareBottemLeft4, ySquareBottemLeft4, widthSquareBottemLeft4, heightSquareBottemLeft4);
+  if(bottomLeft4X == true){
+    image(playerX, xSquareBottomLeft4, ySquareBottomLeft4, widthSquareBottomLeft4, heightSquareBottomLeft4);
   }
-  if(bottemCenter4X == true){
-    image(playerX, xSquareBottemCenter4, ySquareBottemCenter4, widthSquareBottemCenter4, heightSquareBottemCenter4);
+  if(bottomCenter4X == true){
+    image(playerX, xSquareBottomCenter4, ySquareBottomCenter4, widthSquareBottomCenter4, heightSquareBottomCenter4);
   }
-  if(bottemRight4X == true){
-    image(playerX, xSquareBottemRight4, ySquareBottemRight4, widthSquareBottemRight4, heightSquareBottemRight4);
+  if(bottomRight4X == true){
+    image(playerX, xSquareBottomRight4, ySquareBottomRight4, widthSquareBottomRight4, heightSquareBottomRight4);
   }
 }

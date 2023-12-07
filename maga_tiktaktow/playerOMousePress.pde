@@ -32,9 +32,9 @@ void playerOMousePress(){
 
 
 boolean CenterRight2O = false;
-boolean bottemLeft2O = false;
-boolean bottemCenter2O = false;
-boolean bottemRight2O = false;
+boolean bottomLeft2O = false;
+boolean bottomCenter2O = false;
+boolean bottomRight2O = false;
 
 
 
@@ -42,9 +42,9 @@ boolean bottemRight2O = false;
 
 
 boolean CenterRight2OverRide = false;
-boolean bottemLeft2OverRide = false;
-boolean bottemCenter2OverRide = false;
-boolean bottemRight2OverRide = false;
+boolean bottomLeft2OverRide = false;
+boolean bottomCenter2OverRide = false;
+boolean bottomRight2OverRide = false;
 
 
 
@@ -52,7 +52,7 @@ boolean bottemRight2OverRide = false;
 
 
 float xSquareCenterRight2, ySquareCenterRight2, widthSquareCenterRight2, heightSquareCenterRight2;
-float xSquareBottemLeft2, ySquareBottemLeft2, widthSquareBottemLeft2, heightSquareBottemLeft2;
-float xSquareBottemCenter2, ySquareBottemCenter2, widthSquareBottemCenter2, heightSquareBottemCenter2;
-float xSquareBottemRight2, ySquareBottemRight2, widthSquareBottemRight2, heightSquareBottemRight2;
+float xSquarebottomLeft2, ySquarebottomLeft2, widthSquarebottomLeft2, heightSquarebottomLeft2;
+float xSquarebottomCenter2, ySquarebottomCenter2, widthSquarebottomCenter2, heightSquarebottomCenter2;
+float xSquarebottomRight2, ySquarebottomRight2, widthSquarebottomRight2, heightSquarebottomRight2;
 */

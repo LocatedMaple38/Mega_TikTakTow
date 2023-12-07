@@ -7,7 +7,7 @@ void gameBottomRightButtons(){
   rect(xSquareCenterLeft9, ySquareCenterLeft9, widthSquareCenterLeft9, heightSquareCenterLeft9);
   rect(xSquareCenterCenter9, ySquareCenterCenter9, widthSquareCenterCenter9, heightSquareCenterCenter9);
   rect(xSquareCenterRight9, ySquareCenterRight9, widthSquareCenterRight9, heightSquareCenterRight9);
-  rect(xSquareBottemLeft9, ySquareBottemLeft9, widthSquareBottemLeft9, heightSquareBottemLeft9);
-  rect(xSquareBottemCenter9, ySquareBottemCenter9, widthSquareBottemCenter9, heightSquareBottemCenter9);
-  rect(xSquareBottemRight9, ySquareBottemRight9, widthSquareBottemRight9, heightSquareBottemRight9);
+  rect(xSquareBottomLeft9, ySquareBottomLeft9, widthSquareBottomLeft9, heightSquareBottomLeft9);
+  rect(xSquareBottomCenter9, ySquareBottomCenter9, widthSquareBottomCenter9, heightSquareBottomCenter9);
+  rect(xSquareBottomRight9, ySquareBottomRight9, widthSquareBottomRight9, heightSquareBottomRight9);
 }

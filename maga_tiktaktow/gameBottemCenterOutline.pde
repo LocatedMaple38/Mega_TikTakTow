@@ -1,4 +1,4 @@
-void gameBottemCenterOutline(){
+void gamebottomCenterOutline(){
   stroke(100);
   line(xLeft8, yLeft8, widthLeft8, heightLeft8);
   line(xRight8, yRight8, widthRight8, heightRight8);

@@ -17,13 +17,13 @@ void playerOmoveTopCenter1(){
   if(centerRight2O == true){
     image(playerO, xSquareCenterRight2, ySquareCenterRight2, widthSquareCenterRight2, heightSquareCenterRight2);
   }
-  if(bottemLeft2O == true){
-    image(playerO, xSquareBottemLeft2, ySquareBottemLeft2, widthSquareBottemLeft2, heightSquareBottemLeft2);
+  if(bottomLeft2O == true){
+    image(playerO, xSquareBottomLeft2, ySquareBottomLeft2, widthSquareBottomLeft2, heightSquareBottomLeft2);
   }
-  if(bottemCenter2O == true){
-    image(playerO, xSquareBottemCenter2, ySquareBottemCenter2, widthSquareBottemCenter2, heightSquareBottemCenter2);
+  if(bottomCenter2O == true){
+    image(playerO, xSquareBottomCenter2, ySquareBottomCenter2, widthSquareBottomCenter2, heightSquareBottomCenter2);
   }
-  if(bottemRight2O == true){
-    image(playerO, xSquareBottemRight2, ySquareBottemRight2, widthSquareBottemRight2, heightSquareBottemRight2);
+  if(bottomRight2O == true){
+    image(playerO, xSquareBottomRight2, ySquareBottomRight2, widthSquareBottomRight2, heightSquareBottomRight2);
   }
 }

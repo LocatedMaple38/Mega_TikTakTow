@@ -17,7 +17,7 @@ void Game1(){
   gameCenterCenterOutline();
   gameCenterRightOutline();
   gameButtomLeftOutline();
-  gameBottemCenterOutline();
+  gamebottomCenterOutline();
   gameButtomRightOutline();
   mainBoard();
   

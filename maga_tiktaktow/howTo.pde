@@ -1,6 +1,5 @@
 void howTo(){
   rect(xBackGround, yBackGround, widthBackGround, heightBackGround);
-  fill(255, 0, 0);
   gameTopLeftButtons();
   gameTopCenterButtons();
   gameTopRightButtons();
@@ -10,8 +9,8 @@ void howTo(){
   gameBottomLeftButtons();
   gameBottomCenterButtons();
   gameBottomRightButtons();
-  
-  //fill(255);
+
+  fill(255);
   gameTopLeftOutLine();
   gameTopCenterOutLine();
   gameTopRightOutLine();
@@ -19,11 +18,12 @@ void howTo(){
   gameCenterCenterOutline();
   gameCenterRightOutline();
   gameButtomLeftOutline();
-  gameBottemCenterOutline();
+  gamebottomCenterOutline();
   gameButtomRightOutline();
+  mainBoard();
   fill(0);
   textAlign(CENTER, CENTER);
-  textFont(howToFont, 100);
+  textFont(howToFont, 18);
   text(HowToText, xHowToTextBox, yHowToTextBox, widthHowToTextBox, heightHowToTextBox);
 }
   
