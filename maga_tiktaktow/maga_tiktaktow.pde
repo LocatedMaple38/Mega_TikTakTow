@@ -23,7 +23,7 @@ String yesText = "YES", noText = "NO";
 
 PFont settFont, yesFont, noFont, endComfFont, quitComfFont, titleFont, footrFont, startFont, howToFont, OKFont, quitFont, endFont, nextFont;
 
-float xSoundEFX, ySoundEFX, widthSoundEFX, heightSoundEFX;\
+float xSoundEFX, ySoundEFX, widthSoundEFX, heightSoundEFX;
 float xSoundEFXSlider, ySoundEFXSlider, widthSoundEFXSlider, heightSoundEFXSlider;
 float xMainSound, yMainSound, widthMainSound, heightMainSound;
 float xMainSoundSlider, yMainSoundSlider, widthMainSoundSlider, heightMainSoundSlider;
