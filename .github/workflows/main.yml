@@ -1,0 +1,5 @@
+/*if start == false then run homeScreen else run game.
+under game the folllowing is ran topLeftButtons, topCenterButtons, topRightButtons, centerBottons, centerCenterButtons, centerRightButtons, bottomLeftButtons, bottomCenterButtons, bottomRightButtons
+topLeftOutLine, topCenterOutLine, topRightOutLine, centerLeftOutLine, centerCenterOutLine, centerRightOutline, bottomLeftOutLine, bottomCenterOutLine, bottomRightOutLine
+player, 
+*/
