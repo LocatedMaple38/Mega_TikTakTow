@@ -564,7 +564,7 @@ void setup(){
   String groove = "groove";
   String extension = ".mp3";
   String pathway = "FreeWare Music/MusicDownload/"; //Relative Path
-  String path = sketchPath( pathway + groove + extension ); //Absolute Path
+  String path = sketchPath( pathway+groove+extension ); //Absolute Path
   // See: https://poanchen.github.io/blog/2016/11/15/how-to-add-background-music-in-processing-3.0
   println(path);
   song1 = minim.loadFile( path );
@@ -1831,5 +1831,46 @@ void mousePressed(){
       topRightActive = false; 
       bottomRightActive = true;
     }
+    if(centerLeftActive == true && topLeft4OverRide == false && teamGoing == true && mouseX>xSquareTopLeft4 && mouseX<xSquareTopLeft4+widthSquareTopLeft4 && mouseY>ySquareTopLeft4 && mouseY<ySquareTopLeft4+heightSquareTopLeft4){
+      topLeft4X = true;
+      topLeft4OverRide = true;
+      teamGoing = false;
+      topLeftActive = true;
+      centerLeftActive = false;
+    }
+    if(centerLeftActive == true && topCenter4OverRide == false && teamGoing == true && mouseX>xSquareTopCenter4 && mouseX<xSquareTopCenter4+widthSquareTopCenter4 && mouseY>ySquareTopCenter4  && mouseY<ySquareTopCenter4+heightSquareTopCenter4){
+      topCenter4X = true;
+      topLeft4OverRide = true;
+      teamGoing = false;
+      topCenterActive = true;
+      centerLeftActive = false;
+    }
+    if(centerLeftActive == true && topRight4OverRide == false && teamGoing == true && mouseX>xSquareTopRight4 && mouseX<xSquareTopRight4+widthSquareTopRight4 && mouseY>ySquareTopRight4 && mouseY<ySquareTopRight4+heightSquareTopRight4){
+      topRight4X = true;
+      topRight4OverRide = true;
+      teamGoing = false;
+      topCenterLeftActive = false
+      topRightActive = true;
+    }
+    if(centerLeftActive == true && centerLeft4OverRide == false && teamGoing == true && mouseX>xSquareCenterLeft4 && mouseX<xSquareCenterLeft4+widthSquareCenterLeft4 && mouseY>ySquareCenterLeft4 && mouseY<ySquareCenterLeft4+heightSquareCenterLeft4){
+      centerLeft4X = true;
+      centerLeft4OverRide = true;
+      teamGoing = true;
+    }
+    if(centerLeftActive == true && centerCenter4OverRide == false && tramGoing == true && mouseX>xSquareCenterCenter4 && mouseX<xSquareCenterCenter4+widthSquareCenterCenter4 && mouseY>ySquareCenterCenter4 && mouseY<ySquareCenterCenter4+heightSquareCenterCenter4){
+      centerCenter4X = true;
+      centerCennte4Overide = true;
+      teamGoing = true;
+      centerCenterActive = true;
+      centerLeftActive = false;
+    }
+    if(centerLeftActive == true && centerRight4OverRide == false && teamGoing == true && mouseX>xSquareCenterRight4 && mouseX<xSquareCenterRight4+widthSquareCenterRight4 && mouseY>ySquareCenterRight4 && mouseY<ySquareCenterRight4+heightSquareCenterRight4){
+      centerRight4X == true;
+      centerRight4OverRide = true;
+    }
   }
 }
+
+mouseX>xSquareBottomLeft4 && mouseX<xSquareBottomLeft4+widthSquareBottomLeft4 && mouseY>ySquareBottomLeft4 && mouseY<ySquareBottomLeft4+heightSquareBottomLeft4){
+mouseX>xSquareBottomCenter4 && mouseX<xSquareBottomCenter4+widthSquareBottomCenter4 && mouseY>ySquareBottomCenter4 && mouseY<ySquareBottomCenter4+heightSquareBottomCenter4){
+mouseX>xSquareBottomRight4 && mouseX<xSquareBottomRight4+widthSquareBottomRight4 && mouseY>ySquareBottomRight4 && mouseY<ySquareBottomRight4+heightSquareBottomRight4){
