@@ -81,26 +81,26 @@ float xBottom5, yBottom5, widthBottom5, heightBottom5;
 
 //centerRightMini
 float xLeft6, yLeft6, widthLeft6, heightLeft6;
-float xRight6, yRight6, widthRight6, heightRight6; 
-float xTop6, yTop6, widthTop6, heightTop6; 
+float xRight6, yRight6, widthRight6, heightRight6;
+float xTop6, yTop6, widthTop6, heightTop6;
 float xBottom6, yBottom6, widthBottom6, heightBottom6;
 
 //bottomLeftMini
 float xLeft7, yLeft7, widthLeft7, heightLeft7;
-float xRight7, yRight7, widthRight7, heightRight7; 
-float xTop7, yTop7, widthTop7, heightTop7; 
+float xRight7, yRight7, widthRight7, heightRight7;
+float xTop7, yTop7, widthTop7, heightTop7;
 float xBottom7, yBottom7, widthBottom7, heightBottom7;
 
 //bottomCenterMini
 float xLeft8, yLeft8, widthLeft8, heightLeft8;
-float xRight8, yRight8, widthRight8, heightRight8; 
-float xTop8, yTop8, widthTop8, heightTop8; 
+float xRight8, yRight8, widthRight8, heightRight8;
+float xTop8, yTop8, widthTop8, heightTop8;
 float xBottom8, yBottom8, widthBottom8, heightBottom8;
 
 //bottomRightMini
 float xLeft9, yLeft9, widthLeft9, heightLeft9;
-float xRight9, yRight9, widthRight9, heightRight9; 
-float xTop9, yTop9, widthTop9, heightTop9; 
+float xRight9, yRight9, widthRight9, heightRight9;
+float xTop9, yTop9, widthTop9, heightTop9;
 float xBottom9, yBottom9, widthBottom9, heightBottom9;
 
 //mainBord
@@ -216,7 +216,7 @@ float xSquareCenterCenterMain, ySquareCenterCenterMain, widthSquareCenterCenterM
 float xSquareCenterRightMain, ySquareCenterRightMain, widthSquareCenterRightMain, heightSquareCenterRightMain;
 float xSquareBottomLeftMain, ySquareBottomLeftMain, widthSquareBottomLeftMain, heightSquareBottomLeftMain;
 float xSquareBottomCenterMain, ySquareBottomCenterMain, widthSquareBottomCenterMain, heightSquareBottomCenterMain;
-float xSquareBottomRightMain, ySquareBottomRightMain, widthSquareBottomRightMain, heightSquareBottomRightMain; 
+float xSquareBottomRightMain, ySquareBottomRightMain, widthSquareBottomRightMain, heightSquareBottomRightMain;
 
 float xBackGround, yBackGround, widthBackGround, heightBackGround;
 
@@ -553,13 +553,13 @@ boolean bottomRightMainX = false;
 PImage playerO;
 PImage playerX;
 
-void setup(){
+void setup() {
   windowRatio(500, 600);
   size(500, 600);
   surface.setTitle("Mega Tik Tack Toe");
   surface.setResizable(true);
   surface.setLocation(100, 100);
-  
+
   minim = new Minim(this); //load from data directory, loadFile should also load from project folder, like loadImage
   String groove = "groove";
   String extension = ".mp3";
@@ -572,7 +572,7 @@ void setup(){
 
   playerO = loadImage("playerO.png");
   playerX = loadImage("playerX.png");
-  
+
   appWidth = width;
   appHeight = height;
   gameWidth = appWidth;
@@ -604,7 +604,7 @@ void setup(){
   yOK = appHeight*8.35/10;
   widthOK = appWidth*1/2;
   heightOK = appHeight*1.7/10;
-  
+
   xSettings = appWidth*5.1/10-1;
   ySetting = appHeight*8.35/10;
   widthSettings = appWidth*1.7/10-1;
@@ -619,12 +619,12 @@ void setup(){
   yQuit = appHeight*8.35/10;
   widthQuit = appWidth*1.7/10-1;
   heightQuit = appHeight*1.7/10-1;
-  
+
   xEnd = appWidth*0;
   yEnd = appHeight*8.3510;
   widthEnd = appWidth*1.7/10-1;
   heightEnd = appHeight*1.7/10-1;
-  
+
   xBackGround = appWidth*0;
   yBackGround = appHeight*0;
   widthBackGround = appWidth-1;
@@ -634,7 +634,7 @@ void setup(){
   yTitle = appHeight*0;
   widthTitle = appWidth-1;
   heightTitle = appHeight*1/4;
-  
+
   xFooter = appWidth*0;
   yFooter = appHeight*1/4;
   widthFooter = appWidth-1;
@@ -649,117 +649,117 @@ void setup(){
   yHowToTextBox = appHeight*8.3/10;
   widthHowToTextBox = appWidth*1/2;
   heightHowToTextBox = appHeight*1.7/10;
-  
+
   xStart = appWidth*0;
   yStart = appHeight*1.5/4;
   widthStart = appWidth*1/2;
   heightStart = appHeight*1/4;
-  
+
   xLeft = gameWidth*1/3;
   yLeft = gameHeight*0;
   widthLeft = gameWidth*1/3;
   heightLeft = gameHeight-1;
-  
+
   xRight = gameWidth*2/3;
   yRight = gameHeight*0;
   widthRight = gameWidth*2/3;
   heightRitht = gameHeight-1;
-  
+
   xTop = gameWidth*0;
   yTop = gameHeight*1/3;
   widthTop = gameWidth-1;
   heightTop = gameHeight*1/3;
-  
+
   xBottom = gameWidth*0;
   yBottom = gameHeight*2/3;
   widthBottom = gameWidth-1;
   heightBottom = gameHeight*2/3;
-  
+
   xLeft1 = gameWidth*1/9;
   yLeft1 = gameHeight*0;
   widthLeft1 = gameWidth*1/9;
   heightLeft1 = gameHeight*1/3;
-  
+
   xRight1 = gameWidth*2/9;
   yRight1 = gameHeight*0;
   widthRight1 = gameWidth*2/9;
   heightRight1 = gameHeight*1/3;
-  
+
   xTop1 = gameWidth*0;
   yTop1 = gameHeight*1/9;
   widthTop1 = gameWidth*1/3;
   heightTop1 = gameHeight*1/9;
-  
+
   xBottom1 = gameWidth*0;
   yBottom1 = gameHeight*2/9;
   widthBottom1 = gameWidth*1/3;
   heightBottom1 = gameHeight*2/9;
-  
+
   xLeft2 = gameWidth*4/9;
   yLeft2 = gameHeight*0;
   widthLeft2 = gameWidth*4/9;
   heightLeft2 = gameHeight*1/3;
-  
+
   xRight2 = gameWidth*5/9;
   yRight2 = gameHeight*0;
   widthRight2 = gameWidth*5/9;
   heightRight2 = gameHeight*1/3;
-  
+
   xTop2 = gameWidth*1/3;
   yTop2 = gameHeight*1/9;
   widthTop2 = gameWidth*2/3;
   heightTop2 = gameHeight*1/9;
-  
+
   xBottom2 = gameWidth*1/3;
   yBottom2 = gameHeight*2/9;
   widthBottom2 = gameWidth*2/3;
   heightBottom2 = gameHeight*2/9;
-  
+
   xLeft3 = gameWidth*7/9;
   yLeft3 = gameHeight*0;
   widthLeft3 = gameWidth*7/9;
   heightLeft3 = gameHeight*1/3;
-  
+
   xRight3 = gameWidth*8/9;
   yRight3 = gameHeight*0;
   widthRight3 = gameWidth*8/9;
   heightRight3 = gameHeight*1/3;
-  
+
   xTop3 = gameWidth*2/3;
   yTop3 = gameHeight*1/9;
   widthTop3 = gameWidth*3/3;
   heightTop3 = gameHeight*1/9;
-  
+
   xBottom3 = gameWidth*2/3;
   yBottom3 = gameHeight*2/9;
   widthBottom3 = gameWidth*1;
   heightBottom3 = gameHeight*2/9;
-  
+
   xLeft4 = gameWidth*1/9;
   yLeft4 = gameHeight*1/3;
   widthLeft4 = gameWidth*1/9;
   heightLeft4 = gameHeight*2/3;
-  
+
   xRight4 = gameWidth*2/9;
   yRight4 = gameHeight*1/3;
   widthRight4 = gameWidth*2/9;
   heightRight4 = gameHeight*2/3;
-  
+
   xTop4 = gameWidth*0;
   yTop4 = gameHeight*4/9;
   widthTop4 = gameWidth*1/3;
   heightTop4 = gameHeight*4/9;
-  
+
   xBottom4 = gameWidth*0;
   yBottom4 = gameHeight*5/9;
   widthBottom4 = gameWidth*1/3;
   heightBottom4 = gameHeight*5/9;
-  
+
   xLeft5 = gameWidth*4/9;
   yLeft5 = gameHeight*1/3;
   widthLeft5 = gameWidth*4/9;
   heightLeft5 = gameHeight*2/3;
-  
+
   xRight5 = gameWidth*5/9;
   yRight5 = gameHeight*1/3;
   widthRight5 = gameWidth*5/9;
@@ -774,62 +774,62 @@ void setup(){
   yBottom5 = gameHeight*5/9;
   widthBottom5 = gameWidth*2/3;
   heightBottom5 = gameHeight*5/9;
-  
+
   xLeft6 = gameWidth*7/9;
   yLeft6 = gameHeight*1/3;
   widthLeft6 = gameWidth*7/9;
   heightLeft6 = gameHeight*2/3;
-  
+
   xRight6 = gameWidth*8/9;
   yRight6 = gameHeight*1/3;
   widthRight6 = gameWidth*8/9;
   heightRight6 = gameHeight*2/3;
-  
+
   xTop6 = gameWidth*2/3;
   yTop6 = gameHeight*4/9;
   widthTop6 = gameWidth*1;
   heightTop6 = gameHeight*4/9;
-  
+
   xBottom6 = gameWidth*2/3;
   yBottom6 = gameHeight*5/9;
   widthBottom6 = gameWidth*1;
   heightBottom6 = gameHeight*5/9;
-  
+
   xLeft7 = gameWidth*1/9;
   yLeft7 = gameHeight*2/3;
   widthLeft7 = gameWidth*1/9;
   heightLeft7 = gameHeight-1;
-  
+
   xRight7 = gameWidth*2/9;
   yRight7 = gameHeight*2/3;
   widthRight7 = gameWidth*2/9;
   heightRight7 = gameHeight-1;
-  
+
   xTop7 = gameWidth*0;
   yTop7 = gameHeight*7/9;
   widthTop7 = gameWidth*1/3;
   heightTop7 = gameHeight*7/9;
-  
+
   xBottom7 = gameWidth*0;
   yBottom7 = gameHeight*8/9;
   widthBottom7 = gameWidth*1/3;
   heightBottom7 = gameHeight*8/9;
-  
+
   xLeft8 = gameWidth*4/9;
   yLeft8 = gameHeight*1/3;
   widthLeft8 = gameWidth*4/9;
   heightLeft8 = gameHeight*2/3;
-  
+
   xRight8 = gameWidth*5/9;
   yRight8 = gameHeight*1/3;
   widthRight8 = gameWidth*5/9;
   heightRight8 = gameHeight*2/3;
-  
+
   xTop8 = gameWidth*1/3;
   yTop8 = gameHeight*7/9;
   widthTop8 = gameWidth*2/3;
   heightTop8 = gameHeight*7/9;
-  
+
   xBottom8 = gameWidth*1/3;
   yBottom8 = gameHeight*8/9;
   widthBottom8 = gameWidth*2/3;
@@ -839,17 +839,17 @@ void setup(){
   yLeft9 = gameHeight*2/3;
   widthLeft9 = gameWidth*7/9;
   heightLeft9 = gameHeight-1;
-  
+
   xRight9 = gameWidth*8/9;
   yRight9 = gameHeight*2/3;
   widthRight9 = gameWidth*8/9;
   heightRight9 = gameHeight-1;
-  
+
   xTop9 = gameWidth*2/3;
   yTop9 = gameHeight*7/9;
   widthTop9 = gameWidth*7/9;
   heightTop9 = gameHeight-1;
-  
+
   xBottom9 = gameWidth*2/3;
   yBottom9 = gameHeight*8/9;
   widthBottom9 = gameWidth*2/3;
@@ -909,7 +909,7 @@ void setup(){
   ySquareTopCenter2 = gameHeight*0;
   widthSquareTopCenter2 = gameWidth*1/9;
   heightSquareTopCenter2 = gameHeight*1/9;
-  
+
   xSquareTopRight2 = gameWidth*5/9+1;
   ySquareTopRight2 = gameHeight*0;
   widthSquareTopRight2 = gameWidth*1/9;
@@ -924,7 +924,7 @@ void setup(){
   ySquareCenterCenter2 = gameHeight*1/9+1;
   widthSquareCenterCenter2 = gameWidth*1/9;
   heightSquareCenterCenter2 = gameHeight*1/9;
-  
+
   xSquareCenterRight2 = gameWidth*5/9+1;
   ySquareCenterRight2 = gameHeight*1/9+1;
   widthSquareCenterRight2 = gameWidth*1/9;
@@ -939,142 +939,142 @@ void setup(){
   ySquareBottomCenter2 = gameHeight*2/9+1;
   widthSquareBottomCenter2 = gameWidth*1/9;
   heightSquareBottomCenter2 = gameHeight*1/9;
-  
+
   xSquareBottomRight2 = gameWidth*5/9+1;
   ySquareBottomRight2 = gameHeight*2/9+1;
   widthSquareBottomRight2 = gameWidth*1/9;
   heightSquareBottomRight2 = gameHeight*1/9;
-  
+
   xSquareTopLeft3 = gameWidth*6/9+1;
   ySquareTopLeft3 = gameHeight*0;
   widthSquareTopLeft3 = gameWidth*1/9;
   heightSquareTopLeft3 = gameHeight*1/9;
-  
+
   xSquareTopCenter3 = gameWidth*7/9+1;
   ySquareTopCenter3 = gameHeight*0;
   widthSquareTopCenter3 = gameWidth*1/9;
   heightSquareTopCenter3 = gameHeight*1/9;
-    
+
   xSquareTopRight3 = gameWidth*8/9+1;
   ySquareTopRight3 = gameHeight*0;
   widthSquareTopRight3 = gameWidth*1/9;
   heightSquareTopRight3 = gameHeight*1/9;
-  
+
   xSquareCenterLeft3 = gameWidth*6/9+1;
   ySquareCenterLeft3 = gameHeight*1/9+1;
   widthSquareCenterLeft3 = gameWidth*1/9;
   heightSquareCenterLeft3 = gameHeight*1/9;
-  
+
   xSquareCenterCenter3 = gameWidth*7/9+1;
   ySquareCenterCenter3 = gameHeight*1/9+1;
   widthSquareCenterCenter3 = gameWidth*1/9;
   heightSquareCenterCenter3 = gameHeight*1/9;
-  
+
   xSquareCenterRight3 = gameWidth*8/9+1;
   ySquareCenterRight3 = gameHeight*1/9+1;
   widthSquareCenterRight3 = gameWidth*1/9;
   heightSquareCenterRight3 = gameHeight*1/9;
-  
+
   xSquareBottomLeft3 = gameWidth*6/9+1;
   ySquareBottomLeft3 = gameHeight*2/9+1;
   widthSquareBottomLeft3 = gameWidth*1/9;
   heightSquareBottomLeft3 = gameHeight*1/9;
-  
+
   xSquareBottomCenter3 = gameWidth*7/9+1;
   ySquareBottomCenter3 = gameHeight*2/9+1;
   widthSquareBottomCenter3 = gameWidth*1/9;
   heightSquareBottomCenter3 = gameHeight*1/9;
-  
+
   xSquareBottomRight3 = gameWidth*8/9+1;
   ySquareBottomRight3 = gameHeight*2/9+1;
   widthSquareBottomRight3 = gameWidth*1/9;
   heightSquareBottomRight3 = gameHeight*1/9;
-  
+
   xSquareTopLeft4 = gameWidth*0;
   ySquareTopLeft4 = gameHeight*3/9+1;
   widthSquareTopLeft4 = gameWidth*1/9;
   heightSquareTopLeft4 = gameHeight*1/9;
-  
+
   xSquareTopCenter4 = gameWidth*1/9+1;
   ySquareTopCenter4 = gameHeight*3/9+1;
   widthSquareTopCenter4 = gameWidth*1/9;
   heightSquareTopCenter4 = gameHeight*1/9;
-  
+
   xSquareTopRight4 = gameWidth*2/9+1;
   ySquareTopRight4 = gameHeight*3/9+1;
   widthSquareTopRight4 = gameWidth*1/9;
   heightSquareTopRight4 = gameHeight*1/9;
-  
+
   xSquareCenterLeft4 = gameWidth*0;
   ySquareCenterLeft4 = gameHeight*4/9+1;
   widthSquareCenterLeft4 = gameWidth*1/9;
   heightSquareCenterLeft4 = gameHeight*1/9;
-  
+
   xSquareCenterCenter4 = gameWidth*1/9+1;
   ySquareCenterCenter4 = gameHeight*4/9+1;
   widthSquareCenterCenter4 = gameWidth*1/9;
   heightSquareCenterCenter4 = gameHeight*1/9;
-    
+
   xSquareCenterRight4 = gameWidth*2/9+1;
   ySquareCenterRight4 = gameHeight*4/9+1;
   widthSquareCenterRight4 = gameWidth*1/9;
   heightSquareCenterRight4 = gameHeight*1/9;
-  
+
   xSquareBottomLeft4 = gameWidth*0;
   ySquareBottomLeft4 = gameHeight*5/9+1;
   widthSquareBottomLeft4 = gameWidth*1/9;
   heightSquareBottomLeft4 = gameHeight*1/9;
-  
+
   xSquareBottomCenter4 = gameWidth*1/9+1;
   ySquareBottomCenter4 = gameHeight*5/9+1;
   widthSquareBottomCenter4 = gameWidth*1/9;
   heightSquareBottomCenter4 = gameHeight*1/9;
-  
+
   xSquareBottomRight4 = gameWidth*2/9+1;
   ySquareBottomRight4 = gameHeight*5/9+1;
   widthSquareBottomRight4 = gameWidth*1/9;
   heightSquareBottomRight4 = gameHeight*1/9;
-  
+
   xSquareTopLeft5 = gameWidth*3/9+1;
   ySquareTopLeft5 = gameHeight*3/9+1;
   widthSquareTopLeft5 = gameWidth*1/9;
   heightSquareTopLeft5 = gameHeight*1/9;
-  
+
   xSquareTopCenter5 = gameWidth*4/9+1;
   ySquareTopCenter5 = gameHeight*3/9+1;
   widthSquareTopCenter5 = gameWidth*1/9;
   heightSquareTopCenter5 = gameHeight*1/9;
-  
+
   xSquareTopRight5 = gameWidth*5/9+1;
   ySquareTopRight5 = gameHeight*3/9+1;
   widthSquareTopRight5 = gameWidth*1/9;
   heightSquareTopRight5 = gameHeight*1/9;
-  
+
   xSquareCenterLeft5 = gameWidth*3/9+1;
   ySquareCenterLeft5 = gameHeight*4/9+1;
   widthSquareCenterLeft5 = gameWidth*1/9;
   heightSquareCenterLeft5 = gameHeight*1/9;
-  
+
   xSquareCenterCenter5 = gameWidth*4/9+1;
   ySquareCenterCenter5 = gameHeight*4/9+1;
   widthSquareCenterCenter5 = gameWidth*1/9;
   heightSquareCenterCenter5 = gameHeight*1/9;
-  
+
   xSquareCenterRight5 = gameWidth*5/9+1;
   ySquareCenterRight5 = gameHeight*4/9+1;
   widthSquareCenterRight5 = gameWidth*1/9;
   heightSquareCenterRight5 = gameHeight*1/9;
-  
+
   xSquareBottomLeft5 = gameWidth*3/9+1;
   ySquareBottomLeft5 = gameHeight*5/9+1;
   widthSquareBottomLeft5 = gameWidth*1/9;
   heightSquareBottomLeft5 = gameHeight*1/9;
-  
+
   xSquareBottomCenter5 = gameWidth*4/9+1;
   ySquareBottomCenter5 = gameHeight*5/9+1;
   widthSquareBottomCenter5 = gameWidth*1/9;
   heightSquareBottomCenter5 = gameHeight*1/9;
-  
+
   xSquareBottomRight5 = gameWidth*5/9+1;
   ySquareBottomRight5 = gameHeight*5/9+1;
   widthSquareBottomRight5 = gameWidth*1/9;
@@ -1084,42 +1084,42 @@ void setup(){
   ySquareTopLeft6 = gameHeight*3/9+1;
   widthSquareTopLeft6 = gameWidth*1/9;
   heightSquareTopLeft6 = gameHeight*1/9;
-  
+
   xSquareTopCenter6 = gameWidth*7/9+1;
   ySquareTopCenter6 = gameHeight*3/9+1;
   widthSquareTopCenter6 = gameWidth*1/9;
   heightSquareTopCenter6 = gameHeight*1/9;
-  
+
   xSquareTopRight6 = gameWidth*8/9+1;
   ySquareTopRight6 = gameHeight*3/9+1;
   widthSquareTopRight6 = gameWidth*1/9;
   heightSquareTopRight6 = gameHeight*1/9;
-  
+
   xSquareCenterLeft6 = gameWidth*6/9+1;
   ySquareCenterLeft6 = gameHeight*4/9+1;
   widthSquareCenterLeft6 = gameWidth*1/9;
   heightSquareCenterLeft6 = gameHeight*1/9;
-  
+
   xSquareCenterCenter6 = gameWidth*7/9+1;
   ySquareCenterCenter6 = gameHeight*4/9+1;
   widthSquareCenterCenter6 = gameWidth*1/9;
   heightSquareCenterCenter6 = gameHeight*1/9;
-  
+
   xSquareCenterRight6 = gameWidth*8/9+1;
   ySquareCenterRight6 = gameHeight*4/9+1;
   widthSquareCenterRight6 = gameWidth*1/9;
   heightSquareCenterRight6 = gameHeight*1/9;
-  
+
   xSquareBottomLeft6 = gameWidth*6/9+1;
   ySquareBottomLeft6 = gameHeight*5/9+1;
   widthSquareBottomLeft6 = gameWidth*1/9;
   heightSquareBottomLeft6 = gameHeight*1/9;
-  
+
   xSquareBottomCenter6 = gameWidth*7/9+1;
   ySquareBottomCenter6 = gameHeight*5/9+1;
   widthSquareBottomCenter6 = gameWidth*1/9;
   heightSquareBottomCenter6 = gameHeight*1/9;
-  
+
   xSquareBottomRight6 = gameWidth*8/9+1;
   ySquareBottomRight6 = gameHeight*5/9+1;
   widthSquareBottomRight6 = gameWidth*1/9;
@@ -1129,42 +1129,42 @@ void setup(){
   ySquareTopLeft7 = gameHeight*6/9+1;
   widthSquareTopLeft7 = gameWidth*1/9;
   heightSquareTopLeft7 = gameHeight*1/9;
-  
+
   xSquareTopCenter7 = gameWidth*4/9+1;
   ySquareTopCenter7 = gameHeight*6/9+1;
   widthSquareTopCenter7 = gameWidth*1/9;
   heightSquareTopCenter7 = gameHeight*1/9;
-  
+
   xSquareTopRight7 = gameWidth*5/9+1;
   ySquareTopRight7 = gameHeight*6/9+1;
   widthSquareTopRight7 = gameWidth*1/9;
   heightSquareTopRight7 = gameHeight*1/9;
-  
+
   xSquareCenterLeft7 = gameWidth*3/9+1;
   ySquareCenterLeft7 = gameHeight*7/9+1;
   widthSquareCenterLeft7 = gameWidth*1/9;
   heightSquareCenterLeft7 = gameHeight*1/9;
-  
+
   xSquareCenterCenter7 = gameWidth*4/9+1;
   ySquareCenterCenter7 = gameHeight*7/9+1;
   widthSquareCenterCenter7 = gameWidth*1/9;
   heightSquareCenterCenter7 = gameHeight*1/9;
-  
+
   xSquareCenterRight7 = gameWidth*3/9+1;
   ySquareCenterRight7 = gameHeight*7/9+1;
   widthSquareCenterRight7 = gameWidth*1/9;
   heightSquareCenterRight7 = gameHeight*1/9;
-  
+
   xSquareBottomLeft7 = gameWidth*0;
   ySquareBottomLeft7 = gameHeight*8/9+1;
   widthSquareBottomLeft7 = gameWidth*1/9;
   heightSquareBottomLeft7 = gameHeight*1/9;
-  
+
   xSquareBottomCenter7 = gameWidth*1/9+1;
   ySquareBottomCenter7 = gameHeight*8/9+1;
   widthSquareBottomCenter7 = gameWidth*1/9;
   heightSquareBottomCenter7 = gameHeight*1/9;
-  
+
   xSquareBottomRight7 = gameWidth*2/9+1;
   ySquareBottomRight7 = gameHeight*8/9+1;
   widthSquareBottomRight7 = gameWidth*1/9;
@@ -1174,42 +1174,42 @@ void setup(){
   ySquareTopLeft8 = gameHeight*6/3+1;
   widthSquareTopLeft8 = gameWidth*1/9;
   heightSquareTopLeft8 = gameHeight*1/9;
-  
+
   xSquareTopCenter8 = gameWidth*4/9+1;
   ySquareTopCenter8 = gameHeight*6/3+1;
   widthSquareTopCenter8 = gameWidth*1/9;
   heightSquareTopCenter8 = gameHeight*1/9;
-  
+
   xSquareTopRight8 = gameWidth*5/9+1;
   ySquareTopRight8 = gameHeight*6/3+1;
   widthSquareTopRight8 = gameWidth*1/9;
   heightSquareTopRight8 = gameHeight*1/9;
-  
+
   xSquareCenterLeft8 = gameWidth*3/9+1;
   ySquareCenterLeft8 = gameHeight*7/9+1;
   widthSquareCenterLeft8 = gameWidth*1/9;
   heightSquareCenterLeft8 = gameHeight*1/9;
-  
+
   xSquareCenterCenter8 = gameWidth*4/9+1;
   ySquareCenterCenter8 = gameHeight*7/9+1;
   widthSquareCenterCenter8 = gameWidth*1/9;
   heightSquareCenterCenter8 = gameHeight*1/9;
-  
+
   xSquareCenterRight8 = gameWidth*5/9+1;
   ySquareCenterRight8 = gameHeight*7/9+1;
   widthSquareCenterRight8 = gameWidth*1/9;
   heightSquareCenterRight8 = gameHeight*1/9;
-  
+
   xSquareBottomLeft8 = gameWidth*3/9+1;
   ySquareBottomLeft8 = gameHeight*8/9+1;
   widthSquareBottomLeft8 = gameWidth*1/9;
   heightSquareBottomLeft8 = gameHeight*1/9;
-  
+
   xSquareBottomCenter8 = gameWidth*4/9+1;
   ySquareBottomCenter8 = gameHeight*8/9+1;
   widthSquareBottomCenter8 = gameWidth*1/9;
   heightSquareBottomCenter8 = gameHeight*1/9;
-  
+
   xSquareBottomRight8 = gameWidth*5/9+1;
   ySquareBottomRight8 = gameHeight*8/9+1;
   widthSquareBottomRight8 = gameWidth*1/9;
@@ -1219,52 +1219,52 @@ void setup(){
   ySquareTopLeft9 = gameHeight*6/9+1;
   widthSquareTopLeft9 = gameWidth*1/9;
   heightSquareTopLeft9 = gameHeight*1/9;
-  
+
   xSquareTopCenter9 = gameWidth*4/9+1;
   ySquareTopCenter9 = gameHeight*6/9+1;
   widthSquareTopCenter9 = gameWidth*1/9;
   heightSquareTopCenter9 = gameHeight*1/9;
-  
+
   xSquareTopRight9 = gameWidth*5/9+1;
   ySquareTopRight9 = gameHeight*6/9+1;
   widthSquareTopRight9 = gameWidth*1/9;
   heightSquareTopRight9 = gameHeight*1/9;
-  
+
   xSquareCenterLeft9 = gameWidth*3/9+1;
   ySquareCenterLeft9 = gameHeight*7/9+1;
   widthSquareCenterLeft9 = gameWidth*1/9;
   heightSquareCenterLeft9 = gameHeight*1/9;
-  
+
   xSquareCenterCenter9 = gameWidth*4/9+1;
   ySquareCenterCenter9 = gameHeight*7/9+1;
   widthSquareCenterCenter9 = gameWidth*1/9;
   heightSquareCenterCenter9 = gameHeight*1/9;
-  
+
   xSquareCenterRight9 = gameWidth*8/9+1;
   ySquareCenterRight9 = gameHeight*7/9+1;
   widthSquareCenterRight9 = gameWidth*1/9;
   heightSquareCenterRight9 = gameHeight*1/9;
-  
+
   xSquareBottomLeft9 = gameWidth*6/9+1;
   ySquareBottomLeft9 = gameHeight*8/9+1;
   widthSquareBottomLeft9 = gameWidth*1/9;
   heightSquareBottomLeft9 = gameHeight*1/9;
-  
+
   xSquareBottomCenter9 = gameWidth*7/9+1;
   ySquareBottomCenter9 = gameHeight*8/9+1;
   widthSquareBottomCenter9 = gameWidth*1/9;
   heightSquareBottomCenter9 = gameHeight*1/9;
-  
+
   xSquareBottomRight9 = gameWidth*8/9+1;
   ySquareBottomRight9 = gameHeight*8/9+1;
   widthSquareBottomRight9 = gameWidth*1/9;
   heightSquareBottomRight9 = gameHeight*1/9;
-  
+
   xSquareTopLeftMain = gameWidth*0;
   ySquareTopLeftMain = gameHeight*0;
   widthSquareTopLeftMain = gameWidth*1/3;
   heightSquareTopLeftMain = gameHeight*1/3;
-  
+
   xSquareTopCenterMain = gameWidth*1/3+1;
   ySquareTopCenterMain = gameHeight*0;
   widthSquareTopCenterMain = gameWidth*1/3;
@@ -1274,7 +1274,7 @@ void setup(){
   ySquareTopRightMain = gameHeight*0;
   widthSquareTopRightMain = gameWidth*1/3;
   heightSquareTopRightMain = gameHeight*1/3;
-  
+
   xSquareCenterLeftMain = gameWidth*0;
   ySquareCenterLeftMain = gameHeight*1/3+1;
   widthSquareCenterLeftMain = gameWidth*1/3;
@@ -1284,7 +1284,7 @@ void setup(){
   ySquareCenterCenterMain = gameHeight*1/3+1;
   widthSquareCenterCenterMain = gameWidth*1/3;
   heightSquareCenterCenterMain = gameHeight*1/3;
-  
+
   xSquareCenterRightMain = gameWidth*2/3+1;
   ySquareCenterRightMain = gameHeight*1/3+1;
   widthSquareCenterRightMain = gameWidth*1/3;
@@ -1304,573 +1304,635 @@ void setup(){
   ySquareBottomRightMain = gameHeight*2/3+1;
   widthSquareBottomRightMain = gameWidth*1/3;
   heightSquareBottomRightMain = gameHeight*1/3;
-  
 }
-void draw(){  
+void draw() {
   noStroke();
   rect(xBackGround, yBackGround, widthBackGround, heightBackGround);
-  
-  if(start == true){
+
+  if (start == true) {
     Game1();
-  }else{
+  } else {
     homeScreen();
   }
-  
-  if(howToPlay == true){
+
+  if (howToPlay == true) {
     howTo();
   }
-  
-  
+
+
   fill(255, 130, 255);
   textAlign(CENTER, CENTER);
   textFont(settFont, 20);
   text(settText, xSettings, ySetting, widthSettings, heightSettings);
   fill(255);
-  
-  
 }
-void mousePressed(){
+void mousePressed() {
   println(mouseX);
   println(mouseY);
 
-  if(start == false && mouseX>xHowTo && mouseX<xHowTo+widthHowTo && mouseY>yHowTo && mouseY<yHowTo+heightHowTo){
+  if (start == false && mouseX>xHowTo && mouseX<xHowTo+widthHowTo && mouseY>yHowTo && mouseY<yHowTo+heightHowTo) {
     howToPlay = true;
   }
-  if(start == false && mouseX>xStart && mouseX<xStart+widthStart && mouseY>yStart && mouseY<yStart+heightStart){
+  if (start == false && mouseX>xStart && mouseX<xStart+widthStart && mouseY>yStart && mouseY<yStart+heightStart) {
     start = true;
   }
-  if(mouseX>xEnd && mouseX<xEnd+widthEnd && mouseY>yEnd && mouseY<yEnd+heightEnd){
+  if (mouseX>xEnd && mouseX<xEnd+widthEnd && mouseY>yEnd && mouseY<yEnd+heightEnd) {
     exet = true;
   }
-  if(exet == true && mouseX>xEndNo && mouseX<xEndNo+widthEndNo && mouseY>yEndNo && mouseY<yEndNo+heightEndNo){
+  if (exet == true && mouseX>xEndNo && mouseX<xEndNo+widthEndNo && mouseY>yEndNo && mouseY<yEndNo+heightEndNo) {
     exet = false;
   }
-  if(exet == true && mouseX>xEndYes && mouseX<xEndYes+widthEndYes && mouseY>yEndYes && mouseY<yEndYes+heightEndYes){
+  if (exet == true && mouseX>xEndYes && mouseX<xEndYes+widthEndYes && mouseY>yEndYes && mouseY<yEndYes+heightEndYes) {
     reset();
   }
-  if(start == true){
-    if(topLeftActive == true && topLeft1OverRide == false && teamGoing == false && mouseX>xSquareTopLeft1 && mouseX<xSquareTopLeft1+widthSquareTopLeft1 && mouseY>ySquareTopLeft1 && mouseY<ySquareTopLeft1+heightSquareTopLeft1){
+  if (start == true) {
+    if (topLeftActive == true && topLeft1OverRide == false && teamGoing == false && mouseX>xSquareTopLeft1 && mouseX<xSquareTopLeft1+widthSquareTopLeft1 && mouseY>ySquareTopLeft1 && mouseY<ySquareTopLeft1+heightSquareTopLeft1) {
       topLeft1O = true;
       topLeft1OverRide = true;
       teamGoing = true;
       topLeftActive = true;
       topLeftActive = false;
     }
-    if(topLeftActive == true && topCenter1OverRide == false && teamGoing == false && mouseX>xSquareTopCenter1 && mouseX<xSquareTopCenter1+widthSquareTopCenter1 && mouseY>ySquareTopCenter1 && mouseY<ySquareTopCenter1+heightSquareTopCenter1){
+    if (topLeftActive == true && topCenter1OverRide == false && teamGoing == false && mouseX>xSquareTopCenter1 && mouseX<xSquareTopCenter1+widthSquareTopCenter1 && mouseY>ySquareTopCenter1 && mouseY<ySquareTopCenter1+heightSquareTopCenter1) {
       topCenter1O = true;
       topCenter1OverRide = true;
       teamGoing = true;
       topCenterActive = true;
       topLeftActive = false;
     }
-    if(topLeftActive == true && topRight1OverRide == false && teamGoing == false && mouseX>xSquareTopRight1 && mouseX<xSquareTopRight1+widthSquareTopRight1 && mouseY>ySquareTopRight1 && mouseY<ySquareTopRight1+heightSquareTopRight1){
+    if (topLeftActive == true && topRight1OverRide == false && teamGoing == false && mouseX>xSquareTopRight1 && mouseX<xSquareTopRight1+widthSquareTopRight1 && mouseY>ySquareTopRight1 && mouseY<ySquareTopRight1+heightSquareTopRight1) {
       topRight1OverRide = true;
       topRight1O = true;
       teamGoing = true;
       topRightActive = true;
       topLeftActive = false;
     }
-    if(topLeftActive == true && centerLeft1OverRide == false && teamGoing == false && mouseX>xSquareCenterLeft1 && mouseX<xSquareCenterLeft1+widthSquareCenterLeft1 && mouseY>ySquareCenterLeft1 && mouseY<ySquareCenterLeft1+heightSquareCenterLeft1){
+    if (topLeftActive == true && centerLeft1OverRide == false && teamGoing == false && mouseX>xSquareCenterLeft1 && mouseX<xSquareCenterLeft1+widthSquareCenterLeft1 && mouseY>ySquareCenterLeft1 && mouseY<ySquareCenterLeft1+heightSquareCenterLeft1) {
       centerLeft1OverRide = true;
       centerLeft1O = true;
       teamGoing = true;
       centerLeftActive = true;
       topLeftActive = false;
     }
-    if(topLeftActive == true && centerCenter1OverRide == false && teamGoing == false && mouseX>xSquareCenterCenter1 && mouseX<xSquareCenterCenter1+widthSquareCenterCenter1 && mouseY>ySquareCenterCenter1 && mouseY<ySquareCenterCenter1+heightSquareCenterCenter1){
-       centerCenter1OverRide = true;
-       centerCenter1O = true;
-       teamGoing = true;
-       centerCenterActive = true;
-       topLeftActive = false;
+    if (topLeftActive == true && centerCenter1OverRide == false && teamGoing == false && mouseX>xSquareCenterCenter1 && mouseX<xSquareCenterCenter1+widthSquareCenterCenter1 && mouseY>ySquareCenterCenter1 && mouseY<ySquareCenterCenter1+heightSquareCenterCenter1) {
+      centerCenter1OverRide = true;
+      centerCenter1O = true;
+      teamGoing = true;
+      centerCenterActive = true;
+      topLeftActive = false;
     }
-    if(topLeftActive == true && centerRight1OverRide == false && teamGoing == false && mouseX>xSquareCenterRight1 && mouseX<xSquareCenterRight1+widthSquareCenterRight1 && mouseY>ySquareCenterRight1 && mouseY<ySquareCenterRight1+heightSquareCenterRight1){   centerRight1OverRide = true;
+    if (topLeftActive == true && centerRight1OverRide == false && teamGoing == false && mouseX>xSquareCenterRight1 && mouseX<xSquareCenterRight1+widthSquareCenterRight1 && mouseY>ySquareCenterRight1 && mouseY<ySquareCenterRight1+heightSquareCenterRight1) {
+      centerRight1OverRide = true;
       centerRight1O = true;
       teamGoing = true;
       centerRightActive = true;
       topLeftActive = false;
     }
-    if(topLeftActive == true && bottomLeft1OverRide == false && teamGoing == false && mouseX>xSquareBottomLeft1 && mouseX<xSquareBottomLeft1+widthSquareBottomLeft1 && mouseY>ySquareBottomLeft1 && mouseY<ySquareBottomLeft1+heightSquareBottomLeft1){
+    if (topLeftActive == true && bottomLeft1OverRide == false && teamGoing == false && mouseX>xSquareBottomLeft1 && mouseX<xSquareBottomLeft1+widthSquareBottomLeft1 && mouseY>ySquareBottomLeft1 && mouseY<ySquareBottomLeft1+heightSquareBottomLeft1) {
       bottomLeft1O = true;
       bottomLeft1OverRide = true;
       teamGoing = true;
       bottomLeftActive = true;
       topLeftActive = false;
     }
-    if(topLeftActive == true && bottomCenter1OverRide == false && teamGoing == false && mouseX>xSquareBottomCenter1 && mouseX<xSquareBottomCenter1+widthSquareBottomCenter1 && mouseY>ySquareBottomCenter1 && mouseY<ySquareBottomCenter1+heightSquareBottomCenter1){
+    if (topLeftActive == true && bottomCenter1OverRide == false && teamGoing == false && mouseX>xSquareBottomCenter1 && mouseX<xSquareBottomCenter1+widthSquareBottomCenter1 && mouseY>ySquareBottomCenter1 && mouseY<ySquareBottomCenter1+heightSquareBottomCenter1) {
       bottomCenter1O = true;
       bottomCenter1OverRide = true;
       teamGoing = true;
       bottomCenterActive = true;
       topLeftActive = false;
     }
-    if(topLeftActive == true && bottomRight1OverRide == false && teamGoing == false && mouseX>xSquareBottomRight1 && mouseX<xSquareBottomRight1+widthSquareBottomRight1 && mouseY>ySquareBottomRight1 && mouseY<ySquareBottomRight1+heightSquareBottomRight1){  
+    if (topLeftActive == true && bottomRight1OverRide == false && teamGoing == false && mouseX>xSquareBottomRight1 && mouseX<xSquareBottomRight1+widthSquareBottomRight1 && mouseY>ySquareBottomRight1 && mouseY<ySquareBottomRight1+heightSquareBottomRight1) {
       bottomRight1O = true;
       bottomRight1OverRide = true;
       teamGoing = true;
       bottomRightActive = true;
       topLeftActive = false;
     }
-    if(topLeft2OverRide == false && topCenterActive == true && teamGoing == false && mouseX>xSquareTopLeft2 && mouseX<xSquareTopLeft2+widthSquareTopLeft2 && mouseY>ySquareTopLeft2 && mouseY<ySquareTopLeft2+heightSquareTopLeft2){   
+    if (topLeft2OverRide == false && topCenterActive == true && teamGoing == false && mouseX>xSquareTopLeft2 && mouseX<xSquareTopLeft2+widthSquareTopLeft2 && mouseY>ySquareTopLeft2 && mouseY<ySquareTopLeft2+heightSquareTopLeft2) {
       topLeft2O = true;
       topLeft2OverRide = true;
       teamGoing = true;
       topLeftActive = true;
       topCenterActive = false;
     }
-    if(topCenter2OverRide == false && topCenterActive == true && teamGoing == false && mouseX>xSquareTopCenter2 && mouseX<xSquareTopCenter2+widthSquareTopCenter2 && mouseY>ySquareTopCenter2 && mouseY<ySquareTopCenter2+heightSquareTopCenter2){
+    if (topCenter2OverRide == false && topCenterActive == true && teamGoing == false && mouseX>xSquareTopCenter2 && mouseX<xSquareTopCenter2+widthSquareTopCenter2 && mouseY>ySquareTopCenter2 && mouseY<ySquareTopCenter2+heightSquareTopCenter2) {
       topCenter2O = true;
       topCenter2OverRide = true;
       teamGoing = true;
       topCenterActive = true;
       topCenterActive = false;
     }
-    if(topRight2OverRide == false && topCenterActive == true && teamGoing == false && mouseX>xSquareTopRight2 && mouseX<xSquareTopRight2+widthSquareTopRight2 && mouseY>ySquareTopRight2 && mouseY<ySquareTopRight2+heightSquareTopRight2){
+    if (topRight2OverRide == false && topCenterActive == true && teamGoing == false && mouseX>xSquareTopRight2 && mouseX<xSquareTopRight2+widthSquareTopRight2 && mouseY>ySquareTopRight2 && mouseY<ySquareTopRight2+heightSquareTopRight2) {
       topRight2O = true;
       topRight2OverRide = true;
       teamGoing = true;
       topRightActive = true;
       topCenterActive = false;
     }
-    if(centerLeft2OverRide == false && topCenterActive == true && teamGoing == false && mouseX>xSquareCenterLeft2 && mouseX<xSquareCenterLeft2+widthSquareCenterLeft2 && mouseY>ySquareCenterLeft2 && mouseY<ySquareCenterLeft2+heightSquareCenterLeft2){
+    if (centerLeft2OverRide == false && topCenterActive == true && teamGoing == false && mouseX>xSquareCenterLeft2 && mouseX<xSquareCenterLeft2+widthSquareCenterLeft2 && mouseY>ySquareCenterLeft2 && mouseY<ySquareCenterLeft2+heightSquareCenterLeft2) {
       centerLeft2O = true;
       centerLeft2OverRide = true;
       teamGoing = true;
       centerLeftActive = true;
       topCenterActive = false;
     }
-    if(centerCenter2OverRide == false && topCenterActive == true && teamGoing == false && mouseX>xSquareCenterCenter2 && mouseX<xSquareCenterCenter2+widthSquareCenterCenter2 && mouseY>ySquareCenterCenter2 && mouseY<ySquareCenterCenter2+heightSquareCenterCenter2){
+    if (centerCenter2OverRide == false && topCenterActive == true && teamGoing == false && mouseX>xSquareCenterCenter2 && mouseX<xSquareCenterCenter2+widthSquareCenterCenter2 && mouseY>ySquareCenterCenter2 && mouseY<ySquareCenterCenter2+heightSquareCenterCenter2) {
       centerCenter2O = true;
       centerCenter2OverRide = true;
       teamGoing = true;
       centerCenterActive = true;
       topCenterActive = false;
     }
-    if(centerRight2OverRide == false && topCenterActive == true && teamGoing == false && mouseX>xSquareCenterRight2 && mouseX<xSquareCenterRight2+widthSquareCenterRight2 && mouseY>ySquareCenterRight2 && mouseY<ySquareCenterRight2+heightSquareCenterRight2){
+    if (centerRight2OverRide == false && topCenterActive == true && teamGoing == false && mouseX>xSquareCenterRight2 && mouseX<xSquareCenterRight2+widthSquareCenterRight2 && mouseY>ySquareCenterRight2 && mouseY<ySquareCenterRight2+heightSquareCenterRight2) {
       centerRight2O = true;
       centerRight2OverRide = true;
       teamGoing = true;
       centerRightActive = true;
       topCenterActive = false;
     }
-    if(bottomLeft2OverRide == false && topCenterActive == true && teamGoing == false && mouseX>xSquareBottomLeft2 && mouseX<xSquareBottomLeft2+widthSquareBottomLeft2 && mouseY>ySquareBottomLeft2 && mouseY<ySquareBottomLeft2+heightSquareBottomLeft2){
+    if (bottomLeft2OverRide == false && topCenterActive == true && teamGoing == false && mouseX>xSquareBottomLeft2 && mouseX<xSquareBottomLeft2+widthSquareBottomLeft2 && mouseY>ySquareBottomLeft2 && mouseY<ySquareBottomLeft2+heightSquareBottomLeft2) {
       topRight2O = true;
       bottomLeft2OverRide = true;
       teamGoing = true;
       bottomLeftActive = true;
       topCenterActive = false;
     }
-    if(bottomCenter2OverRide == false && topCenterActive == true && teamGoing == false && mouseX>xSquareBottomCenter2 && mouseX<xSquareBottomCenter2+widthSquareBottomCenter2 && mouseY>ySquareBottomCenter2 && mouseY<ySquareBottomCenter2+heightSquareBottomCenter2){
+    if (bottomCenter2OverRide == false && topCenterActive == true && teamGoing == false && mouseX>xSquareBottomCenter2 && mouseX<xSquareBottomCenter2+widthSquareBottomCenter2 && mouseY>ySquareBottomCenter2 && mouseY<ySquareBottomCenter2+heightSquareBottomCenter2) {
       topCenter2O = true;
       bottomCenter2OverRide = true;
       teamGoing = true;
       bottomCenterActive = true;
       topCenterActive = false;
     }
-    if(bottomRight2OverRide == false && topCenterActive == true && teamGoing == false && mouseX>xSquareBottomRight2 && mouseX<xSquareBottomRight2+widthSquareBottomRight2 && mouseY>ySquareBottomRight2 && mouseY<ySquareBottomRight2+heightSquareBottomRight2){
+    if (bottomRight2OverRide == false && topCenterActive == true && teamGoing == false && mouseX>xSquareBottomRight2 && mouseX<xSquareBottomRight2+widthSquareBottomRight2 && mouseY>ySquareBottomRight2 && mouseY<ySquareBottomRight2+heightSquareBottomRight2) {
       topLeft2O = true;
       bottomRight2OverRide = true;
       teamGoing = true;
       bottomRightActive = true;
       topCenterActive = false;
     }
-    if(topLeftActive == true && topLeft1OverRide == false && teamGoing == true && mouseX>xSquareTopLeft1 && mouseX<xSquareTopLeft1+widthSquareTopLeft1 && mouseY>ySquareTopLeft1 && mouseY<ySquareTopLeft1+heightSquareTopLeft1){
+    if (topLeftActive == true && topLeft1OverRide == false && teamGoing == true && mouseX>xSquareTopLeft1 && mouseX<xSquareTopLeft1+widthSquareTopLeft1 && mouseY>ySquareTopLeft1 && mouseY<ySquareTopLeft1+heightSquareTopLeft1) {
       topLeft1X = true;
       topLeft1OverRide = true;
       teamGoing = false;
       topLeftActive = true;
       topLeftActive = false;
     }
-    if(topLeftActive == true && topCenter1OverRide == false && teamGoing == true && mouseX>xSquareTopCenter1 && mouseX<xSquareTopCenter1+widthSquareTopCenter1 && mouseY>ySquareTopCenter1 && mouseY<ySquareTopCenter1+heightSquareTopCenter1){
+    if (topLeftActive == true && topCenter1OverRide == false && teamGoing == true && mouseX>xSquareTopCenter1 && mouseX<xSquareTopCenter1+widthSquareTopCenter1 && mouseY>ySquareTopCenter1 && mouseY<ySquareTopCenter1+heightSquareTopCenter1) {
       topCenter1X = true;
       topCenter1OverRide = true;
       teamGoing = false;
       topCenterActive = true;
       topLeftActive = false;
     }
-    if(topLeftActive == true && topRight1OverRide == false && teamGoing == true && mouseX>xSquareTopRight1 && mouseX<xSquareTopRight1+widthSquareTopRight1 && mouseY>ySquareTopRight1 && mouseY<ySquareTopRight1+heightSquareTopRight1){
+    if (topLeftActive == true && topRight1OverRide == false && teamGoing == true && mouseX>xSquareTopRight1 && mouseX<xSquareTopRight1+widthSquareTopRight1 && mouseY>ySquareTopRight1 && mouseY<ySquareTopRight1+heightSquareTopRight1) {
       topRight1OverRide = true;
       topRight1X = true;
       teamGoing = false;
       topRightActive = true;
       topLeftActive = false;
     }
-    if(topLeftActive == true && centerLeft1OverRide == false && teamGoing == true && mouseX>xSquareCenterLeft1 && mouseX<xSquareCenterLeft1+widthSquareCenterLeft1 && mouseY>ySquareCenterLeft1 && mouseY<ySquareCenterLeft1+heightSquareCenterLeft1){
+    if (topLeftActive == true && centerLeft1OverRide == false && teamGoing == true && mouseX>xSquareCenterLeft1 && mouseX<xSquareCenterLeft1+widthSquareCenterLeft1 && mouseY>ySquareCenterLeft1 && mouseY<ySquareCenterLeft1+heightSquareCenterLeft1) {
       centerLeft1OverRide = true;
       centerLeft1X = true;
       teamGoing = false;
       centerLeftActive = true;
       topLeftActive = false;
-     }
-    if(topLeftActive == true && centerCenter1OverRide == false && teamGoing == true && mouseX>xSquareCenterCenter1 && mouseX<xSquareCenterCenter1+widthSquareCenterCenter1 && mouseY>ySquareCenterCenter1 && mouseY<ySquareCenterCenter1+heightSquareCenterCenter1){
+    }
+    if (topLeftActive == true && centerCenter1OverRide == false && teamGoing == true && mouseX>xSquareCenterCenter1 && mouseX<xSquareCenterCenter1+widthSquareCenterCenter1 && mouseY>ySquareCenterCenter1 && mouseY<ySquareCenterCenter1+heightSquareCenterCenter1) {
       centerCenter1OverRide = true;
       centerCenter1X = true;
       teamGoing = false;
       centerCenterActive = true;
       topLeftActive = false;
     }
-    if(topLeftActive == true && centerRight1OverRide == false && teamGoing == true && mouseX>xSquareCenterRight1 && mouseX<xSquareCenterRight1+widthSquareCenterRight1 && mouseY>ySquareCenterRight1 && mouseY<ySquareCenterRight1+heightSquareCenterRight1){
+    if (topLeftActive == true && centerRight1OverRide == false && teamGoing == true && mouseX>xSquareCenterRight1 && mouseX<xSquareCenterRight1+widthSquareCenterRight1 && mouseY>ySquareCenterRight1 && mouseY<ySquareCenterRight1+heightSquareCenterRight1) {
       centerRight1OverRide = true;
       centerRight1X = true;
       teamGoing = false;
       centerRightActive = true;
       topLeftActive = false;
     }
-    if(topLeftActive == true && bottomLeft1OverRide == false && teamGoing == true && mouseX>xSquareBottomLeft1 && mouseX<xSquareBottomLeft1+widthSquareBottomLeft1 && mouseY>ySquareBottomLeft1 && mouseY<ySquareBottomLeft1+heightSquareBottomLeft1){
+    if (topLeftActive == true && bottomLeft1OverRide == false && teamGoing == true && mouseX>xSquareBottomLeft1 && mouseX<xSquareBottomLeft1+widthSquareBottomLeft1 && mouseY>ySquareBottomLeft1 && mouseY<ySquareBottomLeft1+heightSquareBottomLeft1) {
       bottomLeft1X = true;
       bottomLeft1OverRide = true;
       teamGoing = false;
       bottomLeftActive = true;
       topLeftActive = false;
     }
-    if(topLeftActive == true && bottomCenter1OverRide == false && teamGoing == true && mouseX>xSquareBottomCenter1 && mouseX<xSquareBottomCenter1+widthSquareBottomCenter1 && mouseY>ySquareBottomCenter1 && mouseY<ySquareBottomCenter1+heightSquareBottomCenter1){
+    if (topLeftActive == true && bottomCenter1OverRide == false && teamGoing == true && mouseX>xSquareBottomCenter1 && mouseX<xSquareBottomCenter1+widthSquareBottomCenter1 && mouseY>ySquareBottomCenter1 && mouseY<ySquareBottomCenter1+heightSquareBottomCenter1) {
       bottomCenter1X = true;
       bottomCenter1OverRide = true;
       teamGoing = false;
       bottomCenterActive = true;
       topLeftActive = false;
     }
-    if(topLeftActive == true && bottomRight1OverRide == false && teamGoing == true && mouseX>xSquareBottomRight1 && mouseX<xSquareBottomRight1+widthSquareBottomRight1 && mouseY>ySquareBottomRight1 && mouseY<ySquareBottomRight1+heightSquareBottomRight1){
+    if (topLeftActive == true && bottomRight1OverRide == false && teamGoing == true && mouseX>xSquareBottomRight1 && mouseX<xSquareBottomRight1+widthSquareBottomRight1 && mouseY>ySquareBottomRight1 && mouseY<ySquareBottomRight1+heightSquareBottomRight1) {
       bottomRight1X = true;
       bottomRight1OverRide = true;
       teamGoing = false;
       bottomRightActive = true;
       topLeftActive = false;
     }
-    if(topCenterActive == true && topLeft2OverRide == false && teamGoing == true && mouseX>xSquareTopLeft2 && mouseX<xSquareTopLeft2+widthSquareTopLeft2 && mouseY>ySquareTopLeft2 && mouseY<ySquareTopLeft2+heightSquareTopLeft2){
+    if (topCenterActive == true && topLeft2OverRide == false && teamGoing == true && mouseX>xSquareTopLeft2 && mouseX<xSquareTopLeft2+widthSquareTopLeft2 && mouseY>ySquareTopLeft2 && mouseY<ySquareTopLeft2+heightSquareTopLeft2) {
       topLeft2X = true;
       topLeft2OverRide = true;
       teamGoing = false;
       topLeftActive = true;
       topCenterActive = false;
     }
-    if(topCenterActive == true && topCenter2OverRide == false && teamGoing == true && mouseX>xSquareTopCenter2 && mouseX<xSquareTopCenter2+widthSquareTopCenter2 && mouseY>ySquareTopCenter2 && mouseY<ySquareTopCenter2+heightSquareTopCenter2){
+    if (topCenterActive == true && topCenter2OverRide == false && teamGoing == true && mouseX>xSquareTopCenter2 && mouseX<xSquareTopCenter2+widthSquareTopCenter2 && mouseY>ySquareTopCenter2 && mouseY<ySquareTopCenter2+heightSquareTopCenter2) {
       topCenter2X = true;
       topCenter2OverRide = true;
       teamGoing = false;
       topCenterActive = true;
       topCenterActive = false;
     }
-    if(topCenterActive == true && topRight2OverRide == false && teamGoing == true && mouseX>xSquareTopRight2 && mouseX<xSquareTopRight2+widthSquareTopRight2 && mouseY>ySquareTopRight2 && mouseY<ySquareTopRight2+heightSquareTopRight2){
+    if (topCenterActive == true && topRight2OverRide == false && teamGoing == true && mouseX>xSquareTopRight2 && mouseX<xSquareTopRight2+widthSquareTopRight2 && mouseY>ySquareTopRight2 && mouseY<ySquareTopRight2+heightSquareTopRight2) {
       topRight2X = true;
       topRight2OverRide = true;
       teamGoing = false;
       topRightActive = true;
       topCenterActive = false;
     }
-    if(topCenterActive == true && centerLeft2OverRide == false && teamGoing == true && mouseX>xSquareCenterLeft2 && mouseX<xSquareCenterLeft2+widthSquareCenterLeft2 && mouseY>ySquareCenterLeft2 && mouseY<ySquareCenterLeft2+heightSquareCenterLeft2){
+    if (topCenterActive == true && centerLeft2OverRide == false && teamGoing == true && mouseX>xSquareCenterLeft2 && mouseX<xSquareCenterLeft2+widthSquareCenterLeft2 && mouseY>ySquareCenterLeft2 && mouseY<ySquareCenterLeft2+heightSquareCenterLeft2) {
       centerLeft2X = true;
       centerLeft2OverRide = true;
       teamGoing = false;
       centerLeftActive = true;
       topCenterActive = false;
     }
-    if(topCenterActive == true && centerCenter2OverRide == false && teamGoing == true && mouseX>xSquareCenterCenter2 && mouseX<xSquareCenterCenter2+widthSquareCenterCenter2 && mouseY>ySquareCenterCenter2 && mouseY<ySquareCenterCenter2+heightSquareCenterCenter2){
+    if (topCenterActive == true && centerCenter2OverRide == false && teamGoing == true && mouseX>xSquareCenterCenter2 && mouseX<xSquareCenterCenter2+widthSquareCenterCenter2 && mouseY>ySquareCenterCenter2 && mouseY<ySquareCenterCenter2+heightSquareCenterCenter2) {
       centerCenter2X = true;
       centerCenter2OverRide = true;
       teamGoing = false;
       centerCenterActive = true;
       topCenterActive = false;
     }
-    if(topCenterActive == true && centerRight2OverRide == false && teamGoing == true && mouseX>xSquareCenterRight2 && mouseX<xSquareCenterRight2+widthSquareCenterRight2 && mouseY>ySquareCenterRight2 && mouseY<ySquareCenterRight2+heightSquareCenterRight2){
+    if (topCenterActive == true && centerRight2OverRide == false && teamGoing == true && mouseX>xSquareCenterRight2 && mouseX<xSquareCenterRight2+widthSquareCenterRight2 && mouseY>ySquareCenterRight2 && mouseY<ySquareCenterRight2+heightSquareCenterRight2) {
       centerRight2X = true;
       centerRight2OverRide = true;
       teamGoing = false;
       centerRightActive = true;
       topCenterActive = false;
     }
-    if(topCenterActive == true && bottomLeft2OverRide == false && teamGoing == true && mouseX>xSquareBottomLeft2 && mouseX<xSquareBottomLeft2+widthSquareBottomLeft2 && mouseY>ySquareBottomLeft2 && mouseY<ySquareBottomLeft2+heightSquareBottomLeft2){
+    if (topCenterActive == true && bottomLeft2OverRide == false && teamGoing == true && mouseX>xSquareBottomLeft2 && mouseX<xSquareBottomLeft2+widthSquareBottomLeft2 && mouseY>ySquareBottomLeft2 && mouseY<ySquareBottomLeft2+heightSquareBottomLeft2) {
       bottomLeft2X = true;
       bottomLeft2OverRide = true;
       teamGoing = false;
       bottomLeftActive = true;
       topCenterActive = false;
     }
-    if(topCenterActive == true && bottomCenter2OverRide == false && teamGoing == true && mouseX>xSquareBottomCenter2 && mouseX<xSquareBottomCenter2+widthSquareBottomCenter2 && mouseY>ySquareBottomCenter2 && mouseY<ySquareBottomCenter2+heightSquareBottomCenter2){
+    if (topCenterActive == true && bottomCenter2OverRide == false && teamGoing == true && mouseX>xSquareBottomCenter2 && mouseX<xSquareBottomCenter2+widthSquareBottomCenter2 && mouseY>ySquareBottomCenter2 && mouseY<ySquareBottomCenter2+heightSquareBottomCenter2) {
       bottomCenter2X = true;
       bottomCenter2OverRide = true;
       teamGoing = false;
       bottomCenterActive = true;
       topCenterActive = false;
     }
-    if(topCenterActive == true && bottomRight2OverRide == false && teamGoing == true && mouseX>xSquareBottomRight2 && mouseX<xSquareBottomRight2+widthSquareBottomRight2 && mouseY>ySquareBottomRight2 && mouseY<ySquareBottomRight2+heightSquareBottomRight2){
+    if (topCenterActive == true && bottomRight2OverRide == false && teamGoing == true && mouseX>xSquareBottomRight2 && mouseX<xSquareBottomRight2+widthSquareBottomRight2 && mouseY>ySquareBottomRight2 && mouseY<ySquareBottomRight2+heightSquareBottomRight2) {
       bottomRight2X = true;
       bottomRight2OverRide = true;
       teamGoing = false;
       bottomRightActive = true;
       topCenterActive = false;
     }
-    if(topRightActive == true && topLeft3OverRide == false && teamGoing == true && mouseX>xSquareTopLeft3 && mouseX<xSquareTopLeft3+widthSquareTopLeft3 && mouseY>ySquareTopLeft3 && mouseY<ySquareTopLeft3+heightSquareTopLeft3){
+    if (topRightActive == true && topLeft3OverRide == false && teamGoing == true && mouseX>xSquareTopLeft3 && mouseX<xSquareTopLeft3+widthSquareTopLeft3 && mouseY>ySquareTopLeft3 && mouseY<ySquareTopLeft3+heightSquareTopLeft3) {
       topRight3X = true;
       topLeft3OverRide = true;
       teamGoing = false;
       topLeftActive = true;
       topRightActive = false;
     }
-    if(topRightActive == true && topCenter3OverRide == false && teamGoing == true && mouseX>xSquareTopCenter3 && mouseX<xSquareTopCenter3+widthSquareTopCenter3 && mouseY>ySquareTopCenter3 && mouseY<ySquareTopCenter3+heightSquareTopCenter3){
+    if (topRightActive == true && topCenter3OverRide == false && teamGoing == true && mouseX>xSquareTopCenter3 && mouseX<xSquareTopCenter3+widthSquareTopCenter3 && mouseY>ySquareTopCenter3 && mouseY<ySquareTopCenter3+heightSquareTopCenter3) {
       topCenter3X= true;
       topCenter3OverRide = true;
       teamGoing = false;
       topCenterActive = true;
       topRightActive = false;
     }
-    if(topRightActive == true && topRight3OverRide == false && teamGoing == true && mouseX>xSquareTopRight3 && mouseX<xSquareTopRight3+widthSquareTopRight3 && mouseY>ySquareTopRight3 && mouseY<ySquareTopRight3+heightSquareTopRight3){
+    if (topRightActive == true && topRight3OverRide == false && teamGoing == true && mouseX>xSquareTopRight3 && mouseX<xSquareTopRight3+widthSquareTopRight3 && mouseY>ySquareTopRight3 && mouseY<ySquareTopRight3+heightSquareTopRight3) {
       topRight3X = true;
       topRight3OverRide = true;
       teamGoing = false;
     }
-    if(topRight2OverRide == false && topCenterActive == true && teamGoing == false && mouseX>xSquareTopRight2 && mouseX<xSquareTopRight2+widthSquareTopRight2 && mouseY>ySquareTopRight2 && mouseY<ySquareTopRight2+heightSquareTopRight2){
+    if (topRight2OverRide == false && topCenterActive == true && teamGoing == false && mouseX>xSquareTopRight2 && mouseX<xSquareTopRight2+widthSquareTopRight2 && mouseY>ySquareTopRight2 && mouseY<ySquareTopRight2+heightSquareTopRight2) {
       topRight2O = true;
       topRight2OverRide = true;
       teamGoing = true;
       topRightActive = true;
     }
-    if(centerLeft2OverRide == false && topCenterActive == true && teamGoing == false && mouseX>xSquareCenterLeft2 && mouseX<xSquareCenterLeft2+widthSquareCenterLeft2 && mouseY>ySquareCenterLeft2 && mouseY<ySquareCenterLeft2+heightSquareCenterLeft2){
+    if (centerLeft2OverRide == false && topCenterActive == true && teamGoing == false && mouseX>xSquareCenterLeft2 && mouseX<xSquareCenterLeft2+widthSquareCenterLeft2 && mouseY>ySquareCenterLeft2 && mouseY<ySquareCenterLeft2+heightSquareCenterLeft2) {
       centerLeft2O = true;
       centerLeft2OverRide = true;
       teamGoing = true;
       centerLeftActive = true;
     }
-    if(centerCenter2OverRide == false && topCenterActive == true && teamGoing == false && mouseX>xSquareCenterCenter2 && mouseX<xSquareCenterCenter2+widthSquareCenterCenter2 && mouseY>ySquareCenterCenter2 && mouseY<ySquareCenterCenter2+heightSquareCenterCenter2){
+    if (centerCenter2OverRide == false && topCenterActive == true && teamGoing == false && mouseX>xSquareCenterCenter2 && mouseX<xSquareCenterCenter2+widthSquareCenterCenter2 && mouseY>ySquareCenterCenter2 && mouseY<ySquareCenterCenter2+heightSquareCenterCenter2) {
       centerCenter2O = true;
       centerCenter2OverRide = true;
       teamGoing = true;
       centerCenterActive = true;
     }
-    if(centerRight2OverRide == false && topCenterActive == true && teamGoing == false && mouseX>xSquareCenterRight2 && mouseX<xSquareCenterRight2+widthSquareCenterRight2 && mouseY>ySquareCenterRight2 && mouseY<ySquareCenterRight2+heightSquareCenterRight2){
+    if (centerRight2OverRide == false && topCenterActive == true && teamGoing == false && mouseX>xSquareCenterRight2 && mouseX<xSquareCenterRight2+widthSquareCenterRight2 && mouseY>ySquareCenterRight2 && mouseY<ySquareCenterRight2+heightSquareCenterRight2) {
       centerRight2O = true;
       centerRight2OverRide = true;
       teamGoing = true;
       centerRightActive = true;
     }
-    if(bottomLeft2OverRide == false && topCenterActive == true && teamGoing == false && mouseX>xSquareBottomLeft2 && mouseX<xSquareBottomLeft2+widthSquareBottomLeft2 && mouseY>ySquareBottomLeft2 && mouseY<ySquareBottomLeft2+heightSquareBottomLeft2){
+    if (bottomLeft2OverRide == false && topCenterActive == true && teamGoing == false && mouseX>xSquareBottomLeft2 && mouseX<xSquareBottomLeft2+widthSquareBottomLeft2 && mouseY>ySquareBottomLeft2 && mouseY<ySquareBottomLeft2+heightSquareBottomLeft2) {
       topRight2O = true;
       bottomLeft2OverRide = true;
       teamGoing = true;
       bottomLeftActive = true;
     }
-    if(bottomCenter2OverRide == false && topCenterActive == true && teamGoing == false && mouseX>xSquareBottomCenter2 && mouseX<xSquareBottomCenter2+widthSquareBottomCenter2 && mouseY>ySquareBottomCenter2 && mouseY<ySquareBottomCenter2+heightSquareBottomCenter2){
+    if (bottomCenter2OverRide == false && topCenterActive == true && teamGoing == false && mouseX>xSquareBottomCenter2 && mouseX<xSquareBottomCenter2+widthSquareBottomCenter2 && mouseY>ySquareBottomCenter2 && mouseY<ySquareBottomCenter2+heightSquareBottomCenter2) {
       topCenter2O = true;
       bottomCenter2OverRide = true;
       teamGoing = true;
       bottomCenterActive = true;
     }
-    if(bottomRight2OverRide == false && topCenterActive == true && teamGoing == false && mouseX>xSquareBottomRight2 && mouseX<xSquareBottomRight2+widthSquareBottomRight2 && mouseY>ySquareBottomRight2 && mouseY<ySquareBottomRight2+heightSquareBottomRight2){
+    if (bottomRight2OverRide == false && topCenterActive == true && teamGoing == false && mouseX>xSquareBottomRight2 && mouseX<xSquareBottomRight2+widthSquareBottomRight2 && mouseY>ySquareBottomRight2 && mouseY<ySquareBottomRight2+heightSquareBottomRight2) {
       topLeft2O = true;
       bottomRight2OverRide = true;
       teamGoing = true;
       bottomRightActive = true;
     }
-    if(topLeftActive == true && topLeft1OverRide == false && teamGoing == true && mouseX>xSquareTopLeft1 && mouseX<xSquareTopLeft1+widthSquareTopLeft1 && mouseY>ySquareTopLeft1 && mouseY<ySquareTopLeft1+heightSquareTopLeft1){
+    if (topLeftActive == true && topLeft1OverRide == false && teamGoing == true && mouseX>xSquareTopLeft1 && mouseX<xSquareTopLeft1+widthSquareTopLeft1 && mouseY>ySquareTopLeft1 && mouseY<ySquareTopLeft1+heightSquareTopLeft1) {
       topLeft1X = true;
       topLeft1OverRide = true;
       teamGoing = false;
       topLeftActive = true;
     }
-    if(topLeftActive == true && topCenter1OverRide == false && teamGoing == true && mouseX>xSquareTopCenter1 && mouseX<xSquareTopCenter1+widthSquareTopCenter1 && mouseY>ySquareTopCenter1 && mouseY<ySquareTopCenter1+heightSquareTopCenter1){
+    if (topLeftActive == true && topCenter1OverRide == false && teamGoing == true && mouseX>xSquareTopCenter1 && mouseX<xSquareTopCenter1+widthSquareTopCenter1 && mouseY>ySquareTopCenter1 && mouseY<ySquareTopCenter1+heightSquareTopCenter1) {
       topCenter1X = true;
       topCenter1OverRide = true;
       teamGoing = false;
       topCenterActive = true;
     }
-    if(topLeftActive == true && topRight1OverRide == false && teamGoing == true && mouseX>xSquareTopRight1 && mouseX<xSquareTopRight1+widthSquareTopRight1 && mouseY>ySquareTopRight1 && mouseY<ySquareTopRight1+heightSquareTopRight1){
+    if (topLeftActive == true && topRight1OverRide == false && teamGoing == true && mouseX>xSquareTopRight1 && mouseX<xSquareTopRight1+widthSquareTopRight1 && mouseY>ySquareTopRight1 && mouseY<ySquareTopRight1+heightSquareTopRight1) {
       topRight1OverRide = true;
       topRight1X = true;
       teamGoing = false;
       topRightActive = true;
     }
-    if(topLeftActive == true && centerLeft1OverRide == false && teamGoing == true && mouseX>xSquareCenterLeft1 && mouseX<xSquareCenterLeft1+widthSquareCenterLeft1 && mouseY>ySquareCenterLeft1 && mouseY<ySquareCenterLeft1+heightSquareCenterLeft1){
+    if (topLeftActive == true && centerLeft1OverRide == false && teamGoing == true && mouseX>xSquareCenterLeft1 && mouseX<xSquareCenterLeft1+widthSquareCenterLeft1 && mouseY>ySquareCenterLeft1 && mouseY<ySquareCenterLeft1+heightSquareCenterLeft1) {
       centerLeft1OverRide = true;
       centerLeft1X = true;
       teamGoing = false;
       centerLeftActive = true;
     }
-    if(topLeftActive == true && centerCenter1OverRide == false && teamGoing == true && mouseX>xSquareCenterCenter1 && mouseX<xSquareCenterCenter1+widthSquareCenterCenter1 && mouseY>ySquareCenterCenter1 && mouseY<ySquareCenterCenter1+heightSquareCenterCenter1){
+    if (topLeftActive == true && centerCenter1OverRide == false && teamGoing == true && mouseX>xSquareCenterCenter1 && mouseX<xSquareCenterCenter1+widthSquareCenterCenter1 && mouseY>ySquareCenterCenter1 && mouseY<ySquareCenterCenter1+heightSquareCenterCenter1) {
       centerCenter1OverRide = true;
       centerCenter1X = true;
       teamGoing = false;
       centerCenterActive = true;
     }
-    if(topLeftActive == true && centerRight1OverRide == false && teamGoing == true && mouseX>xSquareCenterRight1 && mouseX<xSquareCenterRight1+widthSquareCenterRight1 && mouseY>ySquareCenterRight1 && mouseY<ySquareCenterRight1+heightSquareCenterRight1){
+    if (topLeftActive == true && centerRight1OverRide == false && teamGoing == true && mouseX>xSquareCenterRight1 && mouseX<xSquareCenterRight1+widthSquareCenterRight1 && mouseY>ySquareCenterRight1 && mouseY<ySquareCenterRight1+heightSquareCenterRight1) {
       centerRight1OverRide = true;
       centerRight1X = true;
       teamGoing = false;
       centerRightActive = true;
     }
-    if(topLeftActive == true && bottomLeft1OverRide == false && teamGoing == true && mouseX>xSquareBottomLeft1 && mouseX<xSquareBottomLeft1+widthSquareBottomLeft1 && mouseY>ySquareBottomLeft1 && mouseY<ySquareBottomLeft1+heightSquareBottomLeft1){
+    if (topLeftActive == true && bottomLeft1OverRide == false && teamGoing == true && mouseX>xSquareBottomLeft1 && mouseX<xSquareBottomLeft1+widthSquareBottomLeft1 && mouseY>ySquareBottomLeft1 && mouseY<ySquareBottomLeft1+heightSquareBottomLeft1) {
       bottomLeft1X = true;
       bottomLeft1OverRide = true;
       teamGoing = false;
       bottomLeftActive = true;
     }
-    if(topLeftActive == true && bottomCenter1OverRide == false && teamGoing == true && mouseX>xSquareBottomCenter1 && mouseX<xSquareBottomCenter1+widthSquareBottomCenter1 && mouseY>ySquareBottomCenter1 && mouseY<ySquareBottomCenter1+heightSquareBottomCenter1){
+    if (topLeftActive == true && bottomCenter1OverRide == false && teamGoing == true && mouseX>xSquareBottomCenter1 && mouseX<xSquareBottomCenter1+widthSquareBottomCenter1 && mouseY>ySquareBottomCenter1 && mouseY<ySquareBottomCenter1+heightSquareBottomCenter1) {
       bottomCenter1X = true;
       bottomCenter1OverRide = true;
       teamGoing = false;
       bottomCenterActive = true;
     }
-    if(topLeftActive == true && bottomRight1OverRide == false && teamGoing == true && mouseX>xSquareBottomRight1 && mouseX<xSquareBottomRight1+widthSquareBottomRight1 && mouseY>ySquareBottomRight1 && mouseY<ySquareBottomRight1+heightSquareBottomRight1){
+    if (topLeftActive == true && bottomRight1OverRide == false && teamGoing == true && mouseX>xSquareBottomRight1 && mouseX<xSquareBottomRight1+widthSquareBottomRight1 && mouseY>ySquareBottomRight1 && mouseY<ySquareBottomRight1+heightSquareBottomRight1) {
       bottomRight1X = true;
       bottomRight1OverRide = true;
       teamGoing = false;
       bottomRightActive = true;
     }
-    if(topCenterActive == true && topLeft2OverRide == false && teamGoing == true && mouseX>xSquareTopLeft2 && mouseX<xSquareTopLeft2+widthSquareTopLeft2 && mouseY>ySquareTopLeft2 && mouseY<ySquareTopLeft2+heightSquareTopLeft2){
+    if (topCenterActive == true && topLeft2OverRide == false && teamGoing == true && mouseX>xSquareTopLeft2 && mouseX<xSquareTopLeft2+widthSquareTopLeft2 && mouseY>ySquareTopLeft2 && mouseY<ySquareTopLeft2+heightSquareTopLeft2) {
       topLeft2X = true;
       topLeft2OverRide = true;
       teamGoing = false;
       topLeftActive = true;
     }
-    if(topCenterActive == true && topCenter2OverRide == false && teamGoing == true && mouseX>xSquareTopCenter2 && mouseX<xSquareTopCenter2+widthSquareTopCenter2 && mouseY>ySquareTopCenter2 && mouseY<ySquareTopCenter2+heightSquareTopCenter2){
+    if (topCenterActive == true && topCenter2OverRide == false && teamGoing == true && mouseX>xSquareTopCenter2 && mouseX<xSquareTopCenter2+widthSquareTopCenter2 && mouseY>ySquareTopCenter2 && mouseY<ySquareTopCenter2+heightSquareTopCenter2) {
       topCenter2X = true;
       topCenter2OverRide = true;
       teamGoing = false;
       topCenterActive = true;
     }
-    if(topCenterActive == true && topRight2OverRide == false && teamGoing == true && mouseX>xSquareTopRight2 && mouseX<xSquareTopRight2+widthSquareTopRight2 && mouseY>ySquareTopRight2 && mouseY<ySquareTopRight2+heightSquareTopRight2){
+    if (topCenterActive == true && topRight2OverRide == false && teamGoing == true && mouseX>xSquareTopRight2 && mouseX<xSquareTopRight2+widthSquareTopRight2 && mouseY>ySquareTopRight2 && mouseY<ySquareTopRight2+heightSquareTopRight2) {
       topRight2X = true;
       topRight2OverRide = true;
       teamGoing = false;
       topRightActive = true;
     }
-    if(topCenterActive == true && centerLeft2OverRide == false && teamGoing == true && mouseX>xSquareCenterLeft2 && mouseX<xSquareCenterLeft2+widthSquareCenterLeft2 && mouseY>ySquareCenterLeft2 && mouseY<ySquareCenterLeft2+heightSquareCenterLeft2){
+    if (topCenterActive == true && centerLeft2OverRide == false && teamGoing == true && mouseX>xSquareCenterLeft2 && mouseX<xSquareCenterLeft2+widthSquareCenterLeft2 && mouseY>ySquareCenterLeft2 && mouseY<ySquareCenterLeft2+heightSquareCenterLeft2) {
       centerLeft2X = true;
       centerLeft2OverRide = true;
       teamGoing = false;
       centerLeftActive = true;
     }
-    if(topCenterActive == true && centerCenter2OverRide == false && teamGoing == true && mouseX>xSquareCenterCenter2 && mouseX<xSquareCenterCenter2+widthSquareCenterCenter2 && mouseY>ySquareCenterCenter2 && mouseY<ySquareCenterCenter2+heightSquareCenterCenter2){
+    if (topCenterActive == true && centerCenter2OverRide == false && teamGoing == true && mouseX>xSquareCenterCenter2 && mouseX<xSquareCenterCenter2+widthSquareCenterCenter2 && mouseY>ySquareCenterCenter2 && mouseY<ySquareCenterCenter2+heightSquareCenterCenter2) {
       centerCenter2X = true;
       centerCenter2OverRide = true;
       teamGoing = false;
       centerCenterActive = true;
     }
-    if(topCenterActive == true && centerRight2OverRide == false && teamGoing == true && mouseX>xSquareCenterRight2 && mouseX<xSquareCenterRight2+widthSquareCenterRight2 && mouseY>ySquareCenterRight2 && mouseY<ySquareCenterRight2+heightSquareCenterRight2){
+    if (topCenterActive == true && centerRight2OverRide == false && teamGoing == true && mouseX>xSquareCenterRight2 && mouseX<xSquareCenterRight2+widthSquareCenterRight2 && mouseY>ySquareCenterRight2 && mouseY<ySquareCenterRight2+heightSquareCenterRight2) {
       centerRight2X = true;
       centerRight2OverRide = true;
       teamGoing = false;
       centerRightActive = true;
     }
-    if(topCenterActive == true && bottomLeft2OverRide == false && teamGoing == true && mouseX>xSquareBottomLeft2 && mouseX<xSquareBottomLeft2+widthSquareBottomLeft2 && mouseY>ySquareBottomLeft2 && mouseY<ySquareBottomLeft2+heightSquareBottomLeft2){
+    if (topCenterActive == true && bottomLeft2OverRide == false && teamGoing == true && mouseX>xSquareBottomLeft2 && mouseX<xSquareBottomLeft2+widthSquareBottomLeft2 && mouseY>ySquareBottomLeft2 && mouseY<ySquareBottomLeft2+heightSquareBottomLeft2) {
       bottomLeft2X = true;
       bottomLeft2OverRide = true;
       teamGoing = false;
       bottomLeftActive = true;
     }
-    if(topCenterActive == true && bottomCenter2OverRide == false && teamGoing == true && mouseX>xSquareBottomCenter2 && mouseX<xSquareBottomCenter2+widthSquareBottomCenter2 && mouseY>ySquareBottomCenter2 && mouseY<ySquareBottomCenter2+heightSquareBottomCenter2){
+    if (topCenterActive == true && bottomCenter2OverRide == false && teamGoing == true && mouseX>xSquareBottomCenter2 && mouseX<xSquareBottomCenter2+widthSquareBottomCenter2 && mouseY>ySquareBottomCenter2 && mouseY<ySquareBottomCenter2+heightSquareBottomCenter2) {
       bottomCenter2X = true;
       bottomCenter2OverRide = true;
       teamGoing = false;
       bottomCenterActive = true;
     }
-    if(topCenterActive == true && bottomRight2OverRide == false && teamGoing == true && mouseX>xSquareBottomRight2 && mouseX<xSquareBottomRight2+widthSquareBottomRight2 && mouseY>ySquareBottomRight2 && mouseY<ySquareBottomRight2+heightSquareBottomRight2){
+    if (topCenterActive == true && bottomRight2OverRide == false && teamGoing == true && mouseX>xSquareBottomRight2 && mouseX<xSquareBottomRight2+widthSquareBottomRight2 && mouseY>ySquareBottomRight2 && mouseY<ySquareBottomRight2+heightSquareBottomRight2) {
       bottomRight2X = true;
       bottomRight2OverRide = true;
       teamGoing = false;
       bottomRightActive = true;
       topCenterActive = false;
     }
-    if(topRightActive == true && topLeft3OverRide == false && teamGoing == true && mouseX>xSquareTopLeft3 && mouseX<xSquareTopLeft3+widthSquareTopLeft3 && mouseY>ySquareTopLeft3 && mouseY<ySquareTopLeft3+heightSquareTopLeft3){
+    if (topRightActive == true && topLeft3OverRide == false && teamGoing == true && mouseX>xSquareTopLeft3 && mouseX<xSquareTopLeft3+widthSquareTopLeft3 && mouseY>ySquareTopLeft3 && mouseY<ySquareTopLeft3+heightSquareTopLeft3) {
       topRight3X = true;
       topLeft3OverRide = true;
       teamGoing = false;
       topLeftActive = true;
       topRightActive = false;
     }
-    if(topRightActive == true && topCenter3OverRide == false && teamGoing == true && mouseX>xSquareTopCenter3 && mouseX<xSquareTopCenter3+widthSquareTopCenter3 && mouseY>ySquareTopCenter3 && mouseY<ySquareTopCenter3+heightSquareTopCenter3){
+    if (topRightActive == true && topCenter3OverRide == false && teamGoing == true && mouseX>xSquareTopCenter3 && mouseX<xSquareTopCenter3+widthSquareTopCenter3 && mouseY>ySquareTopCenter3 && mouseY<ySquareTopCenter3+heightSquareTopCenter3) {
       topCenter3X = true;
       topCenter3OverRide = true;
       teamGoing = false;
       topCenterActive = true;
       topRightActive = false;
     }
-    if(topRightActive == true && topRight3OverRide == false && teamGoing == true && mouseX>xSquareTopRight3 && mouseX<xSquareTopRight3+widthSquareTopRight3 && mouseY>ySquareTopRight3 && mouseY<ySquareTopRight3+heightSquareTopRight3){
+    if (topRightActive == true && topRight3OverRide == false && teamGoing == true && mouseX>xSquareTopRight3 && mouseX<xSquareTopRight3+widthSquareTopRight3 && mouseY>ySquareTopRight3 && mouseY<ySquareTopRight3+heightSquareTopRight3) {
       topRight3X = true;
       topRight3OverRide = true;
       teamGoing = false;
     }
-    if(topRightActive == true && centerLeft3OverRide == false && teamGoing == true && mouseX>xSquareCenterLeft3 && mouseX<xSquareCenterLeft3+widthSquareCenterLeft3 && mouseY>ySquareCenterLeft3 && mouseY<ySquareCenterLeft3+heightSquareCenterLeft3){
+    if (topRightActive == true && centerLeft3OverRide == false && teamGoing == true && mouseX>xSquareCenterLeft3 && mouseX<xSquareCenterLeft3+widthSquareCenterLeft3 && mouseY>ySquareCenterLeft3 && mouseY<ySquareCenterLeft3+heightSquareCenterLeft3) {
       centerLeft3X = true;
       centerLeft3OverRide = true;
       teamGoing = false;
       topRightActive = false;
       centerLeftActive = true;
     }
-    if(topRightActive == true && centerCenter3OverRide == false && teamGoing == true && mouseX>xSquareCenterCenter3 && mouseX<xSquareCenterCenter3+widthSquareCenterCenter3 && mouseY>ySquareCenterCenter3 && mouseY<ySquareCenterCenter3+heightSquareCenterCenter3){
+    if (topRightActive == true && centerCenter3OverRide == false && teamGoing == true && mouseX>xSquareCenterCenter3 && mouseX<xSquareCenterCenter3+widthSquareCenterCenter3 && mouseY>ySquareCenterCenter3 && mouseY<ySquareCenterCenter3+heightSquareCenterCenter3) {
       centerCenter3X = true;
       centerCenter3OverRide = true;
       teamGoing = false;
       topRightActive = false;
       centerCenterActive = true;
     }
-    if(topRightActive == true && centerRight3OverRide == false && teamGoing == true && mouseX>xSquareCenterRight3 && mouseX<xSquareCenterRight3+widthSquareCenterRight3 && mouseY>ySquareCenterRight3 && mouseY<ySquareCenterRight3+heightSquareCenterRight3){
+    if (topRightActive == true && centerRight3OverRide == false && teamGoing == true && mouseX>xSquareCenterRight3 && mouseX<xSquareCenterRight3+widthSquareCenterRight3 && mouseY>ySquareCenterRight3 && mouseY<ySquareCenterRight3+heightSquareCenterRight3) {
       centerRight3X = true;
       centerRight3OverRide = true;
       teamGoing = false;
       topRightActive = false;
       centerRightActive = true;
     }
-    if(topRightActive == true && bottomLeft3OverRide == false && teamGoing == true && mouseX>xSquareBottomLeft3 && mouseX<xSquareBottomLeft3+widthSquareBottomLeft3 && mouseY>ySquareBottomLeft3 && mouseY<ySquareBottomRight3+heightSquareBottomRight3){
+    if (topRightActive == true && bottomLeft3OverRide == false && teamGoing == true && mouseX>xSquareBottomLeft3 && mouseX<xSquareBottomLeft3+widthSquareBottomLeft3 && mouseY>ySquareBottomLeft3 && mouseY<ySquareBottomRight3+heightSquareBottomRight3) {
       bottomLeft3X = true;
       bottomLeft3OverRide = true;
       teamGoing = false;
       topRightActive = false;
       bottomLeftActive = true;
     }
-    if(topRightActive == true && bottomCenter3OverRide == false && teamGoing == true && mouseX>xSquareBottomCenter3 && mouseX<xSquareBottomCenter3+widthSquareBottomCenter3 && mouseY>ySquareBottomCenter3 && mouseY<ySquareBottomCenter3+heightSquareBottomCenter3){
+    if (topRightActive == true && bottomCenter3OverRide == false && teamGoing == true && mouseX>xSquareBottomCenter3 && mouseX<xSquareBottomCenter3+widthSquareBottomCenter3 && mouseY>ySquareBottomCenter3 && mouseY<ySquareBottomCenter3+heightSquareBottomCenter3) {
       bottomCenter3X = true;
       bottomCenter3OverRide = true;
       teamGoing = false;
       topRightActive = false;
       bottomCenterActive = true;
     }
-    if(topRightActive == true && bottomRight3OverRide == false && teamGoing == true && mouseX>xSquareBottomRight3 && mouseX<xSquareBottomRight3+widthSquareBottomRight3 && mouseY>ySquareBottomRight3 && mouseY<ySquareBottomRight3+heightSquareBottomRight3){
+    if (topRightActive == true && bottomRight3OverRide == false && teamGoing == true && mouseX>xSquareBottomRight3 && mouseX<xSquareBottomRight3+widthSquareBottomRight3 && mouseY>ySquareBottomRight3 && mouseY<ySquareBottomRight3+heightSquareBottomRight3) {
       bottomRight3X = true;
       bottomRight3OverRide = true;
       teamGoing = false;
-      topRightActive = false; 
+      topRightActive = false;
       bottomRightActive = true;
     }
-    if(centerLeftActive == true && topLeft4OverRide == false && teamGoing == true && mouseX>xSquareTopLeft4 && mouseX<xSquareTopLeft4+widthSquareTopLeft4 && mouseY>ySquareTopLeft4 && mouseY<ySquareTopLeft4+heightSquareTopLeft4){
+    if (centerLeftActive == true && topLeft4OverRide == false && teamGoing == true && mouseX>xSquareTopLeft4 && mouseX<xSquareTopLeft4+widthSquareTopLeft4 && mouseY>ySquareTopLeft4 && mouseY<ySquareTopLeft4+heightSquareTopLeft4) {
       topLeft4X = true;
       topLeft4OverRide = true;
       teamGoing = false;
       topLeftActive = true;
       centerLeftActive = false;
     }
-    if(centerLeftActive == true && topCenter4OverRide == false && teamGoing == true && mouseX>xSquareTopCenter4 && mouseX<xSquareTopCenter4+widthSquareTopCenter4 && mouseY>ySquareTopCenter4  && mouseY<ySquareTopCenter4+heightSquareTopCenter4){
+    if (centerLeftActive == true && topCenter4OverRide == false && teamGoing == true && mouseX>xSquareTopCenter4 && mouseX<xSquareTopCenter4+widthSquareTopCenter4 && mouseY>ySquareTopCenter4  && mouseY<ySquareTopCenter4+heightSquareTopCenter4) {
       topCenter4X = true;
       topLeft4OverRide = true;
       teamGoing = false;
       topCenterActive = true;
       centerLeftActive = false;
     }
-    if(centerLeftActive == true && topRight4OverRide == false && teamGoing == true && mouseX>xSquareTopRight4 && mouseX<xSquareTopRight4+widthSquareTopRight4 && mouseY>ySquareTopRight4 && mouseY<ySquareTopRight4+heightSquareTopRight4){
+    if (centerLeftActive == true && topRight4OverRide == false && teamGoing == true && mouseX>xSquareTopRight4 && mouseX<xSquareTopRight4+widthSquareTopRight4 && mouseY>ySquareTopRight4 && mouseY<ySquareTopRight4+heightSquareTopRight4) {
       topRight4X = true;
       topRight4OverRide = true;
       teamGoing = false;
-      topCenterLeftActive = false
+      centerLeftActive = false;
       topRightActive = true;
     }
-    if(centerLeftActive == true && centerLeft4OverRide == false && teamGoing == true && mouseX>xSquareCenterLeft4 && mouseX<xSquareCenterLeft4+widthSquareCenterLeft4 && mouseY>ySquareCenterLeft4 && mouseY<ySquareCenterLeft4+heightSquareCenterLeft4){
+    if (centerLeftActive == true && centerLeft4OverRide == false && teamGoing == true && mouseX>xSquareCenterLeft4 && mouseX<xSquareCenterLeft4+widthSquareCenterLeft4 && mouseY>ySquareCenterLeft4 && mouseY<ySquareCenterLeft4+heightSquareCenterLeft4) {
       centerLeft4X = true;
       centerLeft4OverRide = true;
-      teamGoing = true;
+      teamGoing = false;
     }
-    if(centerLeftActive == true && centerCenter4OverRide == false && tramGoing == true && mouseX>xSquareCenterCenter4 && mouseX<xSquareCenterCenter4+widthSquareCenterCenter4 && mouseY>ySquareCenterCenter4 && mouseY<ySquareCenterCenter4+heightSquareCenterCenter4){
+    if (centerLeftActive == true && centerCenter4OverRide == false && teamGoing == true && mouseX>xSquareCenterCenter4 && mouseX<xSquareCenterCenter4+widthSquareCenterCenter4 && mouseY>ySquareCenterCenter4 && mouseY<ySquareCenterCenter4+heightSquareCenterCenter4) {
       centerCenter4X = true;
-      centerCennte4Overide = true;
-      teamGoing = true;
+      centerCenter4OverRide = true;
+      teamGoing = false;
       centerCenterActive = true;
       centerLeftActive = false;
     }
-    if(centerLeftActive == true && centerRight4OverRide == false && teamGoing == true && mouseX>xSquareCenterRight4 && mouseX<xSquareCenterRight4+widthSquareCenterRight4 && mouseY>ySquareCenterRight4 && mouseY<ySquareCenterRight4+heightSquareCenterRight4){
-      centerRight4X == true;
+    if (centerLeftActive == true && centerRight4OverRide == false && teamGoing == true && mouseX>xSquareCenterRight4 && mouseX<xSquareCenterRight4+widthSquareCenterRight4 && mouseY>ySquareCenterRight4 && mouseY<ySquareCenterRight4+heightSquareCenterRight4) {
+      centerRight4X = true;
       centerRight4OverRide = true;
+      teamGoing = false;
+      centerRightActive = true;
+      centerLeftActive = true;
+    }
+    if (centerLeftActive == true && bottomLeft4OverRide == false && teamGoing == true && mouseX>xSquareBottomLeft4 && mouseX<xSquareBottomLeft4+widthSquareBottomLeft4 && mouseY>ySquareBottomLeft4 && mouseY<ySquareBottomLeft4+heightSquareBottomLeft4) {
+      bottomLeft4X = true;
+      bottomLeft4OverRide = true;
+      teamGoing = false;
+      bottomLeftActive = true;
+      centerLeftActive = false;
+    }
+    if (centerLeftActive == true && bottomCenter4OverRide == false && teamGoing == true && mouseX>xSquareBottomCenter4 && mouseX<xSquareBottomCenter4+widthSquareBottomCenter4 && mouseY>ySquareBottomCenter4 && mouseY<ySquareBottomCenter4+heightSquareBottomCenter4) {
+      bottomCenter4X = true;
+      bottomCenter4OverRide = true;
+      teamGoing = false;
+      bottomCenterActive = true;
+      centerLeftActive = false;
+    }
+    if (centerLeftActive == true && bottomRight4OverRide == false && teamGoing == true && mouseX>xSquareBottomRight4 && mouseX<xSquareBottomRight4+widthSquareBottomRight4 && mouseY>ySquareBottomRight4 && mouseY<ySquareBottomRight4+heightSquareBottomRight4) {
+      bottomRight4X = true;
+      bottomRight4OverRide = true;
+      teamGoing = false;
+      bottomRightActive = true;
+      centerLeftActive = false;
+    }
+    if(centerCenterActive == true && topLeft4OverRide == false && teamGoing == true && mouseX>xSquareTopLeft5 && mouseX<xSquareTopLeft5+widthSquareTopLeft5 && mouseY>ySquareTopLeft5 && mouseY<ySquareTopLeft5+heightSquareTopLeft5){
+      topLeft5X = true;
+      topLeft5OverRide = true;
+      teamGoing = false;
+      topLeftActive = true;
+      centerCenterActive = false;
+    }
+    if(centerCenterActive == true && topCenter5OverRide == false && teamGoing == true && mouseX>xSquareTopCenter5 && mouseX<xSquareTopCenter5+widthSquareTopCenter5 && mouseY>ySquareTopCenter5 && mouseY<ySquareTopCenter5+heightSquareTopCenter5){
+      topCenter5X = true;
+      topCenter5OverRide = true;
+      teamGoing = false;
+      topCenterActive = true;
+      centerCenterActive = false;
+    }
+    if(centerCenterActive == true && topRight5OverRide == false && teamGoing == true && mouseX>xSquareTopRight5 && mouseX<xSquareTopRight5+widthSquareTopRight5 && mouseY>ySquareTopRight5 && mouseY<ySquareTopRight5+heightSquareTopRight5){
+      topRight5X = true;
+      topRight5OverRide = true;
+      teamGoing = false;
+      topRightActive = true;
+      centerCenterActive = false;
+    }
+    if(centerCenterActive == true && centerLeft5OverRide == false && teamGoing == true && mouseX>xSquareCenterLeft5 && mouseX<xSquareCenterLeft5+widthSquareCenterLeft5 && mouseY>ySquareCenterLeft5 && mouseY<ySquareCenterLeft5+heightSquareCenterLeft5){
+      centerLeft5X = true;
+      centerLeft5OverRide = true;
+      teamGoing = false;
+      centerLeftActive = true;
+      centerCenterActive = false;
+    }
+    if(centerCenterActive == true && centerCenter5OverRide == false && teamGoing == true && mouseX>xSquareCenterCenter5 && mouseX<xSquareCenterCenter5+widthSquareCenterCenter5 && mouseY>ySquareCenterCenter5 && mouseY<ySquareCenterCenter5+heightSquareCenterCenter5){
+      centerCenter5X = true;
+      centerCenter5OverRide = true;
+      teamGoing = false;
     }
   }
 }
-
-mouseX>xSquareBottomLeft4 && mouseX<xSquareBottomLeft4+widthSquareBottomLeft4 && mouseY>ySquareBottomLeft4 && mouseY<ySquareBottomLeft4+heightSquareBottomLeft4){
-mouseX>xSquareBottomCenter4 && mouseX<xSquareBottomCenter4+widthSquareBottomCenter4 && mouseY>ySquareBottomCenter4 && mouseY<ySquareBottomCenter4+heightSquareBottomCenter4){
-mouseX>xSquareBottomRight4 && mouseX<xSquareBottomRight4+widthSquareBottomRight4 && mouseY>ySquareBottomRight4 && mouseY<ySquareBottomRight4+heightSquareBottomRight4){
+/*
+float , , , ;
+float , , , ;
+float , , , ;
+float , , , ;
+float , , , ;
+float xSquareCenterRight5, ySquareCenterRight5, widthSquareCenterRight5, heightSquareCenterRight5;
+float xSquareBottomLeft5, ySquareBottomLeft5, widthSquareBottomLeft5, heightSquareBottomLeft5;
+float xSquareBottomCenter5, ySquareBottomCenter5, widthSquareBottomCenter5, heightSquareBottomCenter5;
+float xSquareBottomRight5, ySquareBottomRight5, widthSquareBottomRight5, heightSquareBottomRight5;
+*/
