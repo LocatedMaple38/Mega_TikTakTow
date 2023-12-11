@@ -2086,7 +2086,17 @@ void mousePressed() {
       topCenterActive = true;
       bottomCenterActive = false;
     }
-    if(bottomCenterActive == true && topRight8OverRide == false && teamGoing == true 
+    if(bottomCenterActive == true && topRight8OverRide == false && teamGoing == true && mouseX> && mouseX<+ && mouseY> && mouseY<+){
+      topRight8X = true;
+      topRight8OvewrRide = true;
+      teamGoing = false;
+      topRightActive = true;
+      bottomCenterActive = false;
+    }
+    if(bottomCenterActive == true && centerLeft8OverRide == false && teamGoing == true && mouseX> && mouseX<+ mouseY> && mouseY<+){
+      centerLeft8X = true;
+      
+    }
   }
 }
 /*
