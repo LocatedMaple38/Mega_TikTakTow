@@ -1,4 +1,5 @@
 void Game1(){
+  surface.setTitle(appTittle+" game");
   gameTopLeftButtons();
   gameTopCenterButtons();
   gameTopRightButtons();
