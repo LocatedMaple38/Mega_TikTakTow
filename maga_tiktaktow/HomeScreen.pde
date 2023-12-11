@@ -1,4 +1,5 @@
 void homeScreen(){
+  surface.setTitle(appTittle+" homeScreen");
   fill(255, 130, 255);
   rect(xStart, yStart, widthStart, heightStart);
   fill(0, 255, 255);
