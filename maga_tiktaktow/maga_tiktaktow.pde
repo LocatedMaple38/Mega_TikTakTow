@@ -2086,6 +2086,7 @@ void mousePressed() {
       topCenterActive = true;
       bottomCenterActive = false;
     }
+    if(bottomCenterActive == true && topRight8OverRide == false && teamGoing == true 
   }
 }
 /*
