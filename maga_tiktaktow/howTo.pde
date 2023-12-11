@@ -1,4 +1,5 @@
 void howTo(){
+  surface.setTitle(appTittle+" How To");
   rect(xBackGround, yBackGround, widthBackGround, heightBackGround);
   gameTopLeftButtons();
   gameTopCenterButtons();
