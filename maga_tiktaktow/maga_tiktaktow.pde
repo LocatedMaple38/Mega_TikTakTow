@@ -2095,8 +2095,19 @@ void mousePressed() {
     }
     if(bottomCenterActive == true && centerLeft8OverRide == false && teamGoing == true && mouseX> && mouseX<+ mouseY> && mouseY<+){
       centerLeft8X = true;
-      
+      centerLeft8OverRide = true;
+      teamGoing = false;
+      centerLeftActive = true;
+      bottomCenterActive = false;
     }
+    if(bottomCenterActive == true && centerCenter8OverRider == false && teamGoing == true && mouseX> && mouseX<+ && mouseY> && mouseY<+){
+      centerCenter8X = true;
+      centerCenter8OverRide = true;
+      teamGoing = false;
+      centerCenterActive = true;
+      bottomCenterActive = false;
+    }
+    if(
   }
 }
 /*
