@@ -2088,7 +2088,7 @@ void mousePressed() {
     }
     if(bottomCenterActive == true && topRight8OverRide == false && teamGoing == true && mouseX>xSquareTopRight8 && mouseX<xSquareTopRight8+widthSquareTopRight8 && mouseY>ySquareTopRight8 && mouseY<ySquareTopRight8+heightSquareTopRight8){
       topRight8X = true;
-      topRight8OvewrRide = true;
+      topRight8OverRide = true;
       teamGoing = false;
       topRightActive = true;
       bottomCenterActive = false;
@@ -2100,14 +2100,14 @@ void mousePressed() {
       centerLeftActive = true;
       bottomCenterActive = false;
     }
-    if(bottomCenterActive == true && centerCenter8OverRider == false && teamGoing == true && mouseX>xSquareCenterCenter8 && mouseX<xSquareCenterCenter8+widthSquareCenterCenter8 && mouseY>ySquareCenterCenter8 && mouseY<ySquareCenterCenter8+heightSquareCenterCenter8){
+    if(bottomCenterActive == true && centerCenter8OverRide == false && teamGoing == true && mouseX>xSquareCenterCenter8 && mouseX<xSquareCenterCenter8+widthSquareCenterCenter8 && mouseY>ySquareCenterCenter8 && mouseY<ySquareCenterCenter8+heightSquareCenterCenter8){
       centerCenter8X = true;
       centerCenter8OverRide = true;
       teamGoing = false;
       centerCenterActive = true;
       bottomCenterActive = false;
     }
-    if(bottomCenterActive == true && centerRight8OverRide == false && teamGoing == true && mouseXxSquareCenterRight8> && mouseX<xSquareCenterRight8+widthSquareCenterRight8 && mouseY>ySquareCenterRight8 && mouseY<ySquareCenterRight8+heightSquareCenterRight8){
+    if(bottomCenterActive == true && centerRight8OverRide == false && teamGoing == true && mouseX>xSquareCenterRight8 && mouseX<xSquareCenterRight8+widthSquareCenterRight8 && mouseY>ySquareCenterRight8 && mouseY<ySquareCenterRight8+heightSquareCenterRight8){
       centerRight8X = true;
       centerRight8OverRide = true;
       teamGoing = false;
@@ -2116,7 +2116,7 @@ void mousePressed() {
     }
     if(bottomCenterActive == true && bottomLeft8OverRide == false && teamGoing == true && mouseX>xSquareBottomLeft8 && mouseX<xSquareBottomLeft8+widthSquareBottomLeft8 && mouseY>ySquareBottomLeft8 && mouseY<ySquareBottomLeft8+heightSquareBottomLeft8){
       bottomLeft8X = true;
-      bottomleft8OverRide = true;
+      bottomLeft8OverRide = true;
       teamGoing = false;
       bottomLeftActive = true;
       bottomCenterActive = false;
@@ -2133,8 +2133,37 @@ void mousePressed() {
       bottomLeftActive = true;
       bottomCenterActive = false;
     }
+    if(bottomRightActive == true && topLeft9OverRide == false && teamGoing == true && mouseX>xSquareTopLeft9 && mouseX<xSquareTopLeft9+widthSquareTopLeft9 && mouseY>ySquareTopLeft9 && mouseY<ySquareTopLeft9+heightSquareTopLeft9){
+      topLeft9X = true;
+      topLeft9OverRide = true;
+      teamGoing = false;
+      topLeftActive = true;
+      bottomRightActive = false;
+    }
+    if(bottomRightActive == true && topCenter9OverRide == false && teamGoing == true && mouseX>xSquareTopCenter9 && mouseX<xSquareTopCenter9+widthSquareTopCenter9 && mouseY>ySquareTopCenter9 && mouseY<ySquareTopCenter9+heightSquareTopCenter9){
+      topCenter9X = true;
+      topCenter9OverRide = true;
+      teamGoing = false;
+      topCenterActive = true;
+      bottomRightActive = false;
+    }
+    if(bottomRightActive == true && topRight9OverRide == false && teamGoing == true && mouseX>xSquareTopRight9 && mouseX<xSquareTopRight9+widthSquareTopRight9 && mouseY>ySquareTopRight9 && mouseY<ySquareTopRight9+heightSquareTopRight9){
+      topRight9X = true;
+      topRight9OverRide = true;
+      teamGoing = false;
+      topRightActive = true;
+      bottomRightActive = false;
+    }
   }
 }
 /*
-
+float , , , ;
+float , , , ;
+float , , , ;
+float xSquareCenterLeft9, ySquareCenterLeft9, widthSquareCenterLeft9, heightSquareCenterLeft9;
+float xSquareCenterCenter9, ySquareCenterCenter9, widthSquareCenterCenter9, heightSquareCenterCenter9;
+float xSquareCenterRight9, ySquareCenterRight9, widthSquareCenterRight9, heightSquareCenterRight9;
+float xSquareBottomLeft9, ySquareBottomLeft9, widthSquareBottomLeft9, heightSquareBottomLeft9;
+float xSquareBottomCenter9, ySquareBottomCenter9, widthSquareBottomCenter9, heightSquareBottomCenter9;
+float xSquareBottomRight9, ySquareBottomRight9, widthSquareBottomRight9, heightSquareBottomRight9;
 */
