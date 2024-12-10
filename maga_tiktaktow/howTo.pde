@@ -1,26 +1,6 @@
 void howTo(){
   surface.setTitle(appTittle+" How To");
   rect(xBackGround, yBackGround, widthBackGround, heightBackGround);
-  gameTopLeftButtons();
-  gameTopCenterButtons();
-  gameTopRightButtons();
-  gameCenterLeftButtons();
-  gameCenterCenterButtons();
-  gameCenterRightButtons();
-  gameBottomLeftButtons();
-  gameBottomCenterButtons();
-  gameBottomRightButtons();
-
-  fill(255);
-  gameTopLeftOutLine();
-  gameTopCenterOutLine();
-  gameTopRightOutLine();
-  gameCenterLeftOutLine();
-  gameCenterCenterOutline();
-  gameCenterRightOutline();
-  gameButtomLeftOutline();
-  gamebottomCenterOutline();
-  gameButtomRightOutline();
   mainBoard();
   fill(0);
   textAlign(CENTER, CENTER);
