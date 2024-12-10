@@ -1,8 +1,8 @@
 void endGameComf(){
   rect(xEndComf, yEndComf, widthEndComf, heightEndComf);
-  fill(255, 0, 0);
+  fill(#ff0000);
   rect(xEndNo, yEndNo, widthEndNo, heightEndNo);
-  fill(0, 255, 0);
+  fill(#00ff00);
   rect(xEndYes, yEndYes, widthEndYes, heightEndYes);
   fill(0);
   textAlign(CENTER, CENTER);
