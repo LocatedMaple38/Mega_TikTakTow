@@ -18,6 +18,51 @@ void gameTopLeftSetup(){
   yBottom1 = gameHeight*2/9;
   widthBottom1 = gameWidth*1/3;
   heightBottom1 = gameHeight*2/9;
+  
+  xSquareTopLeft1 = gameWidth*0;
+  ySquareTopLeft1 = gameHeight*0;
+  widthSquareTopLeft1 = gameWidth*1/9;
+  heightSquareTopLeft1 = gameHeight*1/9;
+
+  xSquareTopCenter1 = gameWidth*1/9+1;
+  ySquareTopCenter1 = gameHeight*0;
+  widthSquareTopCenter1 = gameWidth*1/9;
+  heightSquareTopCenter1 = gameHeight*1/9;
+
+  xSquareTopRight1 = gameWidth*2/9+1;
+  ySquareTopRight1 = gameHeight*0;
+  widthSquareTopRight1 = gameWidth*1/9;
+  heightSquareTopRight1 = gameHeight*1/9;
+
+  xSquareCenterLeft1 = gameWidth*0;
+  ySquareCenterLeft1 = gameHeight*1/9+1;
+  widthSquareCenterLeft1 = gameWidth*1/9;
+  heightSquareCenterLeft1 = gameHeight*1/9;
+
+  xSquareCenterCenter1 = gameWidth*1/9+1;
+  ySquareCenterCenter1 = gameHeight*1/9+1;
+  widthSquareCenterCenter1 = gameWidth*1/9;
+  heightSquareCenterCenter1 = gameHeight*1/9;
+
+  xSquareCenterRight1 = gameWidth*2/9+1;
+  ySquareCenterRight1 = gameHeight*1/9+1;
+  widthSquareCenterRight1 = gameWidth*1/9;
+  heightSquareCenterRight1 = gameHeight*1/9;
+
+  xSquareBottomLeft1 = gameWidth*0;
+  ySquareBottomLeft1 = gameHeight*2/9+1;
+  widthSquareBottomLeft1 = gameWidth*1/9;
+  heightSquareBottomLeft1 = gameHeight*1/9;
+
+  xSquareBottomCenter1 = gameWidth*1/9+1;
+  ySquareBottomCenter1 = gameHeight*2/9+1;
+  widthSquareBottomCenter1 = gameWidth*1/9;
+  heightSquareBottomCenter1 = gameHeight*1/9;
+
+  xSquareBottomRight1 = gameWidth*2/9+1;
+  ySquareBottomRight1 = gameHeight*2/9+1;
+  widthSquareBottomRight1 = gameWidth*1/9;
+  heightSquareBottomRight1 = gameHeight*1/9;
 }
 void gameTopLeftDraw(){
   noStroke();
