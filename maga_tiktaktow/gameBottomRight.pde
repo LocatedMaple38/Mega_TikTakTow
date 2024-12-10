@@ -1,4 +1,24 @@
 void gameBottomRightSetup(){
+  xLeft9 = gameWidth*7/9;
+  yLeft9 = gameHeight*2/3;
+  widthLeft9 = gameWidth*7/9;
+  heightLeft9 = gameHeight-1;
+
+  xRight9 = gameWidth*8/9;
+  yRight9 = gameHeight*2/3;
+  widthRight9 = gameWidth*8/9;
+  heightRight9 = gameHeight-1;
+
+  xTop9 = gameWidth*2/3;
+  yTop9 = gameHeight*7/9;
+  widthTop9 = gameWidth*7/9;
+  heightTop9 = gameHeight-1;
+
+  xBottom9 = gameWidth*2/3;
+  yBottom9 = gameHeight*8/9;
+  widthBottom9 = gameWidth*2/3;
+  heightBottom9 = gameHeight-1;
+  
   xSquareTopLeft9 = gameWidth*3/9+1;
   ySquareTopLeft9 = gameHeight*6/9+1;
   widthSquareTopLeft9 = gameWidth*1/9;
