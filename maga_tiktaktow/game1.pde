@@ -1,25 +1,6 @@
 void Game1(){
   surface.setTitle(appTittle+" game");
-  gameTopLeftButtons();
-  gameTopCenterButtons();
-  gameTopRightButtons();
-  gameCenterLeftButtons();
-  gameCenterCenterButtons();
-  gameCenterRightButtons();
-  gameBottomLeftButtons();
-  gameBottomCenterButtons();
-  gameBottomRightButtons();
-
-  fill(255);
-  gameTopLeftOutLine();
-  gameTopCenterOutLine();
-  gameTopRightOutLine();
-  gameCenterLeftOutLine();
-  gameCenterCenterOutline();
-  gameCenterRightOutline();
-  gameButtomLeftOutline();
-  gamebottomCenterOutline();
-  gameButtomRightOutline();
+  
   mainBoard();
   
   if(startGame == true){
