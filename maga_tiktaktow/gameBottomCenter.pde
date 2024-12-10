@@ -19,9 +19,9 @@ void gameBottomCenterSetup(){
   widthBottom8 = gameWidth*2/3;
   heightBottom8 = gameHeight*8/9;
 }
-void gameBottomCenterButtons(){
+void gameBottomCenterDraw(){
   noStroke();
-  fill(255, 0, 0);
+  fill(#ff0000);
   rect(xSquareTopLeft8, ySquareTopLeft8, widthSquareTopLeft8, heightSquareTopLeft8);
   rect(xSquareTopCenter8, ySquareTopCenter8, widthSquareTopCenter8, heightSquareTopCenter8);
   rect(xSquareTopRight8, ySquareTopRight8, widthSquareTopRight8, heightSquareTopRight8);
@@ -31,9 +31,6 @@ void gameBottomCenterButtons(){
   rect(xSquareBottomLeft8, ySquareBottomLeft8, widthSquareBottomLeft8, heightSquareBottomLeft8);
   rect(xSquareBottomCenter8, ySquareBottomCenter8, widthSquareBottomCenter8, heightSquareBottomCenter8);
   rect(xSquareBottomRight8, ySquareBottomRight8, widthSquareBottomRight8, heightSquareBottomRight8);
-}
-
-void gamebottomCenterOutline(){
   stroke(100);
   noFill();
   rect(xLeft8, yLeft8, widthLeft8, heightLeft8);
