@@ -1,0 +1,45 @@
+void gameTopLeftSetup(){
+  xLeft1 = gameWidth*1/9;
+  yLeft1 = gameHeight*0;
+  widthLeft1 = gameWidth*1/9;
+  heightLeft1 = gameHeight*1/3;
+
+  xRight1 = gameWidth*2/9;
+  yRight1 = gameHeight*0;
+  widthRight1 = gameWidth*2/9;
+  heightRight1 = gameHeight*1/3;
+
+  xTop1 = gameWidth*0;
+  yTop1 = gameHeight*1/9;
+  widthTop1 = gameWidth*1/3;
+  heightTop1 = gameHeight*1/9;
+
+  xBottom1 = gameWidth*0;
+  yBottom1 = gameHeight*2/9;
+  widthBottom1 = gameWidth*1/3;
+  heightBottom1 = gameHeight*2/9;
+}
+void gameTopLeftDraw(){
+  noStroke();
+  fill(255, 0, 0);
+  rect(xSquareTopLeft1, ySquareTopLeft1, widthSquareTopLeft1, heightSquareTopLeft1);
+  rect(xSquareTopCenter1, ySquareTopCenter1, widthSquareTopCenter1, heightSquareTopCenter1);
+  rect(xSquareTopRight1, ySquareTopRight1, widthSquareTopRight1, heightSquareTopRight1);
+  rect(xSquareCenterLeft1, ySquareCenterLeft1, widthSquareCenterLeft1, heightSquareCenterLeft1);
+  rect(xSquareCenterCenter1, ySquareCenterCenter1, widthSquareCenterCenter1, heightSquareCenterCenter1);
+  rect(xSquareCenterRight1, ySquareCenterRight1, widthSquareCenterRight1, heightSquareCenterRight1);
+  rect(xSquareBottomLeft1, ySquareBottomLeft1, widthSquareBottomLeft1, heightSquareBottomLeft1);
+  rect(xSquareBottomCenter1, ySquareBottomCenter1, widthSquareBottomCenter1, heightSquareBottomCenter1);
+  if(howToPlay == true){
+    fill(255, 255, 0);
+  }else{
+    fill(255, 0, 0);
+  }
+  rect(xSquareBottomRight1, ySquareBottomRight1, widthSquareBottomRight1, heightSquareBottomRight1);
+  
+  stroke(100);
+  line(xLeft1, yLeft1, widthLeft1, heightLeft1);
+  line(xRight1, yRight1, widthRight1, heightRight1);
+  line(xTop1, yTop1, widthTop1, heightTop1);
+  line(xBottom1, yBottom1, widthBottom1, heightBottom1);
+}
