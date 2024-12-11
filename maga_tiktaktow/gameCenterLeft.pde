@@ -78,7 +78,7 @@ void gameCenterLeftDraw(){
   rect(xSquareBottomCenter4, ySquareBottomCenter4, widthSquareBottomCenter4, heightSquareBottomCenter4);
   rect(xSquareBottomRight4, ySquareBottomRight4, widthSquareBottomRight4, heightSquareBottomRight4);
   fill(0);
-  stroke(100);
+  stroke(0);
   line(xLeft4, yLeft4, widthLeft4, heightLeft4);
   line(xRight4, yRight4, widthRight4, heightRight4);
   line(xTop4, yTop4, widthTop4, heightTop4);
