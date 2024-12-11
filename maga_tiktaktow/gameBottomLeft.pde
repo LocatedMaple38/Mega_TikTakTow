@@ -19,32 +19,32 @@ void gameBottomLeftSetup(){
   widthBottom7 = gameWidth*1/3;
   heightBottom7 = gameHeight*8/9;
   
-  xSquareTopLeft7 = gameWidth*3/9+1;
+  xSquareTopLeft7 = gameWidth*0;
   ySquareTopLeft7 = gameHeight*6/9+1;
   widthSquareTopLeft7 = gameWidth*1/9;
   heightSquareTopLeft7 = gameHeight*1/9;
 
-  xSquareTopCenter7 = gameWidth*4/9+1;
+  xSquareTopCenter7 = gameWidth*1/9+1;
   ySquareTopCenter7 = gameHeight*6/9+1;
   widthSquareTopCenter7 = gameWidth*1/9;
   heightSquareTopCenter7 = gameHeight*1/9;
 
-  xSquareTopRight7 = gameWidth*5/9+1;
+  xSquareTopRight7 = gameWidth*2/9+1;
   ySquareTopRight7 = gameHeight*6/9+1;
   widthSquareTopRight7 = gameWidth*1/9;
   heightSquareTopRight7 = gameHeight*1/9;
 
-  xSquareCenterLeft7 = gameWidth*3/9+1;
+  xSquareCenterLeft7 = gameWidth*0;
   ySquareCenterLeft7 = gameHeight*7/9+1;
   widthSquareCenterLeft7 = gameWidth*1/9;
   heightSquareCenterLeft7 = gameHeight*1/9;
 
-  xSquareCenterCenter7 = gameWidth*4/9+1;
+  xSquareCenterCenter7 = gameWidth*1/9+1;
   ySquareCenterCenter7 = gameHeight*7/9+1;
   widthSquareCenterCenter7 = gameWidth*1/9;
   heightSquareCenterCenter7 = gameHeight*1/9;
 
-  xSquareCenterRight7 = gameWidth*3/9+1;
+  xSquareCenterRight7 = gameWidth*2/9+1;
   ySquareCenterRight7 = gameHeight*7/9+1;
   widthSquareCenterRight7 = gameWidth*1/9;
   heightSquareCenterRight7 = gameHeight*1/9;
@@ -65,12 +65,7 @@ void gameBottomLeftSetup(){
   heightSquareBottomRight7 = gameHeight*1/9;
 }
 
-void gameButtomLeftDraw(){
-  stroke(100);
-  line(xLeft7, yLeft7, widthLeft7, heightLeft7);
-  line(xRight7, yRight7, widthRight7, heightRight7);
-  line(xTop7, yTop7, widthTop7, heightTop7);
-  line(xBottom7, yBottom7, widthBottom7, heightBottom7);
+void gameBottomLeftDraw(){
   noStroke();
   fill(255, 0, 0);
   rect(xSquareTopLeft7, ySquareTopLeft7, widthSquareTopLeft7, heightSquareTopLeft7);
@@ -82,6 +77,11 @@ void gameButtomLeftDraw(){
   rect(xSquareBottomLeft7, ySquareBottomLeft7, widthSquareBottomLeft7, heightSquareBottomLeft7);
   rect(xSquareBottomCenter7, ySquareBottomCenter7, widthSquareBottomCenter7, heightSquareBottomCenter7);
   rect(xSquareBottomRight7, ySquareBottomRight7, widthSquareBottomRight7, heightSquareBottomRight7);
+  stroke(0);
+  line(xLeft7, yLeft7, widthLeft7, heightLeft7);
+  line(xRight7, yRight7, widthRight7, heightRight7);
+  line(xTop7, yTop7, widthTop7, heightTop7);
+  line(xBottom7, yBottom7, widthBottom7, heightBottom7);
 }
 
 void gameBottomLeftMousePressed(){
