@@ -8,4 +8,5 @@ void startGame(){
   bottomLeftActive = true;
   bottomCenterActive = true;
   bottomRightActive = true;
+  startGame = false;
 }
