@@ -21,6 +21,7 @@ String HowToText = "ïf I play Center Center Top Left (the green squar) then you
 String footer = "By LocatedMaple38";
 String yesText = "YES", noText = "NO";
 String appTittle = "Mega Tik Tac Toe";
+String player;
 
 PFont settFont, yesFont, noFont, endComfFont, quitComfFont, titleFont, footrFont, startFont, howToFont, OKFont, quitFont, endFont, nextFont;
 
@@ -227,9 +228,9 @@ int gameWidth, gameHeight;
 boolean quit = false;
 boolean exet = false;
 boolean start = false;
-boolean teamGoing = false;
+boolean teamGoing = true;
 boolean howToPlay = false;
-boolean startGame = false;
+boolean startGame = true;
 
 boolean topLeftActive = false;
 boolean topCenterActive = false;
@@ -551,6 +552,8 @@ boolean bottomLeftMainX = false;
 boolean bottomCenterMainX = false;
 boolean bottomRightMainX = false;
 
+int activePlayFeild;
+
 PImage playerO;
 PImage playerX;
 
@@ -559,7 +562,7 @@ void setup() {
   size(500, 600);
   surface.setTitle("Mega Tik Tack Toe");
   surface.setResizable(true);
-  surface.setLocation(100, 100);
+  surface.setLocation(0, 0);
 
   //minim = new Minim(this); //load from data directory, loadFile should also load from project folder, like loadImage
   String groove = "groove";
@@ -606,11 +609,6 @@ void setup() {
   widthOK = appWidth*1/2;
   heightOK = appHeight*1.7/10;
 
-  xSettings = appWidth*5.1/10-1;
-  ySetting = appHeight*8.35/10;
-  widthSettings = appWidth*1.7/10-1;
-  heightSettings = appHeight*1.7/10-1;
-
   xteamGoing = appWidth*3.4/10-1;
   yteamGoing = appHeight*8.35/10;
   widthteamGoing = appWidth*1.7/10-1;
@@ -631,165 +629,10 @@ void setup() {
   widthBackGround = appWidth-1;
   heightBackGround = appHeight-1;
 
-  xTitle = appWidth*0;
-  yTitle = appHeight*0;
-  widthTitle = appWidth-1;
-  heightTitle = appHeight*1/4;
-
-  xFooter = appWidth*0;
-  yFooter = appHeight*1/4;
-  widthFooter = appWidth-1;
-  heightFooter = appHeight*0.5/4;
-
-  xHowTo = appWidth*1/2;
-  yHowTo = appHeight*1.5/4;
-  widthHowTo = appWidth*1/2;
-  heightHowTo = appHeight*1/4;
-
   xHowToTextBox = appWidth*0;
   yHowToTextBox = appHeight*8.3/10;
   widthHowToTextBox = appWidth*1/2;
   heightHowToTextBox = appHeight*1.7/10;
-
-  xStart = appWidth*0;
-  yStart = appHeight*1.5/4;
-  widthStart = appWidth*1/2;
-  heightStart = appHeight*1/4;
-  
-  xSquareTopLeft5 = gameWidth*3/9+1;
-  ySquareTopLeft5 = gameHeight*3/9+1;
-  widthSquareTopLeft5 = gameWidth*1/9;
-  heightSquareTopLeft5 = gameHeight*1/9;
-
-  xSquareTopCenter5 = gameWidth*4/9+1;
-  ySquareTopCenter5 = gameHeight*3/9+1;
-  widthSquareTopCenter5 = gameWidth*1/9;
-  heightSquareTopCenter5 = gameHeight*1/9;
-
-  xSquareTopRight5 = gameWidth*5/9+1;
-  ySquareTopRight5 = gameHeight*3/9+1;
-  widthSquareTopRight5 = gameWidth*1/9;
-  heightSquareTopRight5 = gameHeight*1/9;
-
-  xSquareCenterLeft5 = gameWidth*3/9+1;
-  ySquareCenterLeft5 = gameHeight*4/9+1;
-  widthSquareCenterLeft5 = gameWidth*1/9;
-  heightSquareCenterLeft5 = gameHeight*1/9;
-
-  xSquareCenterCenter5 = gameWidth*4/9+1;
-  ySquareCenterCenter5 = gameHeight*4/9+1;
-  widthSquareCenterCenter5 = gameWidth*1/9;
-  heightSquareCenterCenter5 = gameHeight*1/9;
-
-  xSquareCenterRight5 = gameWidth*5/9+1;
-  ySquareCenterRight5 = gameHeight*4/9+1;
-  widthSquareCenterRight5 = gameWidth*1/9;
-  heightSquareCenterRight5 = gameHeight*1/9;
-
-  xSquareBottomLeft5 = gameWidth*3/9+1;
-  ySquareBottomLeft5 = gameHeight*5/9+1;
-  widthSquareBottomLeft5 = gameWidth*1/9;
-  heightSquareBottomLeft5 = gameHeight*1/9;
-
-  xSquareBottomCenter5 = gameWidth*4/9+1;
-  ySquareBottomCenter5 = gameHeight*5/9+1;
-  widthSquareBottomCenter5 = gameWidth*1/9;
-  heightSquareBottomCenter5 = gameHeight*1/9;
-
-  xSquareBottomRight5 = gameWidth*5/9+1;
-  ySquareBottomRight5 = gameHeight*5/9+1;
-  widthSquareBottomRight5 = gameWidth*1/9;
-  heightSquareBottomRight5 = gameHeight*1/9;
-
-  xSquareTopLeft6 = gameWidth*6/9+1;
-  ySquareTopLeft6 = gameHeight*3/9+1;
-  widthSquareTopLeft6 = gameWidth*1/9;
-  heightSquareTopLeft6 = gameHeight*1/9;
-
-  xSquareTopCenter6 = gameWidth*7/9+1;
-  ySquareTopCenter6 = gameHeight*3/9+1;
-  widthSquareTopCenter6 = gameWidth*1/9;
-  heightSquareTopCenter6 = gameHeight*1/9;
-
-  xSquareTopRight6 = gameWidth*8/9+1;
-  ySquareTopRight6 = gameHeight*3/9+1;
-  widthSquareTopRight6 = gameWidth*1/9;
-  heightSquareTopRight6 = gameHeight*1/9;
-
-  xSquareCenterLeft6 = gameWidth*6/9+1;
-  ySquareCenterLeft6 = gameHeight*4/9+1;
-  widthSquareCenterLeft6 = gameWidth*1/9;
-  heightSquareCenterLeft6 = gameHeight*1/9;
-
-  xSquareCenterCenter6 = gameWidth*7/9+1;
-  ySquareCenterCenter6 = gameHeight*4/9+1;
-  widthSquareCenterCenter6 = gameWidth*1/9;
-  heightSquareCenterCenter6 = gameHeight*1/9;
-
-  xSquareCenterRight6 = gameWidth*8/9+1;
-  ySquareCenterRight6 = gameHeight*4/9+1;
-  widthSquareCenterRight6 = gameWidth*1/9;
-  heightSquareCenterRight6 = gameHeight*1/9;
-
-  xSquareBottomLeft6 = gameWidth*6/9+1;
-  ySquareBottomLeft6 = gameHeight*5/9+1;
-  widthSquareBottomLeft6 = gameWidth*1/9;
-  heightSquareBottomLeft6 = gameHeight*1/9;
-
-  xSquareBottomCenter6 = gameWidth*7/9+1;
-  ySquareBottomCenter6 = gameHeight*5/9+1;
-  widthSquareBottomCenter6 = gameWidth*1/9;
-  heightSquareBottomCenter6 = gameHeight*1/9;
-
-  xSquareBottomRight6 = gameWidth*8/9+1;
-  ySquareBottomRight6 = gameHeight*5/9+1;
-  widthSquareBottomRight6 = gameWidth*1/9;
-  heightSquareBottomRight6 = gameHeight*1/9;
-
-  xSquareTopLeft8 = gameWidth*3/9+1;
-  ySquareTopLeft8 = gameHeight*6/3+1;
-  widthSquareTopLeft8 = gameWidth*1/9;
-  heightSquareTopLeft8 = gameHeight*1/9;
-
-  xSquareTopCenter8 = gameWidth*4/9+1;
-  ySquareTopCenter8 = gameHeight*6/3+1;
-  widthSquareTopCenter8 = gameWidth*1/9;
-  heightSquareTopCenter8 = gameHeight*1/9;
-
-  xSquareTopRight8 = gameWidth*5/9+1;
-  ySquareTopRight8 = gameHeight*6/3+1;
-  widthSquareTopRight8 = gameWidth*1/9;
-  heightSquareTopRight8 = gameHeight*1/9;
-
-  xSquareCenterLeft8 = gameWidth*3/9+1;
-  ySquareCenterLeft8 = gameHeight*7/9+1;
-  widthSquareCenterLeft8 = gameWidth*1/9;
-  heightSquareCenterLeft8 = gameHeight*1/9;
-
-  xSquareCenterCenter8 = gameWidth*4/9+1;
-  ySquareCenterCenter8 = gameHeight*7/9+1;
-  widthSquareCenterCenter8 = gameWidth*1/9;
-  heightSquareCenterCenter8 = gameHeight*1/9;
-
-  xSquareCenterRight8 = gameWidth*5/9+1;
-  ySquareCenterRight8 = gameHeight*7/9+1;
-  widthSquareCenterRight8 = gameWidth*1/9;
-  heightSquareCenterRight8 = gameHeight*1/9;
-
-  xSquareBottomLeft8 = gameWidth*3/9+1;
-  ySquareBottomLeft8 = gameHeight*8/9+1;
-  widthSquareBottomLeft8 = gameWidth*1/9;
-  heightSquareBottomLeft8 = gameHeight*1/9;
-
-  xSquareBottomCenter8 = gameWidth*4/9+1;
-  ySquareBottomCenter8 = gameHeight*8/9+1;
-  widthSquareBottomCenter8 = gameWidth*1/9;
-  heightSquareBottomCenter8 = gameHeight*1/9;
-
-  xSquareBottomRight8 = gameWidth*5/9+1;
-  ySquareBottomRight8 = gameHeight*8/9+1;
-  widthSquareBottomRight8 = gameWidth*1/9;
-  heightSquareBottomRight8 = gameHeight*1/9;
 
   xSquareTopLeftMain = gameWidth*0;
   ySquareTopLeftMain = gameHeight*0;
@@ -835,6 +678,18 @@ void setup() {
   ySquareBottomRightMain = gameHeight*2/3+1;
   widthSquareBottomRightMain = gameWidth*1/3;
   heightSquareBottomRightMain = gameHeight*1/3;
+  
+  mainBoardSetup();
+  gameTopLeftSetup();
+  gameTopCenterSetup();
+  gameTopRightSetup();
+  gameCenterLeftSetup();
+  gameCenterCenterSetup();
+  gameCenterRightSetup();
+  gameBottomLeftSetup();
+  gameBottomCenterSetup();
+  gameBottomRightSetup();
+  homeScreenSetup();
 }
 void draw() {
   noStroke();
@@ -843,19 +698,12 @@ void draw() {
   if (start == true) {
     Game1();
   } else if(howToPlay == false){
-    homeScreen();
+    homeScreenDraw();
   }
-
+  playerMoveImage();
   if (howToPlay == true) {
     howTo();
   }
-
-
-  fill(255, 130, 255);
-  textAlign(CENTER, CENTER);
-  textFont(settFont, 20);
-  text(settText, xSettings, ySetting, widthSettings, heightSettings);
-  fill(255);
 }
 void mousePressed() {
   println(mouseX);
@@ -876,6 +724,8 @@ void mousePressed() {
   if (exet == true && mouseX>xEndYes && mouseX<xEndYes+widthEndYes && mouseY>yEndYes && mouseY<yEndYes+heightEndYes) {
     reset();
   }
+  
+  playerMoveMousePressed();
 }
 /*
 
