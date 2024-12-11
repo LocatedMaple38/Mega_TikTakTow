@@ -554,7 +554,6 @@ boolean bottomCenterMainX = false;
 boolean bottomRightMainX = false;
 
 int activePlayFeild;
-int loco;
 
 PImage playerO;
 PImage playerX;
