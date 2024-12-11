@@ -1,13 +1,21 @@
 void Game1(){
   surface.setTitle(appTittle+" game");
-  
-  mainBoard();
+  gameTopLeftDraw();
+  gameTopCenterDraw();
+  gameTopRightDraw();
+  gameCenterLeftDraw();
+  gameCenterCenterDraw();
+  gameCenterRightDraw();
+  gameBottomLeftDraw();
+  gameBottomCenterDraw();
+  gameBottomRightDraw();
+  mainBoardDraw();
+  activePlayFeild();
   
   if(startGame == true){
     startGame();
   }
   
-  playerMove();
   
   if(teamGoing == true){
     image(playerX, xteamGoing, yteamGoing, widthteamGoing, heightteamGoing);
