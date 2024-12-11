@@ -495,11 +495,12 @@ void playerMoveImage(){
     image(playerX, xSquareBottomLeft3, ySquareBottomLeft3, widthSquareBottomLeft3, heightSquareBottomLeft3);
   }
   if(bottomRight3O){
-    image(playerO, xSquareBottomRight2, ySquareBottomRight2, widthSquareBottomRight2, heightSquareBottomRight2);
+    image(playerO, xSquareBottomCenter3, ySquareBottomCenter3, widthSquareBottomCenter3, heightSquareBottomCenter3);
   }
   if(bottomRight3X){
-    image(playerX, xSquareBottomRight2, ySquareBottomRight2, widthSquareBottomRight2, heightSquareBottomRight2);
+    image(playerX, xSquareBottomCenter3, ySquareBottomCenter3, widthSquareBottomCenter3, heightSquareBottomCenter3);
   }
+  
 }
 /*
 float ;
@@ -509,6 +510,6 @@ float ;
 float ;
 float ;
 float ;
-float xSquareBottomCenter3, ySquareBottomCenter3, widthSquareBottomCenter3, heightSquareBottomCenter3;
+float ;
 float xSquareBottomRight3, ySquareBottomRight3, widthSquareBottomRight3, heightSquareBottomRight3;
 */
