@@ -17,7 +17,7 @@ void gameTopCenterSetup(){
   xBottom2 = gameWidth*1/3;
   yBottom2 = gameHeight*2/9;
   widthBottom2 = gameWidth*2/3;
-  heightBottom2 = gameHeight*2/9
+  heightBottom2 = gameHeight*2/9;
   
   xSquareTopLeft2 = gameWidth*3/9+1;
   ySquareTopLeft2 = gameHeight*0;
@@ -77,7 +77,7 @@ void gameTopCenterDraw(){
   rect(xSquareBottomLeft2, ySquareBottomLeft2, widthSquareBottomLeft2, heightSquareBottomLeft2);
   rect(xSquareBottomCenter2, ySquareBottomCenter2, widthSquareBottomCenter2, heightSquareBottomCenter2);
   rect(xSquareBottomRight2, ySquareBottomRight2, widthSquareBottomRight2, heightSquareBottomRight2);
-  stroke(100);
+  stroke(0);
   line(xLeft2, yLeft2, widthLeft2, heightLeft2);
   line(xRight2, yRight2, widthRight2, heightRight2);
   line(xTop2, yTop2, widthTop2, heightTop2);
