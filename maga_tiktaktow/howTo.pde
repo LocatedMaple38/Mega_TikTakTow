@@ -1,7 +1,7 @@
 void howTo(){
   surface.setTitle(appTittle+" How To");
   rect(xBackGround, yBackGround, widthBackGround, heightBackGround);
-  mainBoard();
+  mainBoardDraw();
   fill(0);
   textAlign(CENTER, CENTER);
   textFont(howToFont, 18);
