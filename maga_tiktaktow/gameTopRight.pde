@@ -77,7 +77,7 @@ void gameTopRightDraw(){
   rect(xSquareBottomLeft3, ySquareBottomLeft3, widthSquareBottomLeft3, heightSquareBottomLeft3);
   rect(xSquareBottomCenter3, ySquareBottomCenter3, widthSquareBottomCenter3, heightSquareBottomCenter3);
   rect(xSquareBottomRight3, ySquareBottomRight3, widthSquareBottomRight3, heightSquareBottomRight3);
-  stroke(100);
+  stroke(0);
   line(xLeft3, yLeft3, widthLeft3, heightLeft3);
   line(xRight3, yRight3, widthRight3, heightRight3);
   line(xTop3, yTop3, widthTop3, heightTop3);
