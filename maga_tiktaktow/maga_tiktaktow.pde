@@ -332,6 +332,7 @@ boolean bottomLeft9OverRide = false;
 boolean bottomCenter9OverRide = false;
 boolean bottomRight9OverRide = false;
 
+int topLeft1 = 0;
 boolean topLeft1O = false;
 boolean topCenter1O = false;
 boolean topRight1O = false;
@@ -553,6 +554,7 @@ boolean bottomCenterMainX = false;
 boolean bottomRightMainX = false;
 
 int activePlayFeild;
+int loco;
 
 PImage playerO;
 PImage playerX;
