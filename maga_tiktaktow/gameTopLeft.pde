@@ -66,7 +66,7 @@ void gameTopLeftSetup(){
 }
 void gameTopLeftDraw(){
   noStroke();
-  fill(255, 0, 0);
+  fill(#ff0000);
   rect(xSquareTopLeft1, ySquareTopLeft1, widthSquareTopLeft1, heightSquareTopLeft1);
   rect(xSquareTopCenter1, ySquareTopCenter1, widthSquareTopCenter1, heightSquareTopCenter1);
   rect(xSquareTopRight1, ySquareTopRight1, widthSquareTopRight1, heightSquareTopRight1);
@@ -82,9 +82,13 @@ void gameTopLeftDraw(){
   }
   rect(xSquareBottomRight1, ySquareBottomRight1, widthSquareBottomRight1, heightSquareBottomRight1);
   
-  stroke(100);
+  stroke(0);
   line(xLeft1, yLeft1, widthLeft1, heightLeft1);
   line(xRight1, yRight1, widthRight1, heightRight1);
   line(xTop1, yTop1, widthTop1, heightTop1);
   line(xBottom1, yBottom1, widthBottom1, heightBottom1);
+}
+
+void gameTopLeftMousePressed(){
+  
 }
