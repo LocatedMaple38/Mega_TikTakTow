@@ -76,10 +76,47 @@ void playerMoveMousePressed(){
       bottomLeft1OverRide = true;
       activePlayFeild = 7;
     }
+    
+    if(bottomCenter1OverRide == false && mouseX>xSquareBottomCenter1 && mouseX<xSquareBottomCenter1+widthSquareBottomCenter1 && mouseY>ySquareBottomCenter1 && mouseY<ySquareBottomCenter1+heightSquareBottomCenter1){
+      if(teamGoing == false){
+        bottomCenter1O = true;
+      }else{
+        bottomCenter1X = true;
+      }
+      teamGoing = teamGoing ? false : true;
+      bottomCenter1OverRide = true;
+      activePlayFeild = 8;
+    }
+    
+    if(bottomRight1OverRide == false && mouseX>xSquareBottomRight1 && mouseX<xSquareBottomRight1+widthSquareBottomRight1 && mouseY>ySquareBottomRight1 && mouseY<ySquareBottomRight1+heightSquareBottomRight1){
+      if(teamGoing == false){
+        bottomRight1O = true;
+      }else{
+        bottomRight1X = true;
+      }
+      teamGoing = teamGoing ? false : true;
+      bottomRight1OverRide = true;
+      activePlayFeild = 9;
+    }
+  }
+  
+  if(topCenterActive){
+    println("hello");
+    if(topLeft2OverRide == false && mouseX>xSquareTopLeft2 && mouseX<xSquareTopLeft2+widthSquareTopLeft2 && mouseY>ySquareTopLeft2 && mouseX<ySquareTopLeft2+heightSquareTopLeft2){
+      if(teamGoing == false){
+        topLeft2O = true;
+      }else{
+        topLeft2X = true;
+      }
+      teamGoing = teamGoing ? false : true;
+      topLeft2OverRide = true;
+      activePlayFeild = 1;
+    }
   }
 }
 //, , , 
 void activePlayFeild(){
+  println(activePlayFeild);
   switch(activePlayFeild){
     case 1:
       topLeftActive = true;
@@ -147,6 +184,39 @@ void activePlayFeild(){
       bottomCenterActive = false;
       bottomRightActive = false;
       break;
+    case 7:
+      topLeftActive = false;
+      topCenterActive = false;
+      topRightActive = false;
+      centerLeftActive = false;
+      centerCenterActive = false;
+      centerRightActive = false;
+      bottomLeftActive = true;
+      bottomCenterActive = false;
+      bottomRightActive = false;
+      break;
+    case 8:
+      topLeftActive = false;
+      topCenterActive = false;
+      topRightActive = false;
+      centerLeftActive = false;
+      centerCenterActive = false;
+      centerRightActive = false;
+      bottomLeftActive = false;
+      bottomCenterActive = true;
+      bottomRightActive = false;
+      break;
+    case 9:
+      topLeftActive = false;
+      topCenterActive = false;
+      topRightActive = false;
+      centerLeftActive = false;
+      centerCenterActive = false;
+      centerRightActive = false;
+      bottomLeftActive = false;
+      bottomCenterActive = false;
+      bottomRightActive = true;
+      break;
   }
 }
 
@@ -192,5 +262,23 @@ void playerMoveImage(){
   }
   if(bottomLeft1X){
     image(playerX, xSquareBottomLeft1, ySquareBottomLeft1, widthSquareBottomLeft1, heightSquareBottomLeft1);
+  }
+  if(bottomCenter1O){
+    image(playerO, xSquareBottomCenter1, ySquareBottomCenter1, widthSquareBottomCenter1, heightSquareBottomCenter1);
+  }
+  if(bottomCenter1X){
+    image(playerX, xSquareBottomCenter1, ySquareBottomCenter1, widthSquareBottomCenter1, heightSquareBottomCenter1);
+  }
+  if(bottomRight1O){
+    image(playerO, xSquareBottomRight1, ySquareBottomRight1, widthSquareBottomRight1, heightSquareBottomRight1);
+  }
+  if(bottomRight1X){
+    image(playerX, xSquareBottomRight1, ySquareBottomRight1, widthSquareBottomRight1, heightSquareBottomRight1);
+  }
+  if(topLeft2O){
+    image(playerO, xSquareTopLeft2, ySquareTopLeft2, widthSquareTopLeft2, heightSquareTopLeft2);
+  }
+  if(topLeft2X){
+    image(playerX, xSquareTopLeft2, ySquareTopLeft2, widthSquareTopLeft2, heightSquareTopLeft2);
   }
 }
