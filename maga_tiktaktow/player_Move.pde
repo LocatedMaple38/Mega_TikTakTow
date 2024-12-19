@@ -316,13 +316,33 @@ void playerMoveMousePressed(){
       teamGoing = !teamGoing;
       activePlayFeild = 2;
     }
+    if(topRight4OverRide == false && mouseX>xSquareTopRight4 && mouseX<xSquareTopRight4+widthSquareTopRight4 && mouseY>ySquareTopRight4 && mouseY<ySquareTopRight4+heightSquareTopRight4){
+      if(teamGoing){
+        topRight4X = true;
+      }else{
+        topRight4O = true;
+      }
+      topRight4OverRide = true;
+      teamGoing = !teamGoing;
+      activePlayFeild = 3;
+    }
+    if(centerLeft4OverRide == false && mouseX>xSquareCenterLeft4 && mouseX<xSquareCenterLeft4+widthSquareCenterLeft4 && mouseY>ySquareCenterLeft4 && mouseY<ySquareCenterLeft4+heightSquareCenterLeft4){
+      if(teamGoing){
+        centerLeft4X = true;
+      }else{
+        centerLeft4O = true;
+      }
+      centerRight4OverRide = true;
+      teamGoing = !teamGoing;
+      activePlayFeild = 4;
+    }
   }
 }
 /*
 float , , , ;
 float , , , ;
-float xSquareTopRight4, ySquareTopRight4, widthSquareTopRight4, heightSquareTopRight4;
-float xSquareCenterLeft4, ySquareCenterLeft4, widthSquareCenterLeft4, heightSquareCenterLeft4;
+float , , , ;
+float , , , ;
 float xSquareCenterCenter4, ySquareCenterCenter4, widthSquareCenterCenter4, heightSquareCenterCenter4;
 float xSquareCenterRight4, ySquareCenterRight4, widthSquareCenterRight4, heightSquareCenterRight4;
 float xSquareBottomLeft4, ySquareBottomLeft4, widthSquareBottomLeft4, heightSquareBottomLeft4;
@@ -604,31 +624,51 @@ void playerMoveImage(){
     image(playerX, xSquareTopLeft4, ySquareTopLeft4, widthSquareTopLeft4, heightSquareTopLeft4);
   }
   if(topCenter4O){
-    
+    image(playerO, xSquareTopCenter4, ySquareTopCenter4, widthSquareTopCenter4, heightSquareTopCenter4);
+  }
+  if(topCenter4X){
+    image(playerX, xSquareTopCenter4, ySquareTopCenter4, widthSquareTopCenter4, heightSquareTopCenter4);
+  }
+  if(topRight4O){
+    image(playerO, xSquareTopRight4, ySquareTopRight4, widthSquareTopRight4, heightSquareTopRight4);
   }
   if(topRight4X){
-    
+    image(playerX, xSquareTopRight4, ySquareTopRight4, widthSquareTopRight4, heightSquareTopRight4);
   }
   if(centerLeft4O){
-    
+    image(playerO, xSquareCenterLeft4, ySquareCenterLeft4, widthSquareCenterLeft4, heightSquareCenterLeft4);
   }
   if(centerLeft4X){
-    
+    image(playerX, xSquareCenterLeft4, ySquareCenterLeft4, widthSquareCenterLeft4, heightSquareCenterLeft4);
   }
   if(centerCenter4O){
-    
+    image(playerO, xSquareCenterCenter4, ySquareCenterCenter4, widthSquareCenterCenter4, heightSquareCenterCenter4);
   }
   if(centerCenter4X){
-    
+    image(playerX, xSquareCenterCenter4, ySquareCenterCenter4, widthSquareCenterCenter4, heightSquareCenterCenter4);
   }
-  
+  if(centerRight4O){
+    image(playerO, xSquareCenterRight4, ySquareCenterRight4, widthSquareCenterRight4, heightSquareCenterRight4);
+  }
+  if(centerRight4X){
+    image(playerX, xSquareCenterRight4, ySquareCenterRight4, widthSquareCenterRight4, heightSquareCenterRight4);
+  }
+  if(bottomLeft4O){
+    image(playerO, xSquareBottomLeft4, ySquareBottomLeft4, widthSquareBottomLeft4, heightSquareBottomLeft4);
+  }
+  if(bottomLeft4X){
+    image(playerX, xSquareBottomLeft4, ySquareBottomLeft4, widthSquareBottomLeft4, heightSquareBottomLeft4);
+  }
+  if(bottomCenter4O){
+    image(playerO, xSquareBottomCenter4, ySquareBottomCenter4, widthSquareBottomCenter4, heightSquareBottomCenter4);
+  }
+  if(bottomCenter4X){
+    image(playerX, xSquareBottomCenter4, ySquareBottomCenter4, widthSquareBottomCenter4, heightSquareBottomCenter4);
+  }
+  if(bottomRight4O){
+    image(playerO, xSquareBottomRight4, ySquareBottomRight4, widthSquareBottomRight4, heightSquareBottomRight4);
+  }
+  if(bottomRight4X){
+    image(playerX, xSquareBottomRight4, ySquareBottomRight4, widthSquareBottomRight4, heightSquareBottomRight4);
+  }
 }
-//float ;
-//float xSquareTopCenter4, ySquareTopCenter4, widthSquareTopCenter4, heightSquareTopCenter4;
-//float xSquareTopRight4, ySquareTopRight4, widthSquareTopRight4, heightSquareTopRight4;
-//float xSquareCenterLeft4, ySquareCenterLeft4, widthSquareCenterLeft4, heightSquareCenterLeft4;
-//float xSquareCenterCenter4, ySquareCenterCenter4, widthSquareCenterCenter4, heightSquareCenterCenter4;
-//float xSquareCenterRight4, ySquareCenterRight4, widthSquareCenterRight4, heightSquareCenterRight4;
-//float xSquareBottomLeft4, ySquareBottomLeft4, widthSquareBottomLeft4, heightSquareBottomLeft4;
-//float xSquareBottomCenter4, ySquareBottomCenter4, widthSquareBottomCenter4, heightSquareBottomCenter4;
-//float xSquareBottomRight4, ySquareBottomRight4, widthSquareBottomRight4, heightSquareBottomRight4;
