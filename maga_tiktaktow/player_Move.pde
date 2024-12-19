@@ -225,12 +225,13 @@ void playerMoveMousePressed(){
       topCenter3OverRide = true;
       activePlayFeild = 2;
     }
+    if(topRight3OverRide == false && mouseX>xSquareTopRight3 && mouseX<xSquareTopRight3+widthSquareTopRight3
   }
 }
 /*
 float , , , ;
 float , , , ;
-float xSquareTopRight3, ySquareTopRight3, widthSquareTopRight3, heightSquareTopRight3;
+float , ySquareTopRight3, , heightSquareTopRight3;
 float xSquareCenterLeft3, ySquareCenterLeft3, widthSquareCenterLeft3, heightSquareCenterLeft3;
 float xSquareCenterCenter3, ySquareCenterCenter3, widthSquareCenterCenter3, heightSquareCenterCenter3;
 float xSquareCenterRight3, ySquareCenterRight3, widthSquareCenterRight3, heightSquareCenterRight3;
