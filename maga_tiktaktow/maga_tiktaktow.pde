@@ -228,7 +228,7 @@ int gameWidth, gameHeight;
 boolean quit = false;
 boolean exet = false;
 boolean start = false;
-boolean teamGoing = true;
+boolean teamGoing = false;
 boolean howToPlay = false;
 boolean startGame = true;
 
@@ -707,8 +707,8 @@ void draw() {
   }
 }
 void mousePressed() {
-  println(mouseX);
-  println(mouseY);
+  //println(mouseX);
+  //println(mouseY);
 
   if (start == false && mouseX>xHowTo && mouseX<xHowTo+widthHowTo && mouseY>yHowTo && mouseY<yHowTo+heightHowTo) {
     howToPlay = true;
@@ -727,6 +727,11 @@ void mousePressed() {
   }
   
   playerMoveMousePressed();
+}
+
+void keyPressed(){
+  println(topLeft1OverRide);
+  println(topLeftActive);
 }
 /*
 
