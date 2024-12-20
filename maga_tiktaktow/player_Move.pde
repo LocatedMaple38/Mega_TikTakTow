@@ -336,19 +336,99 @@ void playerMoveMousePressed(){
       teamGoing = !teamGoing;
       activePlayFeild = 4;
     }
+    if(centerCenter4OverRide == false && mouseX>xSquareCenterCenter4 && mouseX<xSquareCenterCenter4+widthSquareCenterCenter4 && mouseY>ySquareCenterCenter4 && mouseY<ySquareCenterCenter4+heightSquareCenterCenter4){
+      if(teamGoing){
+        centerCenter4X = true;
+      }else{
+        centerCenter4O = true;
+      }
+      centerCenter4OverRide = true;
+      teamGoing = !teamGoing;
+      activePlayFeild = 5;
+    }
+    if(centerRight4OverRide == false && mouseX>xSquareCenterRight4 && mouseX<xSquareCenterRight4+widthSquareCenterRight4 && mouseY>ySquareCenterRight4+heightSquareCenterRight4){
+      if(teamGoing){
+        centerRight4X = true;
+      }else{
+        centerRight4O = true;
+      }
+      centerRight4OverRide = true;
+      teamGoing = !teamGoing;
+      activePlayFeild = 6;
+    }
+    if(bottomLeft4OverRide == false && mouseX>xSquareBottomLeft4 && mouseX<xSquareBottomLeft4+widthSquareBottomLeft4 && mouseY>ySquareBottomLeft4 && mouseY<ySquareBottomLeft4+heightSquareBottomLeft4){
+      if(teamGoing){
+        bottomLeft4X = true;
+      }else{
+        bottomLeft4O = true;
+      }
+      bottomLeft4OverRide = true;
+      teamGoing = !teamGoing;
+      activePlayFeild = 7;
+    }
+    if(bottomCenter4OverRide == false && mouseX>xSquareBottomCenter4 && mouseX<xSquareBottomCenter4+widthSquareBottomCenter4 && mouseY>ySquareBottomCenter4 && mouseY<ySquareBottomCenter4+heightSquareBottomCenter4){
+      if(teamGoing){
+        bottomCenter4X = true;
+      }else{
+        bottomCenter4O = true;
+      }
+      bottomCenter4OverRide = true;
+      teamGoing = !teamGoing;
+      activePlayFeild = 8;
+    }
+    if(bottomRight4OverRide == false && mouseX>xSquareBottomRight4 && mouseX<xSquareBottomRight4+widthSquareBottomRight4 && mouseY>ySquareBottomRight4 && mouseY<ySquareBottomRight4+heightSquareBottomRight4){
+      if(teamGoing){
+        bottomRight4X = true;
+      }else{
+        bottomRight4O = true;
+      }
+      bottomRight4OverRide = true;
+      teamGoing = !teamGoing;
+      activePlayFeild = 9;
+    }
   }
+  if(centerCenter){
+    if(topLeft5OverRide == false && mouseX>xSquareTopLeft5 && mouseX<xSquareTopLeft5+widthSquareTopLeft5 && mouseY>ySquareTopLeft5 && mouseY<ySquareTopLeft5+heightSquareTopLeft5){
+      if(teamGoing){
+        topLeft5X = true;
+      }else{
+        topLeft5O = true;
+      }
+      topLeft5OverRide = true;
+      teamGoing = !teamGoing;
+      activePlayFeild = 1;
+    }
+    if(topCenter5OverRide == false && mouseX>xSquareTopCenter5 && mouseX<xSquareTopCenter5+ySquareTopCenter5 && mouseY>widthSquareTopCenter5 && mouseY<widthSquareTopCenter5+heightSquareTopCenter5){
+      if(teamGoing){
+        topCenter5X = true;
+      }else{
+        topCenter5O = true;
+      }
+      topCenter5OverRide = true;
+      teamGoing = !teamGoing;
+      activePlayFeild = 2;
+    }
+    if(topRight5OverRide == false && mouseX>xSquareTopRight5 && mouseX<xSquareTopRight5+widthSquareTopRight5 && mouseY>ySquareTopRight5 && mouseY<ySquareTopRight5+heightSquareTopRight5){
+      if(teamGoing){
+        topRight5X = true;
+      }else{
+        topRight5O = true;
+      }
+      topRight5OverRride = true;
+      teamGoing = !teamGoing;
+      activePlayFeild = 3;
+    }
+    if(centerLeft5OverRide == false && mouseX>xSquareCenterLeft5 && mouseX<xSquareCenterLeft5+
 }
-/*
-float , , , ;
-float , , , ;
-float , , , ;
-float , , , ;
-float xSquareCenterCenter4, ySquareCenterCenter4, widthSquareCenterCenter4, heightSquareCenterCenter4;
-float xSquareCenterRight4, ySquareCenterRight4, widthSquareCenterRight4, heightSquareCenterRight4;
-float xSquareBottomLeft4, ySquareBottomLeft4, widthSquareBottomLeft4, heightSquareBottomLeft4;
-float xSquareBottomCenter4, ySquareBottomCenter4, widthSquareBottomCenter4, heightSquareBottomCenter4;
-float xSquareBottomRight4, ySquareBottomRight4, widthSquareBottomRight4, heightSquareBottomRight4;
-*/
+//float , , , ;
+//float , , , ;
+//float , , , ;
+//float , ySquareCenterLeft5, widthSquareCenterLeft5, heightSquareCenterLeft5;
+//float xSquareCenterCenter5, ySquareCenterCenter5, widthSquareCenterCenter5, heightSquareCenterCenter5;
+//float xSquareCenterRight5, ySquareCenterRight5, widthSquareCenterRight5, heightSquareCenterRight5;
+//float xSquareBottomLeft5, ySquareBottomLeft5, widthSquareBottomLeft5, heightSquareBottomLeft5;
+//float xSquareBottomCenter5, ySquareBottomCenter5, widthSquareBottomCenter5, heightSquareBottomCenter5;
+//float xSquareBottomRight5, ySquareBottomRight5, widthSquareBottomRight5, heightSquareBottomRight5;
 void activePlayFeild(){
   //println(activePlayFeild);
   switch(activePlayFeild){
